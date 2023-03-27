@@ -1,0 +1,17 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = /Users/maxkiselev/.gitignore
+	pager = less -S
+[color]
+	ui = auto
+[init]
+	defaultBranch = main
+[credential]
+	helper = cache
+[user]
+	name = wtf403
+	email = wtf403@yandex.ru
