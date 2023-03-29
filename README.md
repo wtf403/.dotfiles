@@ -1,3 +1,1 @@
-# My MacOS setup
-
 # .dotfiles
