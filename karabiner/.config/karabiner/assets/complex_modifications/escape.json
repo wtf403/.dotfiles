@@ -1,8 +1,8 @@
 {
-  "title": "Map ctrl + [ to escape",
+  "title": "Escape",
   "rules": [
     {
-      "description": "ctrl(caps_lock) + [ --> escape ",
+      "description": "CapsLock (Ctrl) + [ --> Escape",
       "manipulators": [
         {
           "from": {

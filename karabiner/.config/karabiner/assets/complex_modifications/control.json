@@ -13,7 +13,7 @@
           },
           "to": [
             {
-              "key_code": "control"
+              "key_code": "right_control"
             }
           ],
           "type": "basic"

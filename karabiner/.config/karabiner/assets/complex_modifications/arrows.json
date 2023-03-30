@@ -1,8 +1,8 @@
 {
-  "title": "arrows ==> ctrl+{n,p,b,f}",
+  "title": "Arrows",
   "rules": [
     {
-      "description": "Vertial movement",
+      "description": "Ctrl+{n,p} --> Vertial movement",
       "manipulators": [
         {
           "from": {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "description": "Horizontal movement",
+      "description": "Ctrl+{f,b} --> Horizontal movement",
       "manipulators": [
         {
           "from": {

@@ -1,8 +1,8 @@
 {
-  "title": "Sticky Left Control",
+  "title": "Sticky F13",
   "rules": [
     {
-      "description": "Map left_control to sticky f13",
+      "description": "LeftCtrl--> Sticky F13",
       "manipulators": [
         {
           "from": {

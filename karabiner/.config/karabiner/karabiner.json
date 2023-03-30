@@ -18,182 +18,8 @@
                 },
                 "rules": [
                     {
-                        "description": "Page up / Page down",
+                        "description": "Ctrl+{n,p} --> Vertial movement",
                         "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_command"
-                                        ]
-                                    },
-                                    "optional": [
-                                        "any"
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "page_up"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_command"
-                                        ]
-                                    },
-                                    "optional": [
-                                        "any"
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "page_down"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map ctrl + [ to escape",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "keyboard brightness (shift - f1/f2)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f1",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "right_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "illumination_decrement"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "f2",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_shift"
-                                        ],
-                                        "optional": [
-                                            "right_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "illumination_increment"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "keyboard brightness (shift - f1/f2)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "f1",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "illumination_decrement"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "f2",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_shift"
-                                        ],
-                                        "optional": [
-                                            "left_shift"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "illumination_increment"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map ctrl+p/ctrl+n to arrow up/down",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "p",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
                             {
                                 "from": {
                                     "key_code": "n",
@@ -212,37 +38,14 @@
                                     }
                                 ],
                                 "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map Control key to Hyper (Ctrl + Cmd + Opt + Shift) key",
-                        "manipulators": [
+                            },
                             {
                                 "from": {
-                                    "key_code": "left_control"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_option",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map CapsLock key to Control key",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
+                                    "key_code": "p",
                                     "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
                                         "optional": [
                                             "any"
                                         ]
@@ -250,7 +53,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_control"
+                                        "key_code": "up_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -258,27 +61,50 @@
                         ]
                     },
                     {
-                        "description": "Disable sysdiagnose with cmd+shift+opt+ctrl+,",
+                        "description": "Ctrl+{f,b} --> Horizontal movement",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "comma",
+                                    "key_code": "b",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
                                             "control"
+                                        ],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
                                 },
-                                "to": [],
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Toggle CapsLock with double shift",
+                        "description": "LeftShift + RightShift --> CapsLock",
                         "manipulators": [
                             {
                                 "from": {
@@ -324,107 +150,233 @@
                                     }
                                 ],
                                 "type": "basic"
-                            },
-                            {
-                                "description": "Shift Move Froward by 1 word",
-                                "manipulators": [
-                                    {
-                                        "from": {
-                                            "key_code": "right_shift"
-                                        },
-                                        "to": [
-                                            {
-                                                "key_code": "right_shift"
-                                            }
-                                        ],
-                                        "to_if_alone": [
-                                            {
-                                                "key_code": "right_arrow",
-                                                "modifiers": [
-                                                    "option"
-                                                ]
-                                            }
-                                        ],
-                                        "type": "basic"
-                                    }
-                                ]
-                            },
-                            {
-                                "description": "Shift Move Backward by 1 word",
-                                "manipulators": [
-                                    {
-                                        "from": {
-                                            "key_code": "left_shift"
-                                        },
-                                        "to": [
-                                            {
-                                                "key_code": "left_shift"
-                                            }
-                                        ],
-                                        "to_if_alone": [
-                                            {
-                                                "key_code": "left_arrow",
-                                                "modifiers": [
-                                                    "option"
-                                                ]
-                                            }
-                                        ],
-                                        "type": "basic"
-                                    }
-                                ]
                             }
                         ]
                     },
                     {
-                        "description": "Froward/Backward word navigation",
+                        "description": "CapsLock (Ctrl) + [ --> Escape",
                         "manipulators": [
                             {
-                                "description": "Shift Move Froward by 1 word",
-                                "manipulators": [
-                                    {
-                                        "from": {
-                                            "key_code": "right_shift"
-                                        },
-                                        "to": [
-                                            {
-                                                "key_code": "right_shift"
-                                            }
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
                                         ],
-                                        "to_if_alone": [
-                                            {
-                                                "key_code": "right_arrow",
-                                                "modifiers": [
-                                                    "option"
-                                                ]
-                                            }
-                                        ],
-                                        "type": "basic"
+                                        "optional": [
+                                            "any"
+                                        ]
                                     }
-                                ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "LeftCtrl --> Hyper (Ctrl + Cmd + Opt + Shift)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_control",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_option",
+                                            "left_shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "(disable sysdiagnose with cmd+shift+opt+ctrl+,)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift-F1 --> Decrement Illumination",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "illumination_decrement"
+                                    }
+                                ],
+                                "type": "basic"
                             },
                             {
-                                "description": "Shift Move Backward by 1 word",
-                                "manipulators": [
-                                    {
-                                        "from": {
-                                            "key_code": "left_shift"
-                                        },
-                                        "to": [
-                                            {
-                                                "key_code": "left_shift"
-                                            }
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
                                         ],
-                                        "to_if_alone": [
-                                            {
-                                                "key_code": "left_arrow",
-                                                "modifiers": [
-                                                    "option"
-                                                ]
-                                            }
-                                        ],
-                                        "type": "basic"
+                                        "optional": [
+                                            "right_shift"
+                                        ]
                                     }
-                                ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "illumination_decrement"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Shift-F2 --> Increment Illumination",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "illumination_increment"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_shift"
+                                        ],
+                                        "optional": [
+                                            "right_shift"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "illumination_increment"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "LeftCtrl--> Sticky F13",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "sticky_f13",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "sticky_f13",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "sticky_f13",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "any"
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "f13"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "sticky_f13",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock --> Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
+                                    }
+                                ],
+                                "type": "basic"
                             }
                         ]
                     }
@@ -582,7 +534,7 @@
                     ]
                 }
             ],
-            "name": "Default profile",
+            "name": "main",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
@@ -783,7 +735,7 @@
                     ]
                 }
             ],
-            "name": "test",
+            "name": "default",
             "parameters": {
                 "delay_milliseconds_before_open_device": 1000
             },
