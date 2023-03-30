@@ -1,0 +1,58 @@
+{
+  "title": "Sticky Left Control",
+  "rules": [
+    {
+      "description": "Map left_control to sticky f13",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "conditions": [
+            {
+              "name": "sticky_f13",
+              "type": "variable_if",
+              "value": 0
+            }
+          ],
+          "type": "basic",
+          "to": [
+            {
+              "set_variable": {
+                "name": "sticky_f13",
+                "value": 1
+              }
+            }
+          ]
+        },
+        {
+          "from": {
+            "key_code": "any"
+          },
+          "conditions": [
+            {
+              "name": "sticky_f13",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "type": "basic",
+          "to": [
+            {
+              "key_code": "f13"
+            },
+            {
+              "set_variable": {
+                "name": "sticky_f13",
+                "value": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
