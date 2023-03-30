@@ -1,7 +1,7 @@
 #!/bin/bash
 
-LATITUDE=55.573482
-LONGITUDE=39.518407
+LATITUDE=55.576482
+LONGITUDE=39.513407
 
 # Get the current date
 DATE=$(date +"%Y-%m-%d")
