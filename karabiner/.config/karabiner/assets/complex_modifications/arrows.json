@@ -2,7 +2,7 @@
   "title": "arrows ==> ctrl+{n,p,b,f}",
   "rules": [
     {
-      "description": "Vertial movement with ctrl+{n,p}",
+      "description": "Vertial movement",
       "manipulators": [
         {
           "from": {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "description": "Horizontal movement with ctrl+{b,f}",
+      "description": "Horizontal movement",
       "manipulators": [
         {
           "from": {

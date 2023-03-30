@@ -1,8 +1,8 @@
 {
-  "title": "Base config",
+  "title": "CapsLock",
   "rules": [
     {
-      "description": "Toggle CapsLock with double shift",
+      "description": "LeftShift + RightShift --> CapsLock",
       "manipulators": [
         {
           "from": {

@@ -1,8 +1,8 @@
 {
-  "title": "Control key",
+  "title": "Ctrl",
   "rules": [
     {
-      "description": "Map CapsLock key to Control key",
+      "description": "CapsLock --> Ctrl",
       "manipulators": [
         {
           "from": {
@@ -13,7 +13,7 @@
           },
           "to": [
             {
-              "key_code": "right_control"
+              "key_code": "control"
             }
           ],
           "type": "basic"

@@ -1,8 +1,8 @@
 {
-  "title": "Map Control key to Hyper (Ctrl + Cmd + Opt + Shift) key",
+  "title": "Hyper",
   "rules": [
     {
-      "description": "caps_lock(control) --> hyper",
+      "description": "LeftCtrl --> Hyper (Ctrl + Cmd + Opt + Shift)",
       "manipulators": [
         {
           "from": {
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "description": "Disable sysdiagnose with cmd+shift+opt+ctrl+,",
+      "description": "(disable sysdiagnose with cmd+shift+opt+ctrl+,)",
       "manipulators": [
         {
           "from": {

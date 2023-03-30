@@ -1,9 +1,24 @@
 {
-  "title": "Base config",
+  "title": "Keyboard Illumination",
   "rules": [
     {
-      "description": "keyboard brightness (shift - f1/f2)",
+      "description": "Shift-F1 --> Decrement Illumination",
       "manipulators": [
+        {
+          "from": {
+            "key_code": "f1",
+            "modifiers": {
+              "mandatory": ["right_shift"],
+              "optional": ["left_shift"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "illumination_decrement"
+            }
+          ],
+          "type": "basic"
+        },
         {
           "from": {
             "key_code": "f1",
@@ -18,13 +33,18 @@
             }
           ],
           "type": "basic"
-        },
+        }
+      ]
+    },
+    {
+      "description": "Shift-F2 --> Increment Illumination",
+      "manipulators": [
         {
           "from": {
             "key_code": "f2",
             "modifiers": {
-              "mandatory": ["left_shift"],
-              "optional": ["right_shift"]
+              "mandatory": ["right_shift"],
+              "optional": ["left_shift"]
             }
           },
           "to": [
@@ -33,33 +53,13 @@
             }
           ],
           "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "keyboard brightness (shift - f1/f2)",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "f1",
-            "modifiers": {
-              "mandatory": ["right_shift"],
-              "optional": ["left_shift"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "illumination_decrement"
-            }
-          ],
-          "type": "basic"
         },
         {
           "from": {
             "key_code": "f2",
             "modifiers": {
-              "mandatory": ["right_shift"],
-              "optional": ["left_shift"]
+              "mandatory": ["left_shift"],
+              "optional": ["right_shift"]
             }
           },
           "to": [
