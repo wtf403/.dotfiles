@@ -1,17 +1,19 @@
 {
-  "title": "Map Control key to Hyper (Ctrl + Cmd + Opt + Shift) key",
+  "title": "Control key",
   "rules": [
     {
-      "description": "caps_lock(control) --> hyper",
+      "description": "Map CapsLock key to Control key",
       "manipulators": [
         {
           "from": {
-            "key_code": "left_control"
+            "key_code": "caps_lock",
+            "modifiers": {
+              "optional": ["any"]
+            }
           },
           "to": [
             {
-              "key_code": "left_control",
-              "modifiers": ["left_command", "left_option", "left_shift"]
+              "key_code": "right_control"
             }
           ],
           "type": "basic"

@@ -1,0 +1,37 @@
+{
+  "title": "Map Control key to Hyper (Ctrl + Cmd + Opt + Shift) key",
+  "rules": [
+    {
+      "description": "caps_lock(control) --> hyper",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "left_control"
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "modifiers": ["left_command", "left_option", "left_shift"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Disable sysdiagnose with cmd+shift+opt+ctrl+,",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "comma",
+            "modifiers": {
+              "mandatory": ["command", "shift", "option", "control"]
+            }
+          },
+          "to": [],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}

@@ -1,59 +1,9 @@
 {
-  "title": "Base config",
+  "title": "arrows ==> ctrl+{n,p,b,f}",
   "rules": [
     {
-      "description": "Page up / Page down",
+      "description": "Vertial movement with ctrl+{n,p}",
       "manipulators": [
-        {
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": ["left_control", "left_command"]
-            },
-            "optional": ["any"]
-          },
-          "to": [
-            {
-              "key_code": "page_up"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": ["left_control", "left_command"]
-            },
-            "optional": ["any"]
-          },
-          "to": [
-            {
-              "key_code": "page_down"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Map ctrl+p/ctrl+n to arrow up/down",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
-            }
-          ],
-          "type": "basic"
-        },
         {
           "from": {
             "key_code": "n",
@@ -68,9 +18,58 @@
             }
           ],
           "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "p",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "up_arrow"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Horizontal movement with ctrl+{b,f}",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow"
+            }
+          ],
+          "type": "basic"
+        },
+        {
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow"
+            }
+          ],
+          "type": "basic"
         }
       ]
     }
   ]
 }
-
