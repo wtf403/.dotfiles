@@ -69,8 +69,11 @@
           },
           "to": [
             {
-              "key_code": "delete_or_backspace",
-              "modifiers": ["command"]
+              "key_code": "up_arrow",
+              "modifiers": ["option", "shift"]
+            },
+            {
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [
@@ -94,8 +97,11 @@
           },
           "to": [
             {
-              "key_code": "delete_or_backspace",
-              "modifiers": ["option", "shift", "delete"]
+              "key_code": "down_arrow",
+              "modifiers": ["option", "shift"]
+            },
+            {
+              "key_code": "delete_or_backspace"
             }
           ],
           "conditions": [
