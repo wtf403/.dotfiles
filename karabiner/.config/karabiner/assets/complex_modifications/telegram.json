@@ -18,6 +18,15 @@
               "modifiers": ["option"]
             }
           ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$"
+              ]
+            }
+          ],
           "type": "basic"
         },
         {
@@ -32,6 +41,15 @@
             {
               "key_code": "down_arrow",
               "modifiers": ["option"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$"
+              ]
             }
           ],
           "type": "basic"
@@ -55,6 +73,15 @@
               "modifiers": ["command"]
             }
           ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$"
+              ]
+            }
+          ],
           "type": "basic"
         },
         {
@@ -69,6 +96,15 @@
             {
               "key_code": "delete_or_backspace",
               "modifiers": ["option", "shift", "delete"]
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_unless",
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$"
+              ]
             }
           ],
           "type": "basic"
