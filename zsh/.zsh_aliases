@@ -41,21 +41,19 @@ alias code="codium"
 alias watch="viddy --no-title"
 
 function asdf {
-  compinit -i
-  if [[ $@ == "" ]]
-  then
-    eval "/opt/homebrew/bin/asdf list"
+  if [[ $@ == "" ]]; then
+    command "/opt/homebrew/bin/asdf list"
   else
-    eval "/opt/homebrew/bin/asdf $@"
+    command "/opt/homebrew/bin/asdf $@"
   fi
 }
 
 alias stow="stow -vt ~ --ignore='^(\.git|\.DS_Store)$' "
 alias tree="tree -a -I '.git|.DS_Store'"
 alias mk="bonk"
+
 function tr {
-    compinit -i
-    if [ "$@" = "." ]; then
+    if [[ "$@" == "." ]]; then
       D=${PWD##*/} && cd .. && trash $D || cd $D
     else 
       command trash "$@"
@@ -68,7 +66,6 @@ function brew-install() {
 }
 
 function brew {
-    compinit -i
     if [[ "$1" == "install" && "$2" != '' ]]; then
       shift
       command brew install $@
@@ -81,3 +78,5 @@ function brew {
       command brew $@
     fi
 }
+
+complete -F _brew brew
