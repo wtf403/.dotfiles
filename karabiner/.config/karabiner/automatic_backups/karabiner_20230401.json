@@ -388,8 +388,7 @@
                                     {
                                         "bundle_identifiers": [
                                             "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$",
-                                            "^com\\.microsoft\\.VSCode$"
+                                            "^com\\.vscodium\\.VSCodiumInsiders$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
