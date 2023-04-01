@@ -48,10 +48,34 @@ function asdf {
   fi
 }
 
+
+### asdf ###
+function _asdf {
+    local cur prev opts
+    COMPREPLY=()
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    opts="list plugin update"
+    case "${prev}" in
+        plugin)
+            opts="add list remove update"
+            ;;
+        *)
+            ;;
+    esac
+    COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
+    return 0
+}
+
+complete -F _asdf asdf
+
+
 alias stow="stow -vt ~ --ignore='^(\.git|\.DS_Store)$' "
 alias tree="tree -a -I '.git|.DS_Store'"
 alias mk="bonk"
 
+
+### trash ###
 function tr {
     if [[ "$@" == "." ]]; then
       D=${PWD##*/} && cd .. && trash $D || cd $D
@@ -60,10 +84,30 @@ function tr {
     fi
 }
 
+
 function brew-install() {
     brew install "$@"
     brew list >> ~/.programs
 }
+
+function _tr {
+  local cur
+  COMPREPLY=()
+  cur="${COMP_WORDS[COMP_CWORD]}"
+  case "${cur}" in
+    .)
+      COMPREPLY=('.')
+      ;;
+    *)
+      COMPREPLY=($(compgen -f "${cur}"))
+      ;;
+  esac
+}
+
+complete -F _tr tr
+
+
+### brew ###
 
 function brew {
     if [[ "$1" == "install" && "$2" != '' ]]; then
@@ -77,6 +121,21 @@ function brew {
     else 
       command brew $@
     fi
+}
+
+function _brew {
+    local cur prev
+    cur="${COMP_WORDS[COMP_CWORD]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
+    case "${prev}" in
+        install|uninstall)
+            __brew_complete
+            return
+            ;;
+        *)
+            ;;
+    esac
+    COMPREPLY=($(compgen -W "$(brew commands)" -- "${cur}"))
 }
 
 complete -F _brew brew
