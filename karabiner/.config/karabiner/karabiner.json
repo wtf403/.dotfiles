@@ -18,6 +18,75 @@
                 },
                 "rules": [
                     {
+                        "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.telegram\\.desktop$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "control",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.telegram\\.desktop$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "control",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Ctrl+{n,p} --> Vertial movement",
                         "manipulators": [
                             {
@@ -449,88 +518,13 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+{u,k} --> Delete before/after carriage",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "option",
-                                            "shift"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "option",
-                                            "shift"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.telegram\\.desktop$"
+                                            "^org\\.telegram\\.desktop$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -562,7 +556,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.telegram\\.desktop$"
+                                            "^org\\.telegram\\.desktop$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
