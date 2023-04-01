@@ -2,115 +2,48 @@
   "title": "Telegram",
   "rules": [
     {
-      "description": "Ctrl+{a,e} --> End/Beginning of the line",
+      "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
       "manipulators": [
         {
           "from": {
-            "key_code": "a",
+            "key_code": "open_bracket",
             "modifiers": {
-              "mandatory": ["control"],
+              "mandatory": ["command", "shift"],
               "optional": ["any"]
             }
           },
           "to": [
             {
               "key_code": "up_arrow",
-              "modifiers": ["option"]
+              "modifiers": ["control", "shift"]
             }
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
-              ]
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.telegram\\.desktop$"]
             }
           ],
           "type": "basic"
         },
         {
           "from": {
-            "key_code": "e",
+            "key_code": "close_bracket",
             "modifiers": {
-              "mandatory": ["control"],
+              "mandatory": ["command", "shift"],
               "optional": ["any"]
             }
           },
           "to": [
             {
               "key_code": "down_arrow",
-              "modifiers": ["option"]
+              "modifiers": ["control", "shift"]
             }
           ],
           "conditions": [
             {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Ctrl+{u,k} --> Delete before/after carriage",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "u",
-            "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow",
-              "modifiers": ["option", "shift"]
-            },
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
-              ]
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "k",
-            "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "down_arrow",
-              "modifiers": ["option", "shift"]
-            },
-            {
-              "key_code": "delete_or_backspace"
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
-              ]
+              "type": "frontmost_application_if",
+              "bundle_identifiers": ["^com\\.telegram\\.desktop$"]
             }
           ],
           "type": "basic"
