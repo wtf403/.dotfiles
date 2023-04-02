@@ -524,8 +524,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
+                                            "^org\\.telegram\\.desktop$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -557,8 +556,7 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
+                                            "^org\\.telegram\\.desktop$"
                                         ],
                                         "type": "frontmost_application_if"
                                     }

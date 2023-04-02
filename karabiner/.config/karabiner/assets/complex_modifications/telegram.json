@@ -21,7 +21,7 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^org\\.telegram\\.desktop$"]
+              "bundle_identifiers": ["^org\\.telegram\\.desktop$","^com\\.tdesktop\\.Telegram$"]
             }
           ],
           "type": "basic"
@@ -43,7 +43,7 @@
           "conditions": [
             {
               "type": "frontmost_application_if",
-              "bundle_identifiers": ["^org\\.telegram\\.desktop$"]
+              "bundle_identifiers": ["^org\\.telegram\\.desktop$","^com\\.tdesktop\\.Telegram$"]
             }
           ],
           "type": "basic"
