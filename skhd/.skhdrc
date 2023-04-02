@@ -11,8 +11,8 @@ ctrl + cmd + shift - r : brew services restart yabai
 hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 # test a command
-# lshift - x : terminal-notifier -message "lshift - x"
-#lshift - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
+hyper - x : terminal-notifier -message "lshift - x"
+hyper - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
 
 ## open terminal
 #hyper - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
@@ -24,8 +24,8 @@ hyper - i : yabai -m window --swap west
 # hyper - 0x21 : yabai -m window --swap east # 0x21 is the "[" key
 
 ## send window to monitor and follow focus
-hyper - f : /Users/jesseskelton/CustomScripts/SwitchSpaces/moveWindowLeftAndFollowFocus.sh
-hyper - b : /Users/jesseskelton/CustomScripts/SwitchSpaces/moveWindowRightAndFollowFocus.sh
+hyper - f : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
+hyper - b : /Users/maxkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
 
 ## focus display
 ctrl + cmd - 1 : yabai -m window --display 1 yabai -m display --focus 1
@@ -75,7 +75,7 @@ hyper - f : yabai -m window --toggle zoom-fullscreen
 #hyper - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
 #hyper - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
 
-#alt - p : yabai -m window --focus stack.prev || yabai -m window --focus prev || yabai -m window --focus last
+hyper - p : yabai -m window --focus stack.prev || yabai -m window --focus prev || yabai -m window --focus last
 #
 # go to each window WITHOUT going into a stack
 # ctrl + alt + cmd + lshift - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -re "[.[] | select((.\"stack-index\" <= 1) and (.app != \"Hammerspoon\"))]" | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
