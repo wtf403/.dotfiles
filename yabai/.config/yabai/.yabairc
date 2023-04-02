@@ -1,0 +1,40 @@
+#!/usr/bin/env sh
+
+DISPLAY_COUNT=$(yabai -m query --displays | jq length)
+if [ $DISPLAY_COUNT -eq 2 ]; then
+    yabai -m config layout float 
+    yabai -m config split_ratio 0.355
+    yabai -m space 1 --layout bsp 
+    yabai -m space 2 --layout stack
+elif [ $DISPLAY_COUNT -eq 1 ]; then
+    yabai -m config layout float
+else
+    yabai -m config layout bsp 
+fi
+
+
+yabai -m config window_placement second_child
+yabai -m config window_topmost off
+
+yabai -m config auto_balance off
+yabai -m config mouse_modifier alt 
+yabai -m config mouse_action2 resize
+yabai -m config mouse_action1 move
+yabai -m mouse_drop_action swap
+
+yabai -m space 2 --padding abs:20:20:40:40
+
+
+yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+
+yabai -m rule --add title="^System Preferences$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Karabiner-EventViewer$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
+yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
+yabai -m rule --add app="^Cisco Webex Start$" manage=off
+yabai -m rule --add app="^Private Internet Access$" manage=off
+
