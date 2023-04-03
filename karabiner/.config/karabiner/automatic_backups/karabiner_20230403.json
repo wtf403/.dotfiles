@@ -765,11 +765,11 @@
                 },
                 {
                     "from": {
-                        "key_code": "escape"
+                        "key_code": "fn"
                     },
                     "to": [
                         {
-                            "apple_vendor_keyboard_key_code": "function"
+                            "key_code": "fn"
                         }
                     ]
                 }
