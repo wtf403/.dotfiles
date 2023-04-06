@@ -26,24 +26,24 @@ hyper - y : yabai -m space --mirror y-axis
 hyper - x : yabai -m space --mirror x-axis
 
 # toggle window float
-shift + alt - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+hyper - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 
 # -- Modifying Window Size --
 
 # maximize a window
-shift + alt - m : yabai -m window --toggle zoom-fullscreen
+hyper - m : yabai -m window --toggle zoom-fullscreen
 
 # balance out tree of windows (resize to occupy same area)
-shift + alt - e : yabai -m space --balance
+hyper - e : yabai -m space --balance
 
 # -- Moving Windows Around --
 
 # swap windows
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - h : yabai -m window --swap west
-shift + alt - l : yabai -m window --swap east
+hyper - n : yabai -m window --swap south
+hyper - p : yabai -m window --swap north
+hyper - b : yabai -m window --swap west
+hyper - f : yabai -m window --swap east
 
 # move window and split
 ctrl + alt - j : yabai -m window --warp south
