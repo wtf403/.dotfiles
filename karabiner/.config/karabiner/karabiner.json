@@ -1,6 +1,6 @@
 {
     "global": {
-        "ask_for_confirmation_before_quitting": false,
+        "ask_for_confirmation_before_quitting": true,
         "check_for_updates_on_startup": true,
         "show_in_menu_bar": false,
         "show_profile_name_in_menu_bar": false,
@@ -17,75 +17,6 @@
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
-                    {
-                        "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.telegram\\.desktop$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "control",
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.telegram\\.desktop$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "close_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "control",
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
                     {
                         "description": "Ctrl+{n,p} --> Vertial movement",
                         "manipulators": [
@@ -223,6 +154,170 @@
                         ]
                     },
                     {
+                        "description": "CapsLock --> Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+{a,e} --> End/Beginning of the line",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+{u,k} --> Delete before/after carriage",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "CapsLock (Ctrl) + [ --> Escape",
                         "manipulators": [
                             {
@@ -230,7 +325,7 @@
                                     "key_code": "open_bracket",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control"
+                                            "left_control"
                                         ],
                                         "optional": [
                                             "any"
@@ -333,79 +428,24 @@
                         ]
                     },
                     {
-                        "description": "LeftCtrl--> Sticky F13",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "sticky_f13",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "sticky_f13",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "sticky_f13",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "any"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "f13"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "sticky_f13",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+{a,e} --> End/Beginning of the line",
+                        "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$",
-                                            "^com\\.microsoft\\.VSCode$"
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
                                         ],
-                                        "type": "frontmost_application_unless"
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "a",
+                                    "key_code": "open_bracket",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control"
+                                            "command",
+                                            "shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -416,7 +456,8 @@
                                     {
                                         "key_code": "up_arrow",
                                         "modifiers": [
-                                            "option"
+                                            "control",
+                                            "shift"
                                         ]
                                     }
                                 ],
@@ -426,17 +467,18 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$"
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
                                         ],
-                                        "type": "frontmost_application_unless"
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "e",
+                                    "key_code": "close_bracket",
                                     "modifiers": {
                                         "mandatory": [
-                                            "control"
+                                            "command",
+                                            "shift"
                                         ],
                                         "optional": [
                                             "any"
@@ -447,7 +489,8 @@
                                     {
                                         "key_code": "down_arrow",
                                         "modifiers": [
-                                            "option"
+                                            "control",
+                                            "shift"
                                         ]
                                     }
                                 ],
@@ -513,14 +556,18 @@
                                     "key_code": "comma",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
+                                            "left_command",
+                                            "left_shift",
+                                            "left_option",
+                                            "left_control"
                                         ]
                                     }
                                 },
-                                "to": [],
+                                "to": [
+                                    {
+                                        "key_code": "f19"
+                                    }
+                                ],
                                 "type": "basic"
                             }
                         ]
@@ -533,36 +580,16 @@
                                     "key_code": "open_bracket",
                                     "modifiers": {
                                         "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "CapsLock (Ctrl) + [ --> Escape",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
+                                            "left_command",
+                                            "left_shift",
+                                            "left_option",
                                             "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "escape"
+                                        "key_code": "f19"
                                     }
                                 ],
                                 "type": "basic"
