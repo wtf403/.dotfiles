@@ -13,7 +13,7 @@
               "optional": ["any"]
             }
           },
-          "to: [
+          "to": [
             {
               "sticky_modifier": {
                 "left_shift": "on"
