@@ -475,6 +475,30 @@
                         ]
                     },
                     {
+                        "description": "CapsLock (Ctrl) + [ --> Escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Left Ctrl --> Sticky Hyper (Shift, Control, Option, Command)",
                         "manipulators": [
                             {
@@ -489,48 +513,35 @@
                                 },
                                 "to": [
                                     {
+                                        "key_code": "left_shift",
+                                        "lazy": true,
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_option",
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
                                         "sticky_modifier": {
                                             "left_shift": "on"
                                         }
                                     },
                                     {
                                         "sticky_modifier": {
-                                            "left_control": "toggle"
+                                            "left_control": "on"
                                         }
                                     },
                                     {
                                         "sticky_modifier": {
-                                            "left_option": "toggle"
+                                            "left_option": "on"
                                         }
                                     },
                                     {
                                         "sticky_modifier": {
-                                            "left_command": "toggle"
+                                            "left_command": "on"
                                         }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "CapsLock (Ctrl) + [ --> Escape",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"

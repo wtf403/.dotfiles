@@ -8,7 +8,7 @@
           "from": {
             "key_code": "open_bracket",
             "modifiers": {
-              "mandatory": ["left_control"],
+              "mandatory": ["right_control"],
               "optional": ["any"]
             }
           },
