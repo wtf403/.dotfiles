@@ -12,15 +12,15 @@ hyper - l : yabai -m window --focus east
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 ## Close active application
-lctrl + lalt + lcmd + lshift - 0x33: $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+hyper - q: $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 ## open terminal
 hyper - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
 
 ## swap window
 hyper - y : yabai -m window --swap west
-# shift + alt - j : yabai -m window --wrap first_nephew 
-# shift + alt - k : yabai -m window --wrap first_cousin
+# shift + alt - j : yabai -m window --swap first_nephew 
+# shift + alt - k : yabai -m window --swap first_cousin
 
 ## send window to monitor and follow focus
 hyper - u : 
@@ -66,7 +66,7 @@ ctrl + alt + cmd + lshift - i : yabai -m query --spaces | jq -re ".[] | select(.
 
 ctrl + alt + cmd + rshift - i : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
-#hyper - 0x29 : yabai -m query --spaces \
+hyper - 0x29 : yabai -m query --spaces \
 hyper - o : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | reverse | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
 
 hyper - n : yabai -m window --focus stack.next || yabai -m window --focus next || yabai -m window --focus first
