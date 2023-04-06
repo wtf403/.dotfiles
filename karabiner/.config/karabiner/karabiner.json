@@ -499,7 +499,7 @@
                         ]
                     },
                     {
-                        "description": "LCtrl --> Hyper (Ctrl+Opt+Shift+Command",
+                        "description": "<R_CMD> to <HYPER> with sticky",
                         "manipulators": [
                             {
                                 "from": {
@@ -511,6 +511,17 @@
                                         ]
                                     }
                                 },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "lazy": true,
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_option",
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
                                 "to_if_alone": [
                                     {
                                         "sticky_modifier": {

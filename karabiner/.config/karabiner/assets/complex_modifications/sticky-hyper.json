@@ -1,8 +1,8 @@
 {
-  "title": "Hyper key",
+  "title": "demo",
   "rules": [
     {
-      "description": "LCtrl --> Hyper (Ctrl+Opt+Shift+Command",
+      "description": "<R_CMD> to <HYPER> with sticky",
       "manipulators": [
         {
           "type": "basic",
@@ -15,7 +15,8 @@
           },
           "to": [
             {
-              "key_code": "f19",
+              "key_code": "left_shift",
+              "modifiers": ["left_control", "left_option", "left_command"],
               "lazy": true
             }
           ],

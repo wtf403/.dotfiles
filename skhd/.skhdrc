@@ -8,3 +8,5 @@ hyper - k : yabai -m window --focus north
 hyper - h : yabai -m window --focus west
 hyper - l : yabai -m window --focus east
 
+hyper - p : yabai -m window --stack prev 
+hyper - n : yabai -m window --stack next
