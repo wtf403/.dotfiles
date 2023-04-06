@@ -247,47 +247,6 @@
                         ]
                     },
                     {
-                        "description": "LeftCtrl --> Hyper (Ctrl + Cmd + Opt + Shift)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_control",
-                                        "modifiers": [
-                                            "left_command",
-                                            "left_option",
-                                            "left_shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "(disable sysdiagnose with cmd+shift+opt+ctrl+,)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "comma",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "shift",
-                                            "option",
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Shift-F1 --> Decrement Illumination",
                         "manipulators": [
                             {
@@ -589,77 +548,72 @@
                         ]
                     },
                     {
-                        "description": "LeftCtrl--> Sticky Hyper",
+                        "description": "Left Ctrl --> Sticky Hyper (Shift, Control, Option, Command)",
                         "manipulators": [
                             {
-                                "description": "LeftCtrl --> Sticky Hyper (Ctrl + Cmd + Opt + Shift)",
-                                "manipulators": [
-                                    {
-                                        "from": {
-                                            "key_code": "left_contorl",
-                                            "modifiers": {
-                                                "mandatory": [],
-                                                "optional": [
-                                                    "any"
-                                                ]
-                                            }
-                                        },
-                                        "to": [
-                                            {
-                                                "key_code": "left_shift",
-                                                "lazy": true,
-                                                "modifiers": [
-                                                    "left_control",
-                                                    "left_option",
-                                                    "left_command"
-                                                ]
-                                            }
-                                        ],
-                                        "to_if_alone": [
-                                            {
-                                                "sticky_modifier": {
-                                                    "left_shift": "toggle"
-                                                }
-                                            },
-                                            {
-                                                "sticky_modifier": {
-                                                    "left_control": "toggle"
-                                                }
-                                            },
-                                            {
-                                                "sticky_modifier": {
-                                                    "left_option": "toggle"
-                                                }
-                                            },
-                                            {
-                                                "sticky_modifier": {
-                                                    "left_command": "toggle"
-                                                }
-                                            }
-                                        ],
-                                        "type": "basic"
-                                    },
-                                    {
-                                        "description": "(disable sysdiagnose with cmd+shift+opt+ctrl+,)",
-                                        "manipulators": [
-                                            {
-                                                "from": {
-                                                    "key_code": "comma",
-                                                    "modifiers": {
-                                                        "mandatory": [
-                                                            "command",
-                                                            "shift",
-                                                            "option",
-                                                            "control"
-                                                        ]
-                                                    }
-                                                },
-                                                "to": [],
-                                                "type": "basic"
-                                            }
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "mandatory": [],
+                                        "optional": [
+                                            "any"
                                         ]
                                     }
-                                ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "lazy": true,
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_option",
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "left_shift": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_control": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_option": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_command": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Disable sysdiagnose with cmd+shift+opt+ctrl+,",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "comma",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift",
+                                            "option",
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [],
+                                "type": "basic"
                             }
                         ]
                     }
