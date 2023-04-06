@@ -13,17 +13,10 @@
               "optional": ["any"]
             }
           },
-          "to": [
-            {
-              "key_code": "left_shift",
-              "modifiers": ["left_control", "left_option", "left_command"],
-              "lazy": true
-            }
-          ],
-          "to_if_alone": [
+          "to: [
             {
               "sticky_modifier": {
-                "left_shift": "toggle"
+                "left_shift": "on"
               }
             },
             {
