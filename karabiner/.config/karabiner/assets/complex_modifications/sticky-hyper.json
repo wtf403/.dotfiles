@@ -23,22 +23,22 @@
           "to_if_alone": [
             {
               "sticky_modifier": {
-                "left_shift": "on"
+                "left_shift": "toggle"
               }
             },
             {
               "sticky_modifier": {
-                "left_control": "on"
+                "left_control": "toggle"
               }
             },
             {
               "sticky_modifier": {
-                "left_option": "on"
+                "left_option": "toggle"
               }
             },
             {
               "sticky_modifier": {
-                "left_command": "on"
+                "left_command": "toggle"
               }
             }
           ]

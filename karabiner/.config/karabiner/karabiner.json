@@ -413,56 +413,6 @@
                         ]
                     },
                     {
-                        "description": "Left Ctrl --> Sticky Hyper (Shift, Control, Option, Command)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "lazy": true,
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_option",
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "sticky_modifier": {
-                                            "left_shift": "on"
-                                        }
-                                    },
-                                    {
-                                        "sticky_modifier": {
-                                            "left_control": "on"
-                                        }
-                                    },
-                                    {
-                                        "sticky_modifier": {
-                                            "left_option": "on"
-                                        }
-                                    },
-                                    {
-                                        "sticky_modifier": {
-                                            "left_command": "on"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Option-F1 --> Decrement Illumination",
                         "manipulators": [
                             {
@@ -542,6 +492,56 @@
                                 "to": [
                                     {
                                         "key_code": "illumination_increment"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Left Ctrl --> Sticky Hyper (Shift, Control, Option, Command)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "mandatory": [],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "lazy": true,
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_option",
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "left_shift": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_control": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_option": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_command": "toggle"
+                                        }
                                     }
                                 ],
                                 "type": "basic"
