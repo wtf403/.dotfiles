@@ -1,15 +1,12 @@
 {
-  "title": "Sticky F13 TEST!!!",
+  "title": "TEST!!! Sticky Left Control",
   "rules": [
     {
-      "description": "LeftCtrl--> Sticky F13",
+      "description": "Map left_control to sticky f13",
       "manipulators": [
         {
           "from": {
-            "key_code": "left_control",
-            "modifiers": {
-              "optional": ["any"]
-            }
+            "key_code": "left_control"
           },
           "conditions": [
             {
@@ -23,7 +20,7 @@
             {
               "set_variable": {
                 "name": "sticky_f13",
-                "value": 1
+                "value": "toggle"
               }
             }
           ]
@@ -47,7 +44,7 @@
             {
               "set_variable": {
                 "name": "sticky_f13",
-                "value": 0
+                "value": "toggle"
               }
             }
           ]
