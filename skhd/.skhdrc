@@ -12,7 +12,7 @@ hyper - l : yabai -m window --focus east
 ctrl + alt + cmd - r : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"
 
 ## Close active application
-hyper - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+lctrl + lalt + lcmd + lshift - 0x33: $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 ## open terminal
 hyper - return : /Applications/iTerm.app/Contents/MacOS/iTerm2
@@ -29,7 +29,6 @@ hyper - p :
 ## focus display
 ctrl + cmd - 1 : yabai -m window --display 1 yabai -m display --focus 1
 ctrl + cmd - 2 : yabai -m window --display 2 yabai -m display --focus 2
-ctrl + cmd - 3 : yabai -m window --display 3 yabai -m display --focus 3
 
 ## increase window size
 shift + alt - a : yabai -m window --resize left:-20:0
@@ -62,7 +61,7 @@ hyper - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index"
 hyper - p : yabai -m window --focus stack.prev || yabai -m window --focus prev || yabai -m window --focus last
 #
 # go to each window WITHOUT going into a stack
-# ctrl + alt + cmd + lshift - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -re "[.[] | select((.\"stack-index\" <= 1) and (.app != \"Hammerspoon\"))]" | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
+hyper - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -re "[.[] | select((.\"stack-index\" <= 1) and (.app != \"Hammerspoon\"))]" | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
 ctrl + alt + cmd + lshift - i : yabai -m query --spaces | jq -re ".[] | select(.visible == 1).index" | xargs -I{} yabai -m query --windows --space {} | jq -re "[.[] | select(.app != \"Hammerspoon\")]" | jq -sre "add | sort_by(.display, .frame.x, .frame.y, .id) | nth(index(map(select(.focused == 1))) - 1).id" | xargs -I{} yabai -m window --focus {}
 
 ctrl + alt + cmd + rshift - i : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
@@ -80,9 +79,10 @@ ctrl + alt + cmd + lshift - o : yabai -m query --spaces | jq -re ".[] | select(.
 ctrl + alt + cmd + lshift - return : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
 #create a stack
-# ctrl + alt + cmd + rshift - 1 : yabai -m query --windows --window | jq -re "." | xargs -I{} yabai -m window 1 --stack {}
+ctrl + alt + cmd + rshift - 1 : yabai -m query --windows --window | jq -re "." | xargs -I{} yabai -m window 1 --stack {}
+
 # stack next window onto current window
-ctrl + alt + cmd + lshift - 0x43 : window=$(yabai -m query --windows --window | jq -r '.id') && yabai -m window east --stack $window || (yabai -m window $window --toggle float && yabai -m window $window --toggle float)
+lctrl + lalt + lcmd + lshift - 0x43 : window=$(yabai -m query --windows --window | jq -r '.id') && yabai -m window east --stack $window || (yabai -m window $window --toggle float && yabai -m window $window --toggle float)
 
 ################################################################
 ############################# UNUSED ###########################
@@ -119,7 +119,7 @@ hyper - c : yabai -m space --focus next
 
 ## move window
 shift + ctrl - a : yabai -m window --move rel:-20:0
-shift + ctrl - s : yabai -m window --move rel:0:20
+shift + ltrl - s : yabai -m window --move rel:0:20
 shift + ctrl - w : yabai -m window --move rel:0:-20
 shift + ctrl - d : yabai -m window --move rel:20:0
 
@@ -127,8 +127,8 @@ shift + ctrl - d : yabai -m window --move rel:20:0
 # hyper - y : yabai -m window --warp west
 # shift + cmd - j : yabai -m window --warp south
 # shift + cmd - k : yabai -m window --warp north
-hyper - 0x21 : yabai -m window --swap first_cousin # "[" key
-hyper - 0x1e : yabai -m window --swap first_nephew  # "]" key
+# hyper - 0x21 : yabai -m window --swap first_cousin # "[" key
+# hyper - 0x1e : yabai -m window --swap first_nephew  # "]" key
 
 ## focus monitor
 ctrl + alt - x  : yabai -m display --focus last
