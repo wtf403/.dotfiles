@@ -78,3 +78,7 @@ ctrl + alt - r : brew services restart yabai
 hyper - f : yabai -m window --toggle zoom-fullscreen
 
 hyper - p : yabai -m window --focus stack.prev || yabai -m window --focus prev || yabai -m window --focus last
+
+hyper - n : yabai -m window --focus stack.next || yabai -m window --focus next || yabai -m window --focus last
+
+hyper - 0x21 : yabai -m window --warp east # "[" key

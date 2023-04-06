@@ -59,6 +59,21 @@
           "type": "basic"
         }
       ]
+    },
+    {
+      "description": "Disable app quiting with cmd+shift+opt+ctrl+[",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": ["command", "shift", "option", "control"]
+            }
+          },
+          "to": [],
+          "type": "basic"
+        }
+      ]
     }
   ]
 }
