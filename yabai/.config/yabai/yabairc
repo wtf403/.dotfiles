@@ -16,7 +16,7 @@ fi
 
 yabai -m config mouse_follows_focus on
 # (switched to https://github.com/sbmpost/AutoRaise)
-#yabai -m config focus_follows_mouse autofocus 
+yabai -m config focus_follows_mouse autofocus 
 
 yabai -m config window_animation_duration 0.0
 yabai -m config window_zoom_persist on
