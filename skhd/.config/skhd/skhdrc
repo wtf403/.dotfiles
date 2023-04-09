@@ -3,10 +3,11 @@ cmd - h [
 ]
 
 # change window focus within space
-hyper - j : yabai -m display --focus south | yabai -m window --focus south
-hyper - k : yabai -m display --focus north | yabai -m window --focus north
-hyper - h : yabai -m display --focus west | yabai -m window --focus west
-hyper - l : yabai -m display --focus east | yabai -m window --focus east
+fn - j : yabai -m display --focus south | yabai -m window --focus south
+fn - k : yabai -m display --focus north | yabai -m window --focus north
+fn - h : yabai -m display --focus west | yabai -m window --focus west
+fn - l : yabai -m display --focus east | yabai -m window --focus east
+
 
 # flip along y-axik
 hyper - y : yabai -m space --mirror y-axis
@@ -25,10 +26,10 @@ shift + hyper - e : yabai -m space --balance
 # -- Moving Windows Around --
 
 # swap windows
-shift + hyper - j : yabai -m window --swap south
-shift + hyper - k : yabai -m window --swap north
-shift + hyper - h : yabai -m window --swap west
-shift + hyper - l : yabai -m window --swap east
+hyper - u : yabai -m window --swap south
+hyper - i : yabai -m window --swap north
+hyper - o : yabai -m window --swap west
+hyper - p : yabai -m window --swap east
 
 # move window and split
 ctrl + hyper - j : yabai -m window --warp south
