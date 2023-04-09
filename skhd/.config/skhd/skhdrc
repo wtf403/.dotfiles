@@ -9,7 +9,7 @@ fn - h : yabai -m display --focus west | yabai -m window --focus west
 fn - l : yabai -m display --focus east | yabai -m window --focus east
 
 
-# flip along y-axik
+# flip along -axik
 hyper - y : yabai -m space --mirror y-axis
 
 # flip along x-axis
