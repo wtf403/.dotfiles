@@ -1,0 +1,75 @@
+cmd - h [
+  "safari" : skhd -k ""
+]
+
+# change window focus within space
+hyper - j : yabai -m window --focus south
+hyper - k : yabai -m window --focus north
+hyper - h : yabai -m window --focus west
+hyper - l : yabai -m window --focus east
+
+#change focus between external displays (left and right)
+hyper - s: yabai -m display --focus west
+hyper - g: yabai -m display --focus east
+
+# -- Modifying the Layout --
+
+# rotate layout clockwise
+shift + hyper - r : yabai -m space --rotate 270
+
+# flip along y-axis
+shift + hyper - y : yabai -m space --mirror y-axis
+
+# flip along x-axis
+shift + hyper - x : yabai -m space --mirror x-axis
+
+# toggle window float
+shift + hyper - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
+
+
+# -- Modifying Window Size --
+
+# maximize a window
+shift + hyper - m : yabai -m window --toggle zoom-fullscreen
+
+# balance out tree of windows (resize to occupy same area)
+shift + hyper - e : yabai -m space --balance
+
+# -- Moving Windows Around --
+
+# swap windows
+shift + hyper - j : yabai -m window --swap south
+shift + hyper - k : yabai -m window --swap north
+shift + hyper - h : yabai -m window --swap west
+shift + hyper - l : yabai -m window --swap east
+
+# move window and split
+ctrl + hyper - j : yabai -m window --warp south
+ctrl + hyper - k : yabai -m window --warp north
+ctrl + hyper - h : yabai -m window --warp west
+ctrl + hyper - l : yabai -m window --warp east
+
+# move window to display left and right
+shift + hyper - s : yabai -m window --display west; yabai -m display --focus west;
+shift + hyper - g : yabai -m window --display east; yabai -m display --focus east;
+
+
+# move window to prev and next space
+shift + hyper - p : yabai -m window --space prev;
+shift + hyper - n : yabai -m window --space next;
+
+# move window to space #
+shift + hyper - 1 : yabai -m window --space 1;
+shift + hyper - 2 : yabai -m window --space 2;
+shift + hyper - 3 : yabai -m window --space 3;
+shift + hyper - 4 : yabai -m window --space 4;
+shift + hyper - 5 : yabai -m window --space 5;
+shift + hyper - 6 : yabai -m window --space 6;
+shift + hyper - 7 : yabai -m window --space 7;
+
+# -- Starting/Stopping/Restarting Yabai --
+
+# stop/start/restart yabai
+ctrl + hyper - q : brew services stop yabai
+ctrl + hyper - s : brew services start yabai
+ctrl + hyper - r : brew services restart yabai
