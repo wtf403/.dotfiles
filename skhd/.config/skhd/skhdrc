@@ -3,34 +3,21 @@ cmd - h [
 ]
 
 # change window focus within space
-hyper - j : yabai -m window --focus south
-hyper - k : yabai -m window --focus north
-hyper - h : yabai -m window --focus west
-hyper - l : yabai -m window --focus east
+hyper - j : yabai -m display --focus south | yabai -m window --focus south
+hyper - k : yabai -m display --focus north | yabai -m window --focus north
+hyper - h : yabai -m display --focus west | yabai -m window --focus west
+hyper - l : yabai -m display --focus east | yabai -m window --focus east
 
-#change focus between external displays (left and right)
-hyper - s: yabai -m display --focus west
-hyper - g: yabai -m display --focus east
-
-# -- Modifying the Layout --
-
-# rotate layout clockwise
-shift + hyper - r : yabai -m space --rotate 270
-
-# flip along y-axis
-shift + hyper - y : yabai -m space --mirror y-axis
+# flip along y-axik
+hyper - y : yabai -m space --mirror y-axis
 
 # flip along x-axis
-shift + hyper - x : yabai -m space --mirror x-axis
-
-# toggle window float
-shift + hyper - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
-
+hyper - x : yabai -m space --mirror x-axis
 
 # -- Modifying Window Size --
 
 # maximize a window
-shift + hyper - m : yabai -m window --toggle zoom-fullscreen
+hyper - m : yabai -m window --toggle zoom-fullscreen
 
 # balance out tree of windows (resize to occupy same area)
 shift + hyper - e : yabai -m space --balance
