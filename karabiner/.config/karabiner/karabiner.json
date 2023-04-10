@@ -18,59 +18,6 @@
                 },
                 "rules": [
                     {
-                        "description": "F1-F2 --> Theme Switching",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "dark_mode",
-                                        "type": "variable_if",
-                                        "value": false
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "f3"
-                                },
-                                "to": [
-                                    {
-                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "dark_mode",
-                                            "value": true
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "dark_mode",
-                                        "type": "variable_if",
-                                        "value": true
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "f3"
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "dark_mode",
-                                            "value": false
-                                        }
-                                    },
-                                    {
-                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Ctrl+{n,p} --> Vertial movement",
                         "manipulators": [
                             {
@@ -595,6 +542,59 @@
                                         "sticky_modifier": {
                                             "left_command": "toggle"
                                         }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "F1-F2 --> Theme Switching",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "dark_mode",
+                                        "type": "variable_if",
+                                        "value": false
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f3"
+                                },
+                                "to": [
+                                    {
+                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'"
+                                    },
+                                    {
+                                        "set_variable": {
+                                            "name": "dark_mode",
+                                            "value": true
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "dark_mode",
+                                        "type": "variable_if",
+                                        "value": true
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f2"
+                                },
+                                "to": [
+                                    {
+                                        "set_variable": {
+                                            "name": "dark_mode",
+                                            "value": false
+                                        }
+                                    },
+                                    {
+                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
                                     }
                                 ],
                                 "type": "basic"
