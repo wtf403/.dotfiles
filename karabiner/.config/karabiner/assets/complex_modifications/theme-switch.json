@@ -2,24 +2,23 @@
   "title": "Theme Switch",
   "rules": [
     {
-      "description": "F12 --> Theme Switching",
+      "description": "fn --> Theme Switching",
       "manipulators": [
         {
           "from": {
-            "key_code": "f12",
+            "key_code": "backslash",
             "modifiers": {
-              "mandatory": ["right_option"],
-              "optional": ["left_option"]
+              "mandatory": ["fn"]
             }
           },
           "to": [
             {
-              "shell_command": "osascript -e \"tell application 'System Events' to tell appearance preferences to set dark mode to false\""
+              "shell_command": ""
             },
             {
               "set_variable": {
                 "name": "dark_mode",
-                "value": false
+                "value": "false"
               }
             }
           ],
@@ -27,35 +26,34 @@
             {
               "type": "variable_if",
               "name": "dark_mode",
-              "value": true
+              "value": "true"
             }
           ],
           "type": "basic"
         },
         {
           "from": {
-            "key_code": "f12",
+            "key_code": "backslash",
             "modifiers": {
-              "mandatory": ["right_option"],
-              "optional": ["left_option"]
+              "mandatory": ["fn"]
             }
           },
           "to": [
             {
               "set_variable": {
                 "name": "dark_mode",
-                "value": true
+                "value": "true"
               }
             },
             {
-              "shell_command": "osascript -e \"tell application 'System Events' to tell appearance preferences to set dark mode to true\""
+              "shell_command": ""
             }
           ],
           "conditions": [
             {
               "type": "variable_if",
               "name": "dark_mode",
-              "value": false
+              "value": "false"
             }
           ],
           "type": "basic"

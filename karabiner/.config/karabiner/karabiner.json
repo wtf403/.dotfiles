@@ -549,35 +549,32 @@
                         ]
                     },
                     {
-                        "description": "F12 --> Theme Switching",
+                        "description": "fn --> Theme Switching",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "name": "dark_mode",
                                         "type": "variable_if",
-                                        "value": true
+                                        "value": "true"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f12",
+                                    "key_code": "backslash",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_option"
-                                        ],
-                                        "optional": [
-                                            "left_option"
+                                            "fn"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "osascript -e \"tell application 'System Events' to tell appearance preferences to set dark mode to false\""
+                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
                                     },
                                     {
                                         "set_variable": {
                                             "name": "dark_mode",
-                                            "value": false
+                                            "value": "false"
                                         }
                                     }
                                 ],
@@ -588,17 +585,14 @@
                                     {
                                         "name": "dark_mode",
                                         "type": "variable_if",
-                                        "value": false
+                                        "value": "false"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f12",
+                                    "key_code": "backslash",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_option"
-                                        ],
-                                        "optional": [
-                                            "left_option"
+                                            "fn"
                                         ]
                                     }
                                 },
@@ -606,11 +600,11 @@
                                     {
                                         "set_variable": {
                                             "name": "dark_mode",
-                                            "value": true
+                                            "value": "true"
                                         }
                                     },
                                     {
-                                        "shell_command": "osascript -e \"tell application 'System Events' to tell appearance preferences to set dark mode to true\""
+                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
                                     }
                                 ],
                                 "type": "basic"
