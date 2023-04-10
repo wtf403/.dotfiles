@@ -6,57 +6,13 @@
       "manipulators": [
         {
           "from": {
-            "key_code": "backslash",
-            "modifiers": {
-              "mandatory": ["fn"]
-            }
+            "key_code": "f6"
           },
           "to": [
             {
-              "shell_command": ""
-            },
-            {
-              "set_variable": {
-                "name": "dark_mode",
-                "value": "false"
-              }
+              "shell_command": "open -a 'Safari.app'"
             }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "dark_mode",
-              "value": "true"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "backslash",
-            "modifiers": {
-              "mandatory": ["fn"]
-            }
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "dark_mode",
-                "value": "true"
-              }
-            },
-            {
-              "shell_command": ""
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "dark_mode",
-              "value": "false"
-            }
-          ],
-          "type": "basic"
+          ]
         }
       ]
     }

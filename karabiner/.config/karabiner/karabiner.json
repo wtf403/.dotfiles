@@ -552,62 +552,14 @@
                         "description": "fn --> Theme Switching",
                         "manipulators": [
                             {
-                                "conditions": [
-                                    {
-                                        "name": "dark_mode",
-                                        "type": "variable_if",
-                                        "value": "true"
-                                    }
-                                ],
                                 "from": {
-                                    "key_code": "backslash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
+                                    "key_code": "f6"
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
-                                    },
-                                    {
-                                        "set_variable": {
-                                            "name": "dark_mode",
-                                            "value": "false"
-                                        }
+                                        "shell_command": "open -a 'Safari.app'"
                                     }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "dark_mode",
-                                        "type": "variable_if",
-                                        "value": "false"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "backslash",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "fn"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "set_variable": {
-                                            "name": "dark_mode",
-                                            "value": "true"
-                                        }
-                                    },
-                                    {
-                                        "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
-                                    }
-                                ],
-                                "type": "basic"
+                                ]
                             }
                         ]
                     }
