@@ -560,7 +560,15 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f3"
+                                    "key_code": "f3",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -584,7 +592,15 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f2"
+                                    "key_code": "f3",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_shift"
+                                        ],
+                                        "optional": [
+                                            "left_shift"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
