@@ -40,39 +40,22 @@ alias vim="nvim"
 alias code="codium"
 alias watch="viddy --no-title"
 
-function asdf {
-  if [[ $@ == "" ]]; then
-    command "/opt/homebrew/bin/asdf list"
-  else
-    command "/opt/homebrew/bin/asdf $@"
-  fi
-}
-
-
-### asdf ###
-function _asdf {
-    local cur prev opts
-    COMPREPLY=()
-    cur="${COMP_WORDS[COMP_CWORD]}"
-    prev="${COMP_WORDS[COMP_CWORD-1]}"
-    opts="list plugin update"
-    case "${prev}" in
-        plugin)
-            opts="add list remove update"
-            ;;
-        *)
-            ;;
-    esac
-    COMPREPLY=($(compgen -W "${opts}" -- ${cur}))
-    return 0
-}
-
-complete -F _asdf asdf
 
 
 alias stow="stow -vt ~ --ignore='^(\.git|\.DS_Store)$' "
 alias tree="tree -a -I '.git|.DS_Store'"
 alias mk="bonk"
+
+### asdf ###
+
+asdf () {
+	if [[ $@ == "" ]]
+	then
+		/opt/homebrew/bin/asdf list
+	else
+		/opt/homebrew/bin/asdf $@
+	fi
+}
 
 
 ### trash ###
@@ -80,7 +63,7 @@ function tr {
     if [[ "$@" == "." ]]; then
       D=${PWD##*/} && cd .. && trash $D || cd $D
     else 
-      command trash "$@"
+      trash "$@"
     fi
 }
 
@@ -112,14 +95,14 @@ complete -F _tr tr
 function brew {
     if [[ "$1" == "install" && "$2" != '' ]]; then
       shift
-      command brew install $@
-      command brew list > ~/.programs
+      brew install $@
+      ommand brew list > ~/.programs
     elif [[ "$1" == "uninstall" && "$2" != '' ]]; then
       shift
-      command brew uninstall $@
-      command brew list > ~/.programs
+      brew uninstall $@
+      brew list > ~/.programs
     else 
-      command brew $@
+      brew $@
     fi
 }
 
