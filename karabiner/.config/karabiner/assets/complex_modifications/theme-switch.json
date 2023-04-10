@@ -2,19 +2,18 @@
   "title": "Keyboard Illumination",
   "rules": [
     {
-      "description": "Option-F1 --> Decrement Illumination",
+      "description": "F1-F2 --> Theme Swithing",
       "manipulators": [
         {
           "from": {
             "key_code": "f1",
             "modifiers": {
-              "mandatory": ["right_option"],
-              "optional": ["left_option"]
+              "mandatory": ["f2"]
             }
           },
           "to": [
             {
-              "key_code": "illumination_decrement"
+              "shell_command": "osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'"
             }
           ],
           "type": "basic"
@@ -30,41 +29,6 @@
           "to": [
             {
               "key_code": "illumination_decrement"
-            }
-          ],
-          "type": "basic"
-        }
-      ]
-    },
-    {
-      "description": "Option-F2 --> Increment Illumination",
-      "manipulators": [
-        {
-          "from": {
-            "key_code": "f2",
-            "modifiers": {
-              "mandatory": ["right_option"],
-              "optional": ["left_option"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "illumination_increment"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "f2",
-            "modifiers": {
-              "mandatory": ["left_option"],
-              "optional": ["right_option"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "illumination_increment"
             }
           ],
           "type": "basic"
