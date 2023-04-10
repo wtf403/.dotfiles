@@ -549,18 +549,18 @@
                         ]
                     },
                     {
-                        "description": "Toggle Music play/pause with f3",
+                        "description": "F6 --> Toggle System Appearance",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
                                         "name": "dark",
                                         "type": "variable_if",
-                                        "value": true
+                                        "value": 0
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f3"
+                                    "key_code": "f6"
                                 },
                                 "to": [
                                     {
@@ -569,7 +569,7 @@
                                     {
                                         "set_variable": {
                                             "name": "dark",
-                                            "value": true
+                                            "value": 1
                                         }
                                     }
                                 ],
@@ -580,11 +580,11 @@
                                     {
                                         "name": "dark",
                                         "type": "variable_if",
-                                        "value": false
+                                        "value": 1
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "f3"
+                                    "key_code": "f6"
                                 },
                                 "to": [
                                     {
@@ -593,7 +593,7 @@
                                     {
                                         "set_variable": {
                                             "name": "dark",
-                                            "value": false
+                                            "value": 0
                                         }
                                     }
                                 ],

@@ -1,13 +1,20 @@
 {
-  "title": "Change media play/pause",
+  "title": "Theme Change",
   "rules": [
     {
-      "description": "Toggle Music play/pause with f3",
+      "description": "F6 --> Toggle System Appearance",
       "manipulators": [
         {
           "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "dark",
+              "value": 0
+            }
+          ],
           "from": {
-            "key_code": "f3"
+            "key_code": "f6"
           },
           "to": [
             {
@@ -16,22 +23,23 @@
             {
               "set_variable": {
                 "name": "dark",
-                "value": true
+                "value": 1
               }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "dark",
-              "value": true
             }
           ]
         },
         {
           "type": "basic",
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "dark",
+              "value": 1
+            }
+          ],
+
           "from": {
-            "key_code": "f3"
+            "key_code": "f6"
           },
           "to": [
             {
@@ -40,15 +48,8 @@
             {
               "set_variable": {
                 "name": "dark",
-                "value": false
+                "value": 0
               }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "variable_if",
-              "name": "dark",
-              "value": false
             }
           ]
         }
