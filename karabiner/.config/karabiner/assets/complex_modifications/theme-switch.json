@@ -2,14 +2,14 @@
   "title": "Theme Switch",
   "rules": [
     {
-      "description": "F1-F2 --> Theme Switching",
+      "description": "F3 --> Theme Switching",
       "manipulators": [
         {
           "from": {
             "key_code": "f3",
             "modifiers": {
-              "mandatory": ["right_shift"],
-              "optional": ["left_shift"]
+              "mandatory": ["right_option"],
+              "optional": ["left_option"]
             }
           },
           "to": [
@@ -36,8 +36,8 @@
           "from": {
             "key_code": "f3",
             "modifiers": {
-              "mandatory": ["right_shift"],
-              "optional": ["left_shift"]
+              "mandatory": ["right_option"],
+              "optional": ["left_option"]
             }
           },
           "to": [
