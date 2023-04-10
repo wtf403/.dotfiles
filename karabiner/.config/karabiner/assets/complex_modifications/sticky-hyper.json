@@ -1,8 +1,8 @@
 {
-  "title": "demo",
+  "title": "Sticky Hyper",
   "rules": [
     {
-      "description": "<R_CMD> to <HYPER> with sticky",
+      "description": "LeftCtrl to Sticky Hyper with sticky",
       "manipulators": [
         {
           "type": "basic",

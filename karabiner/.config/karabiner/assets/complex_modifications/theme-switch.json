@@ -1,34 +1,53 @@
 {
-  "title": "Keyboard Illumination",
+  "title": "Theme Switch",
   "rules": [
     {
-      "description": "F1-F2 --> Theme Swithing",
+      "description": "F1-F2 --> Theme Switching",
       "manipulators": [
         {
           "from": {
-            "key_code": "f1",
-            "modifiers": {
-              "mandatory": ["f2"]
-            }
+            "key_code": "f3"
           },
           "to": [
             {
-              "shell_command": "osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'"
+              "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'"
+            },
+            {
+              "set_variable": {
+                "name": "dark_mode",
+                "value": true
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "dark_mode",
+              "value": false
             }
           ],
           "type": "basic"
         },
         {
           "from": {
-            "key_code": "f1",
-            "modifiers": {
-              "mandatory": ["left_option"],
-              "optional": ["right_option"]
-            }
+            "key_code": "f3"
           },
           "to": [
             {
-              "key_code": "illumination_decrement"
+              "set_variable": {
+                "name": "dark_mode",
+                "value": false
+              }
+            },
+            {
+              "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "dark_mode",
+              "value": true
             }
           ],
           "type": "basic"
