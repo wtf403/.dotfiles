@@ -95,14 +95,14 @@ complete -F _tr tr
 function brew {
     if [[ "$1" == "install" && "$2" != '' ]]; then
       shift
-      brew install $@
-      ommand brew list > ~/.programs
+      command brew install $@
+      command brew list > ~/.programs
     elif [[ "$1" == "uninstall" && "$2" != '' ]]; then
       shift
-      brew uninstall $@
-      brew list > ~/.programs
+      command brew uninstall $@
+      command brew list > ~/.programs
     else 
-      brew $@
+      command brew $@
     fi
 }
 
