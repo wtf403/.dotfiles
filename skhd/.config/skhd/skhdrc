@@ -95,6 +95,7 @@ ctrl + alt + cmd + lshift - o : yabai -m query --spaces | jq -re ".[] | select(.
 
 # Toggle foucus on a stack
 fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 #create a stack
 # ctrl + alt + cmd + rshift - 1 : yabai -m query --windows --window | jq -re "." | xargs -I{} yabai -m window 1 --stack {}
