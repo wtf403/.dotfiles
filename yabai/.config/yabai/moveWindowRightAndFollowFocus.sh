@@ -1,4 +1,4 @@
-#!/usr/env/bin bash
+#!/usr/bin/env bash
 
 curWindowId="$(yabai -m query --windows --window | jq -re ".id")"
 
