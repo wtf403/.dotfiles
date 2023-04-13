@@ -1,5 +1,6 @@
 aai
 act
+ansible
 aom
 apr
 apr-util
@@ -188,6 +189,7 @@ python-typing-extensions
 python@3.10
 python@3.11
 python@3.9
+pyyaml
 qt@5
 ranger
 rav1e
