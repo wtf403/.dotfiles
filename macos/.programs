@@ -243,6 +243,8 @@ watch
 webp
 wget
 wimlib
+wireguard-go
+wireguard-tools
 x264
 x265
 xorgproto
