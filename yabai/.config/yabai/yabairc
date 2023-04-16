@@ -46,5 +46,5 @@ yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Cisco Webex Start$" manage=off
 yabai -m rule --add app="^Private Internet Access$" manage=off
-yabai -m rule --add app="^DeepL$" manage=off
+yabai -m rule --add app="^com.linguee.DppeLCopyTranslator$" manage=off
 
