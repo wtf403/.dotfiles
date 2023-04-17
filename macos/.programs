@@ -1,6 +1,7 @@
 aai
 act
 ansible
+ansible-lint
 aom
 apr
 apr-util
@@ -15,6 +16,7 @@ automake
 bash
 bat
 bdw-gc
+black
 blueutil
 broot
 brotli
@@ -253,6 +255,7 @@ xvid
 xxhash
 xz
 yabai
+yamllint
 yarn
 youtube-dl
 zeromq
