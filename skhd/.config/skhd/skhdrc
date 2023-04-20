@@ -26,7 +26,7 @@ fn - 0x21 : yabai -m window --swap east # 0x21 is the "[" key
 
 ## send window to monitor and follow focus
 fn - u : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
-fn - p : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
+fn - w : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
 
 ## focus display
 fn - 1 : yabai -m window --display 1 yabai -m display --focus 1
