@@ -9,7 +9,7 @@ fn - h : yabai -m display --focus west | yabai -m window --focus west
 fn - l : yabai -m display --focus east | yabai -m window --focus east
 
 ## Quickly restart the yabai launch agent
-ctrl + alt - r : brew services restart yabai
+fn + alt - r : brew services restart yabai
 
 ## Close active application
 fn - delete : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
