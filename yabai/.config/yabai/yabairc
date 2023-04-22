@@ -56,6 +56,7 @@ yabai -m rule --add app="Preview" manage=off
 yabai -m rule --add app="iScreen Shoter" manage=off
 yabai -m rule --add app="Xnip" manage=off
 yabai -m rule --add app="App Store" manage=off
+yabai -m rule --add app="Stats" manage=off
 
 # Safari settings
 yabai -m rule --add app="Safari" title="General" manage=off
