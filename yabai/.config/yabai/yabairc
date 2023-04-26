@@ -6,10 +6,16 @@ if [ $DISPLAY_COUNT -eq 2 ]; then
     yabai -m config split_ratio 0.355
     yabai -m space 1 --layout bsp 
     yabai -m space 2 --layout stack
+
+    yabai -m space 2 --padding abs:20:20:20:20
+
 elif [ $DISPLAY_COUNT -eq 1 ]; then
     yabai -m config layout float
     yabai -m space 1 --layout stack
     yabai -m space 2 --layout bsp 
+
+    yabai -m space 1 --padding abs:20:20:20:20
+
 else
     yabai -m config layout bsp 
 fi
@@ -30,8 +36,6 @@ yabai -m config mouse_action1 resize
 yabai -m config mouse_action2 move
 yabai -m mouse_drop_action stack
 
-yabai -m space 2 --padding abs:20:20:20:20
-yabai -m space 2 --gap abs:20
 
 
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
