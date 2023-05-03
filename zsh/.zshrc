@@ -25,7 +25,7 @@ fi
 # CASE_SENSITIVE="true"
 #
 HISTFILESIZE=10000000
-HISTIGNORE='*\n*'
+HISTORY_IGNORE="(*[\n]*|exit|ls|bg|fg|history|clear)"
 
 
 # Uncomment the following line to use hyphen-insensitive completion.
