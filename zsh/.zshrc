@@ -202,7 +202,7 @@ bindkey "${terminfo[kcuf1]}" autosuggest_partial_wordwise
 
 # Add autosuggest_partial_wordwise to IGNORE
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
-export ZSH_AUTOSUGGEST_IGNORE_WIDGETS+=(autosuggest_partial_wordwise)
+ZSH_AUTOSUGGEST_IGNORE_WIDGETS+=(autosuggest_partial_wordwise)
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=80
 export ZSH_AUTOSUGGEST_HISTORY_IGNORE="(cd *|ls *|l *|cat *|man *|rm *|mv *|chmod *|cp *|rmdir *|*[\n]*)"
 
