@@ -201,6 +201,7 @@ zle -N autosuggest_partial_wordwise
 bindkey "${terminfo[kcuf1]}" autosuggest_partial_wordwise
 
 # Add autosuggest_partial_wordwise to IGNORE
+ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 ZSH_AUTOSUGGEST_IGNORE_WIDGETS+=(autosuggest_partial_wordwise)
 
 source /Users/maxkiselev/.docker/init-zsh.sh || true # Added by Docker Desktop
