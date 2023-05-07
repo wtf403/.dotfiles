@@ -13,31 +13,31 @@ fn - h : yabai -m display --focus west | yabai -m window --focus west
 fn - l : yabai -m display --focus east | yabai -m window --focus east
 
 ## Quickly restart the yabai launch agent
-fn - r :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
+fn - q :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
 
 # Close active applicatin
 fn + shift - x : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 ## swap window
-fn - y : yabai -m window --swap west
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-fn - 0x21 : yabai -m window --swap east # 0x21 is the "[" key
+# fn - y : yabai -m window --swap west
+# shift + alt - j : yabai -m window --swap south
+# shift + alt - k : yabai -m window --swap north
+# fn - 0x21 : yabai -m window --swap east # 0x21 is the "[" key
 
-## send window to monitor and follow focus
-fn - u : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
-fn - w : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
+# ## send window to monitor and follow focus
+# fn - u : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
+# fn - w : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
 
-## focus display
-fn - 1 : yabai -m window --display 1 yabai -m display --focus 1
-fn - 2:  yabai -m window --display 2 yabai -m display --focus 2
-fn - 3 : yabai -m window --display 3 yabai -m display --focus 3
+# ## focus display
+# fn - 1 : yabai -m window --display 1 yabai -m display --focus 1
+# fn - 2:  yabai -m window --display 2 yabai -m display --focus 2
+# fn - 3 : yabai -m window --display 3 yabai -m display --focus 3
 
 ## incerase window size
-fn - shift + h : yabai -m window --resize left:-20:0
-fn - shift + j : yabai -m window --resize bottom:0:20
-fn - shift + k : yabai -m window --resize top:0:-20
-fn - shift + l : yabai -m window --resize right:20:0
+fn - ctrl + h : yabai -m window --resize left:-20:0
+fn - ctrl + j : yabai -m window --resize bottom:0:20
+fn - ctrl + k : yabai -m window --resize top:0:-20
+fn - ctrl + l : yabai -m window --resize right:20:0
 
 ## decrease window size
 #shift + cmd - a : yabai -m window --resize left:20:0
