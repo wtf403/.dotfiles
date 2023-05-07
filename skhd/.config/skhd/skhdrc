@@ -2,6 +2,19 @@ cmd - h [
   "safari" : skhd -k ""
 ]
 
+
+# Define a variable to store the sticky key
+sticky_key = -1
+
+# Define a keybinding for the sticky key
+ctrl - g : sticky_key = 1
+
+# Define keybindings that depend on the sticky key
+ctrl - a : if (sticky_key == 1) then ; terminal-notifier -message "ctrl - a"; sticky_key = -1; fi
+ctrl - b : if (sticky_key == 1) then ; terminal-notifier -message "ctrl - b"; sticky_key = -1; fi
+ctrl - c : if (sticky_key == 1) then ; terminal-notifier -message "ctrl - c"; sticky_key = -1; fi
+
+
 # change window focus within space
 fn - j : yabai -m display --focus south | yabai -m window --focus south
 fn - k : yabai -m display --focus north | yabai -m window --focus north
@@ -16,7 +29,8 @@ fn - delete : $(yabai -m window $(yabai -m query --windows --window | jq -re ".i
 
 # test notifier
 #fn - x : terminal-notifier -message "fn - x"
-#fn - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
+
+fn - x : terminal-notifier -message "$(yabai -m query --windows --window | jq -re ".id")"
 
 ## swap window
 fn - y : yabai -m window --swap west
