@@ -64,6 +64,16 @@
                         "description": "Ctrl+{f,b} --> Horizontal movement",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
                                 "from": {
                                     "key_code": "b",
                                     "modifiers": {
@@ -620,11 +630,11 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+quote to Sticky Meh with sticky",
+                        "description": "Ctrl+G to Sticky Meh with sticky",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "semicolon",
+                                    "key_code": "g",
                                     "modifiers": {
                                         "mandatory": [
                                             "control"
