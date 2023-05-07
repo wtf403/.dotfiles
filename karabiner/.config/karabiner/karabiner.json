@@ -602,19 +602,11 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+quote to Sticky Meh with sticky",
+                        "description": "fn to sticky_fn",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "quote",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "fn"
                                 },
                                 "to": [
                                     {
@@ -628,11 +620,19 @@
                         ]
                     },
                     {
-                        "description": "fn to sticky_fn",
+                        "description": "Ctrl+quote to Sticky Meh with sticky",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "semicolon",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
