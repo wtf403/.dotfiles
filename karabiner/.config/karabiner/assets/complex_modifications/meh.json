@@ -2,24 +2,17 @@
   "title": "Sticky Meh",
   "rules": [
     {
-      "description": "Ctrl+H to Sticky Meh with sticky",
+      "description": "Ctrl+quote to Sticky Meh with sticky",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "h",
+            "key_code": "quote",
             "modifiers": {
               "mandatory": ["control"],
               "optional": ["any"]
             }
           },
-          "to": [
-            {
-              "key_code": "left_shift",
-              "modifiers": ["left_control", "left_option"],
-              "lazy": true
-            }
-          ],
           "to_if_alone": [
             {
               "sticky_modifier": {
