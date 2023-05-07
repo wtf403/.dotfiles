@@ -13,7 +13,25 @@
               "optional": ["any"]
             }
           },
-          "to_if_alone": [
+          "to": [
+            {
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn to sticky_fn",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn"
+          },
+          "to": [
             {
               "sticky_modifier": {
                 "fn": "toggle"
