@@ -16,17 +16,7 @@
           "to_if_alone": [
             {
               "sticky_modifier": {
-                "left_shift": "toggle"
-              }
-            },
-            {
-              "sticky_modifier": {
-                "left_control": "toggle"
-              }
-            },
-            {
-              "sticky_modifier": {
-                "left_option": "toggle"
+                "fn": "toggle"
               }
             }
           ]
