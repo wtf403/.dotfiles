@@ -3,17 +3,9 @@ cmd - h [
 ]
 
 
-# Define a variable to store the sticky key
-sticky_key = -1
+ctrl - g : $modKey + g -s
 
-# Define a keybinding for the sticky key
-ctrl - g : sticky_key = 1
-
-# Define keybindings that depend on the sticky key
-ctrl - a : if (sticky_key == 1) then ; terminal-notifier -message "ctrl - a"; sticky_key = -1; fi
-ctrl - b : if (sticky_key == 1) then ; terminal-notifier -message "ctrl - b"; sticky_key = -1; fi
-ctrl - c : if (sticky_key == 1) then ; terminal-notifier -message "ctrl - c"; sticky_key = -1; fi
-
+$modKey + g : open -a "Google Chrome"
 
 # change window focus within space
 fn - j : yabai -m display --focus south | yabai -m window --focus south
