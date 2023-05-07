@@ -34,10 +34,11 @@ fn + shift - x : $(yabai -m window $(yabai -m query --windows --window | jq -re 
 # fn - 3 : yabai -m window --display 3 yabai -m display --focus 3
 
 ## incerase window size
-# fn - ctrl + h : yabai -m window --resize left:-20:0
-# fn - ctrl + j : yabai -m window --resize bottom:0:20
-# fn - ctrl + k : yabai -m window --resize top:0:-20
-# fn - ctrl + l : yabai -m window --resize right:20:0
+fn + ctrl - j : yabai -m window --resize bottom:0:60
+fn + ctrl - k : yabai -m window --resize top:0:-60
+fn + ctrl - l : yabai -m window --resize right:60:0
+fn + ctrl - h : yabai -m window --resize left:-60:0 || yabai -m window --resize left:60:0
+
 
 ## decrease window size
 #shift + cmd - a : yabai -m window --resize left:20:0
