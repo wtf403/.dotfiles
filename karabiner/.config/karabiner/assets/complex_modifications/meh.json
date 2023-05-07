@@ -1,0 +1,44 @@
+{
+  "title": "Sticky Meh",
+  "rules": [
+    {
+      "description": "Ctrl+G to Sticky Meh with sticky",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": ["control"],
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift",
+              "modifiers": ["left_control", "left_option"],
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "sticky_modifier": {
+                "left_shift": "toggle"
+              }
+            },
+            {
+              "sticky_modifier": {
+                "left_control": "toggle"
+              }
+            },
+            {
+              "sticky_modifier": {
+                "left_option": "toggle"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
