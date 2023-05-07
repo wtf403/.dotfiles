@@ -2,10 +2,8 @@ cmd - h [
   "safari" : skhd -k ""
 ]
 
+meh - a: terminal-notifier -message "Hello"
 
-ctrl - g : $modKey + g -s
-
-$modKey + g : open -a "Google Chrome"
 
 # change window focus within space
 fn - j : yabai -m display --focus south | yabai -m window --focus south
