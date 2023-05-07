@@ -20,7 +20,7 @@ fn + shift - x : $(yabai -m window $(yabai -m query --windows --window | jq -re 
 
 ## swap window
 fn + shift - 0x21 : yabai -m window --swap west
-fn + shift - 0x1E : yabai -m window --swap south
+fn + shift - 0x1E : yabai -m window --swap east
 
 # ## send window to monitor and follow focus
 # fn - u : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
