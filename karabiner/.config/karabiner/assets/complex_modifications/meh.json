@@ -2,12 +2,12 @@
   "title": "Sticky Meh",
   "rules": [
     {
-      "description": "Ctrl+G to Sticky Meh with sticky",
+      "description": "Ctrl+H to Sticky Meh with sticky",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "h",
             "modifiers": {
               "mandatory": ["control"],
               "optional": ["any"]

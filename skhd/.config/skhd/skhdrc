@@ -6,7 +6,6 @@ cmd - h [
 
 meh - a: terminal-notifier -message "Hello"
 
-
 # change window focus within space
 meh - j : yabai -m display --focus south | yabai -m window --focus south
 meh - k : yabai -m display --focus north | yabai -m window --focus north
