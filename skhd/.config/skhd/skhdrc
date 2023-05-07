@@ -7,10 +7,12 @@ cmd - h [
 fn - a: terminal-notifier -message "Hello"
 
 # change window focus within space
-fn - j : yabai -m display --focus south || yabai -m window --focus south
-fn - k : yabai -m display --focus north || yabai -m window --focus north
-fn - h : yabai -m display --focus west || yabai -m window --focus west
-fn - l : yabai -m display --focus east || yabai -m window --focus east
+fn - j : yabai -m window --focus south || yabai -m display --focus south
+fn - k : yabai -m window --focus north || yabai -m display --focus north
+fn - h : yabai -m window --focus west || yabai -m display --focus west
+fn - l : yabai -m window --focus east || yabai -m display --focus east
+
+
 
 ## Quickly restart the yabai launch agent
 fn - q :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
@@ -28,10 +30,10 @@ fn + shift - 0x1E : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.
 # fn - 3 : yabai -m window --display 3 yabai -m display --focus 3
 
 ## incerase window size
-fn + ctrl - j : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:30
-fn + ctrl - k : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-30
-fn + ctrl - l : yabai -m window --resize right:60:0 || yabai -m window --resize left:60:0
-fn + ctrl - h : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-60:0
+fn + ctrl - j : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
+fn + ctrl - k : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-60
+fn + ctrl - l : yabai -m window --resize right:60:0 || yabai -m window --resize left:100:0
+fn + ctrl - h : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
 
 
 ## decrease window size
