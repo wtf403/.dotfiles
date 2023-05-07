@@ -18,13 +18,9 @@ fn - q :  terminal-notifier -message "Restarting yabai..." && brew services rest
 # Close active applicatin
 fn + shift - x : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
-## swap window
-fn + shift - 0x21 : yabai -m window --swap west
-fn + shift - 0x1E : yabai -m window --swap east
-
-# ## send window to monitor and follow focus
-# fn - u : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
-# fn - w : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
+# swap window
+fn + shift - 0x21 : /Users/maxkiselev/.config/yabai/moveWindowLeftAndFollowFocus.sh
+fn + shift - 0x1E : /Users/mkiselev/.config/yabai/moveWindowRightAndFollowFocus.sh
 
 # ## focus display
 # fn - 1 : yabai -m window --display 1 yabai -m display --focus 1

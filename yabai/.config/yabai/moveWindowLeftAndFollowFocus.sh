@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 
-# curWindowId="$(jq -re ".id" <<<$(yabai -m query --windows --window))"
-xx=$(yabai -m query --windows --window)
-curWindowId="$(echo $xx | jq -re ".id")"
+curWindowId="$(yabai -m query --windows --window | jq -re ".id")"
+curSpaceLayout="$(yabai -m query --spaces --space | jq -re ".type")"
 
-focusWindow() {
-    $(yabai -m window --focus $1) # $1 is the first argument passed in (window id).
-}
+if [ "$curSpaceLayout" != "stack" ]; then
+  $(yabai -m window --display west || yabai -m window --display first)
+fi
 
-$(yabai -m window --display prev || yabai -m window --display last)
-focusWindow "$curWindowId"
+$(yabai -m window --focus "$curWindowId")
