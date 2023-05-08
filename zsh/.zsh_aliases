@@ -1,3 +1,4 @@
+alias r="ranger"
 alias copy="pbcopy"
 alias fuck="fuck --yeah"
 alias rc="nvim ~/.zshrc"
