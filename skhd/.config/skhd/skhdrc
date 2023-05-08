@@ -8,7 +8,7 @@ cmd - h [
 ## Yabai 
 
 # restart
-fn - 0x32 :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
+fn - q :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
 
 # close
 fn + shift - x : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
@@ -36,7 +36,7 @@ fn - f : yabai -m window --toggle zoom-fullscreen
 fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
-## TODO:
+## TODO
 ## float / unfloat window and center on screen
 fn - t : yabai -m window --toggle float;\
 
@@ -47,12 +47,11 @@ fn - k : yabai -m window --focus north || yabai -m display --focus north || yaba
 fn - h : yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east
 fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
 
-## TODO:
 # swap windows
-fn + shift - j : yabai -m window --swap south || yabai -m display --swap south || yabai -m window --swap north || yabai -m display --swap north
-fn + shift - k : yabai -m window --swap north || yabai -m display --swap north || yabai -m window --swap south || yabai -m display --swap south
-fn + shift - h : yabai -m window --swap west || yabai -m display --swap west || yabai -m window --swap east || yabai -m display --swap east
-fn + shift - l : yabai -m window --swap east || yabai -m display --swap east || yabai -m window --swap west || yabai -m display --swap west
+fn + shift - j : yabai -m window --swap south || yabai -m window --display south || yabai -m window --swap north || yabai -m window --display north
+fn + shift - k : yabai -m window --swap north || yabai -m window --display north || yabai -m window --swap south || yabai -m window --display south
+fn + shift - h : yabai -m window --swap west || yabai -m window --display west || yabai -m window --swap east || yabai -m window --display east
+fn + shift - l : yabai -m window --swap east || yabai -m window --display east || yabai -m window --swap west || yabai -m window --display west
 
 # resize windows
 fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
