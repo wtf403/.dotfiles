@@ -2,5 +2,5 @@
 
 curWindowId="$(yabai -m query --windows --window | jq -re ".id")"
 
-$(yabai -m window --display next || yabai -m window --display first)
+$(yabai -m window --display prev || yabai -m window --display last)
 $(yabai -m window --focus "$curWindowId")
