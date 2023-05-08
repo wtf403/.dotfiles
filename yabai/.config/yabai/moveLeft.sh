@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-#yabai -m window --focus west || yabai -m display --focus west
+CURRENT_WINDOW=$(yabai -m query --windows --window | jq -r '.[].id')
+WEST_WINDOW=$(yabai -m query --windows --window west of:window:${CURRENT_WINDOW} | jq -r '.[].id')
 
-WIN_ID=$(yabai -m query --windows --window | jq '.id') 
-
-yabai -m window --display recent
-
-$(yabai -m window --focus "$WIN_ID")
+yabai -m window --focus ${WEST_WINDOW}; yabai -m query --windows --window ${WEST_WINDOW} | jq -re '(.frame.x + .frame.w / 2) | tostring + "," + (.frame.y + .frame.h / 2) | tostring' | xargs -I{} yabai -m query --windows --window ${WEST_WINDOW} | jq -re '(.display | tostring) + " {}"' | xargs -I{} yabai -m mouse --move {}

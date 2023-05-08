@@ -45,7 +45,7 @@ fn - t : yabai -m window --toggle float
 # windows movements
 fn - j : yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
 fn - k : yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
-fn - h : yabai -m window --focus west
+fn - h : yabai -m window --focus west && yabai -m query --windows --window | jq -re '(.frame.x + .frame.w / 2 | floor | tostring) + "," + (.frame.y + .frame.h / 2 | floor | tostring)' | xargs -I{} sh -c 'yabai -m query --windows --window | jq -re '\''(.display | tostring) + " {}"'\'' | xargs -I{} yabai -m window --focus && yabai -m mouse --move {}'
 fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
 
 # swap windows

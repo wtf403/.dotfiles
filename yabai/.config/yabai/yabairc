@@ -2,9 +2,9 @@
 
 DISPLAY_COUNT=$(yabai -m query --displays | jq length)
 if [ $DISPLAY_COUNT -eq 2 ]; then
-    yabai -m config layout float 
+    yabai -m config layout float
     yabai -m config split_ratio 0.355
-    yabai -m space 1 --layout bsp 
+    yabai -m space 1 --layout bsp
     yabai -m space 2 --layout stack
 
     yabai -m space 2 --padding abs:20:20:20:20
@@ -12,17 +12,17 @@ if [ $DISPLAY_COUNT -eq 2 ]; then
 elif [ $DISPLAY_COUNT -eq 1 ]; then
     yabai -m config layout float
     yabai -m space 1 --layout stack
-    yabai -m space 2 --layout bsp 
+    yabai -m space 2 --layout bsp
 
     yabai -m space 1 --padding abs:20:20:20:20
 
 else
-    yabai -m config layout bsp 
+    yabai -m config layout bsp
 fi
 
+yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus off
 # (switched to https://github.com/sbmpost/AutoRaise)
-# yabai -m config focus_follows_mouse autofocus 
 
 yabai -m config window_animation_duration 0.0
 yabai -m config window_zoom_persist on
@@ -35,8 +35,6 @@ yabai -m config mouse_modifier fn
 yabai -m config mouse_action1 resize
 yabai -m config mouse_action2 move
 yabai -m mouse_drop_action swap
-
-
 
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
