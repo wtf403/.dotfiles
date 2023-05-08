@@ -20,6 +20,9 @@ else
     yabai -m config layout bsp
 fi
 
+# space animation
+yabai -m config space_transition on
+
 yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus off
 # (switched to https://github.com/sbmpost/AutoRaise)
