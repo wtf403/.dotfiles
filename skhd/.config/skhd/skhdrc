@@ -49,8 +49,8 @@ fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai 
 # swap windows
 fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh 
 fn + shift - k : ~/.config/yabai/moveUpAndFollowFocus.sh
-fn + shift - h : ~/.config/yabai/moveLeftAndFollowFocus.sh
-fn + shift - l : ~/.config/yabai/moveRightAndFollowFocus.sh
+fn + shift - h : ~/.config/yabai/moveRightAndFollowFocus.sh
+fn + shift - l : ~/.config/yabai/moveLeftAndFollowFocus.sh
 
 # resize windows
 fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
