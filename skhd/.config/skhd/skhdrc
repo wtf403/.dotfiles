@@ -45,7 +45,7 @@ fn - t : yabai -m window --toggle float
 # windows movements
 fn - j : yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
 fn - k : yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
-fn - h : yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east
+fn - h : ~/.config/yabai/moveLeft.sh
 fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
 
 # swap windows
