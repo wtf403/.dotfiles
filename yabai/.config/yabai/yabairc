@@ -20,7 +20,7 @@ else
     yabai -m config layout bsp 
 fi
 
-yabai -m config mouse_follows_focus off
+yabai -m config mouse_follows_focus on
 # (switched to https://github.com/sbmpost/AutoRaise)
 # yabai -m config focus_follows_mouse autofocus 
 
