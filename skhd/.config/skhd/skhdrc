@@ -39,16 +39,16 @@ fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.fir
 fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # Destroy space
-fn - shift + d: yabai -m space --destroy && yabai -m space --create && yabai -m space --focus prev
+fn + shift - d: yabai -m space --destroy
 
 # Create space
-fn - shift + c: yabai -m space --create && yabai -m space --focus prev
+fn + shift - c: yabai -m space --create
 
 # Move between spaces
 
 # Move window to next/prev space
-fn - shift + 0x1D : yabai -m query --spaces --space | jq -re ".index" | xargs -I {} bash -c "if [[ '{}' = '1' ]]; then yabai -m window --space 2; elif [[ '{}' = '2' ]]; then yabai -m window --space 1; fi"
-fn - shift + 0x1B : yabai -m window --space next
+fn + shift - 0x1D : yabai -m query --spaces --space | jq -re ".index" | xargs -I {} bash -c "if [[ '{}' = '1' ]]; then yabai -m window --space 2; elif [[ '{}' = '2' ]]; then yabai -m window --space 1; fi"
+fn + shift - 0x1B : yabai -m window --space next
 
 # floating window at center of the screen
 fn - t : ~/.config/yabai/float.sh
