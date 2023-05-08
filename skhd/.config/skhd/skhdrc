@@ -43,16 +43,16 @@ fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.las
 fn - t : yabai -m window --toggle float
 
 # windows movements
-fn - j : yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
-fn - k : yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
-fn - h : yabai -m window --focus west && yabai -m query --windows --window | jq -re '(.frame.x + .frame.w / 2 | floor | tostring) + "," + (.frame.y + .frame.h / 2 | floor | tostring)' | xargs -I{} sh -c 'yabai -m query --windows --window | jq -re '\''(.display | tostring) + " {}"'\'' | xargs -I{} yabai -m window --focus && yabai -m mouse --move {}'
-fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
+fn - j : yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north && ~/.config/yabai/focus.sh
+fn - k : yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south && ~/.config/yabai/focus.sh
+fn - h : yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east && ~/.config/yabai/focus.sh
+fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west && ~/.config/yabai/focus.sh
 
 # swap windows
-fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh
-fn + shift - k : ~/.config/yabai/moveUpAndFollowFocus.sh
-fn + shift - h : ~/.config/yabai/moveRightAndFollowFocus.sh
-fn + shift - l : ~/.config/yabai/moveLeftAndFollowFocus.sh
+fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh && ~/.config/yabai/focus.sh
+fn + shift - k : ~/.config/yabai/moveUpAndFollowFocus.sh && ~/.config/yabai/focus.sh
+fn + shift - h : ~/.config/yabai/moveRightAndFollowFocus.sh && ~/.config/yabai/focus.sh
+fn + shift - l : ~/.config/yabai/moveLeftAndFollowFocus.sh && ~/.config/yabai/focus.sh
 
 # resize windows
 fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
