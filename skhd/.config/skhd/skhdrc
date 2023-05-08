@@ -11,7 +11,7 @@ cmd - h [
 fn - q :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
 
 # close
-fn + shift - x : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+fn + shift - x : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
 
 # rotate tree 90deg clockwise
 fn - r : yabai -m space --rotate 90
@@ -27,6 +27,9 @@ fn - y : yabai -m space --mirror y-axis
 
 # toggle window split type
 fn - e : yabai -m window --toggle split
+
+# destroy desktop
+fn + shift - d : yabai -m space --destroy
 
 
 # toggle window fullscreen zoom
