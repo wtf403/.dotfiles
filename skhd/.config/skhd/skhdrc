@@ -38,7 +38,7 @@ fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.las
 
 ## TODO
 ## float / unfloat window and center on screen
-fn - t : yabai -m window --toggle float;\
+fn - t : yabai -m window --toggle float;
 
 # windows movements
 fn - j : yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
