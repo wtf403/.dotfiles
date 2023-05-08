@@ -8,7 +8,7 @@ cmd - h [
 ## Yabai 
 
 # restart
-fn - q :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
+fn - 0x32 :  terminal-notifier -message "Restarting yabai..." && brew services restart yabai
 
 # close
 fn + shift - x : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
