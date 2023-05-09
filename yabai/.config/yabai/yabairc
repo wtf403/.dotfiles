@@ -7,7 +7,7 @@ if [ $DISPLAY_COUNT -eq 2 ]; then
     yabai -m space 1 --layout bsp
     yabai -m space 2 --layout stack
 
-    yabai -m space 2 --padding abs:20:20:22:22
+    yabai -m space 2 --padding abs:15:15:15:15
 
 elif [ $DISPLAY_COUNT -eq 1 ]; then
     yabai -m config layout float
