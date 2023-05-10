@@ -232,5 +232,5 @@ zvm_after_init_commands+=('bindkey "^J" self-insert')
 
 # ALIASES
 precmd() {
-  source ~/.zsh_aliases
+  source ~/.config/zsh/.aliases
 }
