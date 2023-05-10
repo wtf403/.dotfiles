@@ -172,7 +172,7 @@ export PATH=$PATH:~/.spoof-dpi/bin
 source "$HOME/.cargo/env"
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
-source /Users/maxkiselev/.config/broot/launcher/bash/br
+#source /Users/maxkiselev/.config/broot/launcher/bash/br
 
 source ~/.iterm2_shell_integration.zsh
 
