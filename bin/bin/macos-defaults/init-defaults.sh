@@ -483,3 +483,8 @@ echo "Done. Note that some of these changes require a logout/restart to take eff
 sudo defaults delete /Library/Preferences/com.apple.airport.bt.plist bluetoothCoexMgmt
 defaults write /Library/Preferences/com.apple.airport.bt.plist bluetoothCoexMgmt Hybrid
 
+# NoTunes replacement Music.app with open.spotify.com
+defaults write digital.twisted.noTunes replacement /Users/maxkiselev/bin/macos-defaults/spotify.webloc
+
+# Change hammerspoon config path
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/.config/hammerspoon/init.lua"
