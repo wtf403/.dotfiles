@@ -91,11 +91,11 @@ function brew {
     if [[ "$1" == "install" && "$2" != '' ]]; then
       shift
       command brew install $@
-      command brew list > ~/.programs
+      command brew list > ~/.backup/.homebrew
     elif [[ "$1" == "uninstall" && "$2" != '' ]]; then
       shift
       command brew uninstall $@
-      command brew list > ~/.programs
+      command brew list > ~/.backup/.homebrew
     else 
       command brew $@
     fi
