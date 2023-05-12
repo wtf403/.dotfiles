@@ -1,6 +1,7 @@
 alias copy="pbcopy"
 alias fuck="fuck --yeah"
 alias rc="nvim ~/.zshrc"
+alias seq="seq -s ' ' -t '\n'"
 alias aliases="nvim ~/.zsh_aliases"
 alias supervisord="supervisord -c ~/.config/supervisord/supervisord.conf"
 alias desktop="cd ~/Desktop"
