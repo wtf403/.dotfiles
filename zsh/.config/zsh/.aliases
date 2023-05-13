@@ -1,7 +1,6 @@
 alias copy="pbcopy"
 alias fuck="fuck --yeah"
 alias rc="nvim ~/.zshrc"
-alias seq="seq -s ' ' -t '\n'"
 alias aliases="nvim ~/.zsh_aliases"
 alias supervisord="supervisord -c ~/.config/supervisord/supervisord.conf"
 alias desktop="cd ~/Desktop"
@@ -61,7 +60,7 @@ asdf () {
 
 
 ### trash ###
-function tr {
+function trash {
     if [[ "$@" == "." ]]; then
       D=${PWD##*/} && cd .. && trash $D || cd $D
     else 
@@ -70,7 +69,7 @@ function tr {
 }
 
 
-function _tr {
+function _trash {
   local cur
   COMPREPLY=()
   cur="${COMP_WORDS[COMP_CWORD]}"
@@ -84,7 +83,7 @@ function _tr {
   esac
 }
 
-complete -F _tr tr
+complete -F _trash trash
 
 
 ### brew ###
