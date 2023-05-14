@@ -62,9 +62,9 @@ asdf () {
 ### trash ###
 function trash {
     if [[ "$@" == "." ]]; then
-      D=${PWD##*/} && cd .. && trash $D || cd $D
+      D=${PWD##*/} && cd .. && command trash $D || cd $D
     else 
-      trash "$@"
+      command trash "$@"
     fi
 }
 
