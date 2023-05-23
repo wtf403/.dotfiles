@@ -172,12 +172,6 @@
   },
   "json.maxItemsComputed": 20000,
 
-  // Python
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
-  },
-  "python.languageServer": "Pylance",
-
   // HTML
   "[html]": {
     "editor.tabSize": 2,
