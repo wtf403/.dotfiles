@@ -9,7 +9,6 @@
 	pager = less -S
 [mergetool "nvim"]
   cmd = nvim --merge -- %O %B %A %A
-
 [merge]
   tool = /Users/maxkiselev/.local/bin/nvim
 [color]
