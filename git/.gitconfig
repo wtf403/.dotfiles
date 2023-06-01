@@ -5,7 +5,13 @@
 	required = true
 [core]
 	excludesfile = /Users/maxkiselev/.gitignore
+  editor = /Users/maxkiselev/.local/bin/nvim
 	pager = less -S
+[mergetool "nvim"]
+  cmd = nvim --merge -- %O %B %A %A
+
+[merge]
+  tool = /Users/maxkiselev/.local/bin/nvim
 [color]
 	ui = auto
 [init]
