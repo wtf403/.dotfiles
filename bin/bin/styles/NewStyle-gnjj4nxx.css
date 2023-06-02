@@ -3,9 +3,3 @@
 @description This is your new file, start writing code
 @match       <all_urls>
 ==/UserStyle== */
-
-[data-location*="twitter.com"] body {
-    background: blue !important;
-    font-size: 100px !important;
-    color: red;
-}
