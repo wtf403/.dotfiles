@@ -5,6 +5,7 @@
   "editor.fontLigatures": true,
   "editor.selectionHighlight": false,
   "window.openFilesInNewWindow": "off",
+  "editor.linkedEditing": true,
   "editor.scrollBeyondLastLine": false,
   "editor.mouseWheelScrollSensitivity": 2,
   "editor.inlineSuggest.enabled": true, // for inline-parameters ext
@@ -239,6 +240,7 @@
     "editor.wordWrapColumn": 80,
     "editor.wrappingStrategy": "simple",
     "editor.wrappingIndent": "same",
+    "files.trimTrailingWhitespace": false,
     "editor.quickSuggestions": {
       "comments": "off",
       "strings": "off",
