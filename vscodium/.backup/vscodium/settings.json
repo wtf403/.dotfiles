@@ -1509,9 +1509,10 @@
   // Copilot
   "github.copilot.enable": {
     "*": true,
-    "yaml": false,
     "plaintext": true,
-    "markdown": false,
+    "markdown": true,
+    "scminput": false,
+    "yaml": false,
     "python": true
   },
   "cSpell.autoFormatConfigFile": true,
