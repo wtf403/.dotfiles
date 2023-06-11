@@ -3,6 +3,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 # default editor
 EDITOR="/Users/maxkiselev/.local/bin/nvim"
 
@@ -159,7 +161,6 @@ export PATH=$PATH:~/.spoof-dpi/bin
 #export GOPATH=$HOME/go
 #export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 source "$HOME/.cargo/env"
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 #source /Users/maxkiselev/.config/broot/launcher/bash/br
 
