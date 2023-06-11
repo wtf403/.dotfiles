@@ -52,9 +52,9 @@ alias mk="bonk"
 asdf () {
 	if [[ $@ == "" ]]
 	then
-		/opt/homebrew/bin/asdf list
+    /Users/maxkiselev/.asdf/bin/asdf list
 	else
-		/opt/homebrew/bin/asdf $@
+    /Users/maxkiselev/.asdf/bin/asdf $@
 	fi
 }
 
@@ -92,11 +92,11 @@ function brew {
     if [[ "$1" == "install" && "$2" != '' ]]; then
       shift
       command brew install $@
-      command brew list > ~/.backup/.homebrew
+      command brew list > ~/.macos/.homebrew
     elif [[ "$1" == "uninstall" && "$2" != '' ]]; then
       shift
       command brew uninstall $@
-      command brew list > ~/.backup/.homebrew
+      command brew list > ~/.macos/.homebrew
     else 
       command brew $@
     fi
