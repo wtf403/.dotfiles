@@ -1528,7 +1528,6 @@
   "workbench.colorTheme": "White",
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 1,
-  "git.openRepositoryInParentFolders": "never",
-  "prettier.useEditorConfig": false
+  "git.openRepositoryInParentFolders": "never"
   //* ===== UNSORTED ===== *//
 }
