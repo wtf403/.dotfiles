@@ -1525,9 +1525,10 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "White Night",
+  "workbench.colorTheme": "White",
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 1,
-  "git.openRepositoryInParentFolders": "never"
+  "git.openRepositoryInParentFolders": "never",
+  "prettier.useEditorConfig": false
   //* ===== UNSORTED ===== *//
 }
