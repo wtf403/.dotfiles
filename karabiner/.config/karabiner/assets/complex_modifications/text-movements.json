@@ -23,6 +23,7 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$"
               ]
@@ -49,7 +50,9 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
+                "^com\\.vscodium$",
+                "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCode$"
               ]
             }
           ],
@@ -82,7 +85,9 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
+                "^com\\.vscodium$",
+                "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCode$"
               ]
             }
           ],
@@ -110,7 +115,9 @@
               "type": "frontmost_application_unless",
               "bundle_identifiers": [
                 "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$"
+                "^com\\.vscodium$",
+                "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCode$"
               ]
             }
           ],
