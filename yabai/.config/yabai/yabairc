@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-sudo yabai --load-sa
+#yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+#sudo yabai --load-sa
 
 DISPLAY_COUNT=$(yabai -m query --displays | jq length)
 if [ $DISPLAY_COUNT -eq 2 ]; then
