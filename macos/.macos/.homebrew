@@ -25,6 +25,7 @@ ca-certificates
 cabextract
 cairo
 cdrtools
+cffi
 cjson
 cliclick
 cmake
@@ -177,6 +178,7 @@ postgresql@14
 postgresql@15
 prettier
 protobuf
+pycparser
 pyenv
 pygments
 pyqt@5
@@ -189,6 +191,7 @@ ranger
 rav1e
 readline
 reattach-to-user-namespace
+redis
 ripgrep
 rsync
 rtmpdump
