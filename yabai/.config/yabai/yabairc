@@ -19,7 +19,7 @@ else
     yabai -m space 2 --layout stack
 fi
 
-yabai -m config focus_follows_mouse autofocus
+#yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus off
 # (switched to https://github.com/sbmpost/AutoRaise)
 
