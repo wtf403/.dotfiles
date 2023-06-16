@@ -15,4 +15,6 @@
   > div:first-child {
   border-left: 1px solid black;
   margin-left: -1px;
+  padding-left: 1px;
+  z-index: 3;
 }
