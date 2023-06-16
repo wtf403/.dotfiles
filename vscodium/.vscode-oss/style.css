@@ -34,3 +34,20 @@
   > div.monaco-scrollable-element.mac {
   overflow: visible;
 }
+
+#workbench\.parts\.editor
+  > div.content
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div
+  > div
+  > div.title.tabs.title-border-bottom
+  > div.tabs-and-actions-container.tabs-border-bottom
+  > div.monaco-scrollable-element.mac
+  > div {
+  overflow: visible;
+}
