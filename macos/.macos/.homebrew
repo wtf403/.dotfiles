@@ -13,6 +13,7 @@ atool
 autoconf
 automake
 bash
+bash-completion@2
 bat
 bdw-gc
 berkeley-db
