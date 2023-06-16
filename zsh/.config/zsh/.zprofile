@@ -19,3 +19,4 @@ export XDG_STATE_HOME="${HOME}/.local/state"
 # for user scripts
 export PATH="$HOME/bin:$PATH"
 
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
