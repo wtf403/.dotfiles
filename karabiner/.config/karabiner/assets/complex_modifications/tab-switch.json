@@ -8,8 +8,7 @@
           "from": {
             "key_code": "semicolon",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
@@ -29,8 +28,7 @@
           "from": {
             "key_code": "quote",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
@@ -50,8 +48,7 @@
           "from": {
             "key_code": "semicolon",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
@@ -71,8 +68,7 @@
           "from": {
             "key_code": "quote",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
