@@ -190,6 +190,8 @@ fi
 zle -N autosuggest_partial_wordwise 
 bindkey "${terminfo[kcuf1]}" autosuggest_partial_wordwise
 
+bindkey -r "C-m"
+
 # Add autosuggest_partial_wordwise to IGNORE
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
 ZSH_AUTOSUGGEST_IGNORE_WIDGETS+=(autosuggest_partial_wordwise)
