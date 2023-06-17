@@ -54,7 +54,7 @@
           "to": [
             {
               "key_code": "open_bracket",
-              "modifiers": ["command", "alt", "shift"]
+              "modifiers": ["command", "option", "shift"]
             }
           ],
           "type": "basic"
@@ -74,7 +74,7 @@
           "to": [
             {
               "key_code": "open_bracket",
-              "modifiers": ["command", "alt", "shift"]
+              "modifiers": ["command", "option", "shift"]
             }
           ],
           "type": "basic"
