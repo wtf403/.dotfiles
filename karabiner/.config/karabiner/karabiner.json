@@ -729,7 +729,7 @@
                                         "key_code": "open_bracket",
                                         "modifiers": [
                                             "command",
-                                            "option",
+                                            "alt",
                                             "shift"
                                         ]
                                     }
@@ -755,7 +755,7 @@
                                         "key_code": "open_bracket",
                                         "modifiers": [
                                             "command",
-                                            "option",
+                                            "alt",
                                             "shift"
                                         ]
                                     }
