@@ -75,5 +75,5 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
   > div
   > div.overflow-guard
   > div.scroll-decoration {
-  box-shadow: var(--vscode-scrollbar-shadow) 0 3px 3px -3px inset;
+  box-shadow: unset;
 }
