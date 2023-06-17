@@ -1,35 +1,20 @@
 {
-  "title": "Arrows",
+  "title": "Tab Switch",
   "rules": [
     {
-      "description": "Ctrl+{n,p} --> Vertial movement",
+      "description": "ctrl+; --> cmd+shift+[",
       "manipulators": [
         {
           "from": {
-            "key_code": "n",
+            "key_code": "semicolon",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "down_arrow"
-            }
-          ],
-          "type": "basic"
-        },
-        {
-          "from": {
-            "key_code": "p",
-            "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "up_arrow"
+              "key_code": "open_bracket",
+              "modifiers": ["command", "shift"]
             }
           ],
           "type": "basic"
@@ -37,44 +22,59 @@
       ]
     },
     {
-      "description": "Ctrl+{f,b} --> Horizontal movement",
+      "description": "ctrl+' --> cmd+shift+]",
       "manipulators": [
         {
-          "conditions": [
-            {
-              "bundle_identifiers": [
-                "^com\\.googlecode\\.iterm2$",
-                "^com\\.vscodium\\.VSCodiumInsiders$",
-                "^com\\.microsoft\\.VSCode$"
-              ],
-              "type": "frontmost_application_unless"
-            }
-          ],
           "from": {
-            "key_code": "b",
+            "key_code": "quote",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "left_arrow"
+              "key_code": "close_bracket",
+              "modifiers": ["command", "shift"]
             }
           ],
           "type": "basic"
-        },
+        }
+      ]
+    },
+    {
+      "description": "cmd+ctrl+; --> cmd+opt+shift+[",
+      "manipulators": [
         {
           "from": {
-            "key_code": "f",
+            "key_code": "semicolon",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "right_arrow"
+              "key_code": "open_bracket",
+              "modifiers": ["command", "option", "shift"]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "cmd+ctrl+'--> cmd+opt+shift+]",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "quote",
+            "modifiers": {
+              "mandatory": ["control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": ["command", "option", "shift"]
             }
           ],
           "type": "basic"
