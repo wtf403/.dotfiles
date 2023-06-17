@@ -29,7 +29,8 @@
           "from": {
             "key_code": "quote",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": ["control"],
+              "optional": ["any"]
             }
           },
           "to": [
