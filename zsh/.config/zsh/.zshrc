@@ -226,5 +226,5 @@ precmd() {
   source ~/.config/zsh/.aliases
 }
 
-bindkey -r "^M"
+bindkey '^M' accept-line
 
