@@ -49,3 +49,7 @@
   > div {
   overflow: visible !important;
 }
+
+div[aria-label="remote"] {
+  border-right: 1px solid black;
+}
