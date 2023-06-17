@@ -721,7 +721,7 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control",
-                                            "command"
+                                            "option"
                                         ]
                                     }
                                 },
@@ -748,7 +748,7 @@
                                     "modifiers": {
                                         "mandatory": [
                                             "control",
-                                            "command"
+                                            "option"
                                         ]
                                     }
                                 },
