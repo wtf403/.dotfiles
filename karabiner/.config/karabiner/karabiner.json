@@ -682,7 +682,6 @@
                                         "key_code": "open_bracket",
                                         "modifiers": [
                                             "command",
-                                            "option",
                                             "shift"
                                         ]
                                     }
@@ -711,7 +710,6 @@
                                         "key_code": "close_bracket",
                                         "modifiers": [
                                             "command",
-                                            "option",
                                             "shift"
                                         ]
                                     }
@@ -737,6 +735,7 @@
                                         "key_code": "open_bracket",
                                         "modifiers": [
                                             "command",
+                                            "option",
                                             "shift"
                                         ]
                                     }
@@ -762,6 +761,7 @@
                                         "key_code": "open_bracket",
                                         "modifiers": [
                                             "command",
+                                            "option",
                                             "shift"
                                         ]
                                     }
