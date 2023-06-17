@@ -48,7 +48,7 @@
           "from": {
             "key_code": "semicolon",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": ["control", "command"]
             }
           },
           "to": [
@@ -68,7 +68,7 @@
           "from": {
             "key_code": "quote",
             "modifiers": {
-              "mandatory": ["control"]
+              "mandatory": ["control", "command"]
             }
           },
           "to": [
