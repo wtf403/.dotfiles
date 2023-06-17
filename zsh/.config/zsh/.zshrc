@@ -190,7 +190,6 @@ fi
 zle -N autosuggest_partial_wordwise 
 bindkey "${terminfo[kcuf1]}" autosuggest_partial_wordwise
 
-bindkey -r "^ROF"
 
 # Add autosuggest_partial_wordwise to IGNORE
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
@@ -226,3 +225,6 @@ zvm_after_init_commands+=('bindkey "^J" self-insert')
 precmd() {
   source ~/.config/zsh/.aliases
 }
+
+bindkey -r "^M"
+
