@@ -188,7 +188,6 @@ else
 fi
 }
 zle -N autosuggest_partial_wordwise 
-bindkey "${terminfo[kcuf1]}" autosuggest_partial_wordwise
 
 
 # Add autosuggest_partial_wordwise to IGNORE
@@ -226,5 +225,5 @@ precmd() {
   source ~/.config/zsh/.aliases
 }
 
-#bindkey -r '^M' accept-line
+bindkey '^M' accept-line
 
