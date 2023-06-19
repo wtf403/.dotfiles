@@ -78,5 +78,7 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
   box-shadow: unset;
 }
 
-
+.monaco-workbench .part.editor>.content .editor-group-container>.title.title-border-bottom:after {
+  height: 0.9px;
+}
 
