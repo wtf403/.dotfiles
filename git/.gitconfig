@@ -5,11 +5,11 @@
 	required = true
 [core]
 	excludesfile = /Users/maxkiselev/.gitignore
-  editor = /Users/maxkiselev/.local/bin/nvim
+  editor = /Users/maxkiselev/.asdf/shims/nvim
 [mergetool "nvim"]
   cmd = nvim --merge -- %O %B %A %A
 [merge]
-  tool = /Users/maxkiselev/.local/bin/nvim
+  tool = /Users/maxkiselev/.asdf/shims/nvim
 [color]
 	ui = auto
 [init]
