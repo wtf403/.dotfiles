@@ -89,3 +89,7 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
 [id="workbench.parts.sidebar"] {
   outline: none;
 }
+
+#workbench\.parts\.sidebar > div.composite.title {
+  background-color: #aaaaaa20;
+}
