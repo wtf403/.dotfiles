@@ -79,5 +79,5 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
 }
 
 .tabs-breadcrumbs {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
 }
