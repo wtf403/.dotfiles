@@ -77,3 +77,7 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
   > div.scroll-decoration {
   box-shadow: unset;
 }
+
+.breadcrumbs-control {
+  border-bottom: 1px;
+}
