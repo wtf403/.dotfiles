@@ -78,10 +78,11 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
   box-shadow: unset;
 }
 
-#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div {
-  --tabs-border-bottom-color: unset;
-}
 
 .tabs-breadcrumbs {
   border-bottom: 1px solid;
+}
+
+#workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.tabs.title-border-bottom > div.tabs-and-actions-container.tabs-border-bottom {
+  --tabs-border-bottom-color: unset !important;
 }
