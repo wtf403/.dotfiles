@@ -78,6 +78,6 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
   box-shadow: unset;
 }
 
-.breadcrumbs-control {
-  border-bottom: 1px;
+.tabs-breadcrumbs {
+  border-bottom: 1px solid black;
 }
