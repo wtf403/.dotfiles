@@ -118,3 +118,7 @@ function _brew {
 }
 
 complete -F _brew brew
+
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi
