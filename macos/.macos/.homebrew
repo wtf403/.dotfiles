@@ -1,3 +1,4 @@
+abseil
 act
 aften
 ansible
@@ -103,6 +104,8 @@ libheif
 libidn
 libidn2
 liblqr
+libmediainfo
+libmms
 libnghttp2
 libogg
 libomp
@@ -133,6 +136,7 @@ libxdmcp
 libxext
 libxrender
 libyaml
+libzen
 libzip
 little-cms2
 lsd
