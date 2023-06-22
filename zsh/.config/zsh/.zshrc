@@ -3,7 +3,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-. "$HOME/.asdf/asdf.sh"
 
 # default editor
 EDITOR="/Users/maxkiselev/.local/bin/nvim"
@@ -221,4 +220,6 @@ precmd() {
 }
 
 bindkey '^M' accept-line
+
+. "$HOME/.asdf/asdf.sh"
 
