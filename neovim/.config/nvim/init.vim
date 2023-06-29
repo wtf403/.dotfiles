@@ -210,6 +210,12 @@ vnoremap <Space> zf
 
 if exists('g:vscode')
   " nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR> | :call VSCodeNotify('editor.toggleFold')<CR>
+  
+  nnoremap <silent> h <Cmd>call VSCodeNotify('editor.left')<CR>
+  nnoremap <silent> j <Cmd>call VSCodeNotify('editor.down')<CR>
+  nnoremap <silent> k <Cmd>call VSCodeNotify('editor.up')<CR>
+  nnoremap <silent> l <Cmd>call VSCodeNotify('editor.right')<CR>
+
   nnoremap <silent> za <Cmd>call VSCodeNotify('editor.toggleFold')<CR>
   nnoremap <silent> zR <Cmd>call VSCodeNotify('editor.unfoldAll')<CR>
   nnoremap <silent> zM <Cmd>call VSCodeNotify('editor.foldAll')<CR>
