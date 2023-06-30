@@ -169,6 +169,15 @@ require('neoscroll').setup({
   easing_function = nil,
 })
 
+local t = {}
+  t['<C-u>'] = { 'scroll', { '-vim.wo.scroll', 'true', '50', 'sine', [['sine']] } }
+  t['<C-d>'] = { 'scroll', {  'vim.wo.scroll', 'true', '50', 'sine', [['sine']] } }
+  t['<C-y>'] = {'scroll', { '10', 'true', '10'}}
+  t['<C-e>'] = {'scroll', { '-10', 'true', '10'}}
+  t['zt'] = { 'zt', {'10'} }
+  t['zz'] = { 'zz', {'10'} }
+  t['zb'] = { 'zb', {'10'} }
+  require('neoscroll.config').set_mappings(t)
 
 EOF
 nmap <C-s> <cmd>Pounce<CR>
