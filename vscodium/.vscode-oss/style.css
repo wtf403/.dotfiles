@@ -78,7 +78,11 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
   box-shadow: unset;
 }
 
-.monaco-workbench .part.editor>.content .editor-group-container>.title.title-border-bottom:after {
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.title-border-bottom:after {
   height: 0.9px;
 }
 
@@ -92,4 +96,8 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
 
 #workbench.parts.sidebar > div.composite.title {
   background-color: #aaaaaa20 !important;
+}
+
+:root {
+  --traffic-lights-height: 26px !important;
 }
