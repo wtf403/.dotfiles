@@ -1,0 +1,8 @@
+# mdls -name kMDItemCFBundleIdentifier /Applications/MacVim.app
+#
+# mdls -name kMDItemContentTypeTree /Applications/MacVim.app
+#
+# bundle id       UTI                  role
+com.apple.Safari  json
+org.vim.MacVim    public.ruby-script
+
