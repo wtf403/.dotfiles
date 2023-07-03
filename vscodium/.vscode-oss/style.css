@@ -1,80 +1,88 @@
-#workbench\.parts\.editor
-  > div.content
-  > div
-  > div
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div
-  > div
-  > div.title.tabs.title-border-bottom
-  > div.tabs-and-actions-container.tabs-border-bottom
-  > div.monaco-scrollable-element.mac {
-  overflow: visible !important;
-}
+@media (prefers-color-scheme: dark) {
+  #workbench\.parts\.editor
+    > div.content
+    > div
+    > div
+    > div
+    > div
+    > div.monaco-scrollable-element.mac
+    > div.split-view-container
+    > div
+    > div
+    > div.title.tabs.title-border-bottom
+    > div.tabs-and-actions-container.tabs-border-bottom
+    > div.monaco-scrollable-element.mac {
+    overflow: visible !important;
+  }
 
-#workbench\.parts\.editor
-  > div.content
-  > div
-  > div
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div
-  > div
-  > div.title.tabs.title-border-bottom
-  > div.tabs-and-actions-container.tabs-border-bottom
-  > div.monaco-scrollable-element.mac
-  > div {
-  overflow: visible !important;
-}
+  #workbench\.parts\.editor
+    > div.content
+    > div
+    > div
+    > div
+    > div
+    > div.monaco-scrollable-element.mac
+    > div.split-view-container
+    > div
+    > div
+    > div.title.tabs.title-border-bottom
+    > div.tabs-and-actions-container.tabs-border-bottom
+    > div.monaco-scrollable-element.mac
+    > div {
+    overflow: visible !important;
+  }
 
-div[aria-label="remote"] {
-  border-right: 1px solid black;
-}
+  div[aria-label="remote"] {
+    border-right: 1px solid black;
+  }
 
-body.activity-bar-at-bottom:not(.status-bar-at-top)
+  body.activity-bar-at-bottom:not(.status-bar-at-top)
+    .monaco-workbench
+    .part.statusbar {
+    height: 100% !important;
+  }
+
+  #workbench\.parts\.editor
+    > div.content
+    > div
+    > div
+    > div
+    > div
+    > div.monaco-scrollable-element.mac
+    > div.split-view-container
+    > div
+    > div
+    > div.editor-container
+    > div
+    > div
+    > div.overflow-guard
+    > div.scroll-decoration {
+    box-shadow: unset;
+  }
+
   .monaco-workbench
-  .part.statusbar {
-  height: 100% !important;
+    .part.editor
+    > .content
+    .editor-group-container
+    > .title.title-border-bottom:after {
+    height: 0.9px;
+  }
+
+  [id="workbench.parts.sidebar"] {
+    outline: none;
+  }
+
+  #workbench.parts.sidebar > div.composite.title {
+    background-color: #aaaaaa20 !important;
+  }
+
+  #workbench\.parts\.activitybar {
+    border-left: 1px solid #ffffff20 !important;
+  }
 }
 
-#workbench\.parts\.editor
-  > div.content
-  > div
-  > div
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div
-  > div
-  > div.editor-container
-  > div
-  > div
-  > div.overflow-guard
-  > div.scroll-decoration {
-  box-shadow: unset;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title.title-border-bottom:after {
-  height: 0.9px;
-}
-
-[id="workbench.parts.sidebar"] {
-  outline: none;
-}
-
-#workbench.parts.sidebar > div.composite.title {
-  background-color: #aaaaaa20 !important;
-}
-
-#workbench\.parts\.activitybar {
-  border-left: 1px solid #ffffff20 !important;
+@media (prefers-color-scheme: light) {
+  #workbench\.parts\.activitybar {
+    border-left: 1px solid #000 !important;
+  }
 }
