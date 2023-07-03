@@ -2,6 +2,10 @@
   max-height: initial !important;
 }
 
+:root {
+  --title-border-bottom-color: initial;
+}
+
 @media (prefers-color-scheme: dark) {
   #workbench\.parts\.editor
     > div.content
