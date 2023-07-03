@@ -86,8 +86,4 @@
   #workbench\.parts\.activitybar {
     border-left: 1px solid #000 !important;
   }
-
-  .tabs-container > div {
-    border-left: 1px solid black !important;
-  }
 }
