@@ -74,3 +74,7 @@ body.activity-bar-at-bottom:not(.status-bar-at-top)
 #workbench.parts.sidebar > div.composite.title {
   background-color: #aaaaaa20 !important;
 }
+
+#workbench\.parts\.activitybar {
+  border-left: 1px solid #ffffff20;
+}
