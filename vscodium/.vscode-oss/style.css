@@ -1,3 +1,7 @@
+.review-widget .body .review-comment .review-comment-contents .comment-body {
+  max-height: initial !important;
+}
+
 @media (prefers-color-scheme: dark) {
   #workbench\.parts\.editor
     > div.content
@@ -87,7 +91,20 @@
     border-left: 1px solid #000 !important;
   }
 
-  #workbench\.parts\.editor > div.content > div > div > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div > div > div.title.tabs.title-border-bottom > div.tabs-and-actions-container.tabs-border-bottom > div.monaco-scrollable-element.mac > div.tabs-container {
+  #workbench\.parts\.editor
+    > div.content
+    > div
+    > div
+    > div
+    > div
+    > div.monaco-scrollable-element.mac
+    > div.split-view-container
+    > div
+    > div
+    > div.title.tabs.title-border-bottom
+    > div.tabs-and-actions-container.tabs-border-bottom
+    > div.monaco-scrollable-element.mac
+    > div.tabs-container {
     border-left: 1px solid black !important;
   }
 }
