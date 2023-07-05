@@ -1,5 +1,3 @@
-ZSH_CUSTOM=~/.config/zsh
-
 ### Should stay close to the top of ~/.zshrc ###
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -9,30 +7,15 @@ fi
 # default editor
 EDITOR="/Users/maxkiselev/.local/bin/nvim"
 
-
 export PATH=/usr/local/bin:$PATH
-# Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-if [ "$TERM_PROGRAM" = "Apple_Terminal" ]; then
-    ZSH_THEME="robbyrussell"
-else
-    ZSH_THEME="powerlevel10k/powerlevel10k"
-fi
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 HISTFILESIZE=10000000
 HISTORY_IGNORE="(*[\n]*|exit|ls|bg|fg|history|clear)"
 
 
 
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(
   asdf
   docker
