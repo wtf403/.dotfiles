@@ -25,17 +25,6 @@ HISTFILESIZE=10000000
 HISTORY_IGNORE="(*[\n]*|exit|ls|bg|fg|history|clear)"
 
 
-zstyle ':omz:update' mode auto      # update automatically without asking
-
-zstyle ':omz:update' frequency 1
-
-DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
