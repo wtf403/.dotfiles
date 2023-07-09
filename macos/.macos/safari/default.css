@@ -1,5 +1,3 @@
-[data-location*="http://duckduckgo.com"] body
-{
-  background-color: red;
+[data-location*="duckduckgo.com"] [data-testid="mainline"] {
   max-width: 90ch;
 }
