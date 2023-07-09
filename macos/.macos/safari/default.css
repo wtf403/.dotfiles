@@ -1,3 +1,4 @@
-[data-location*="https://web-standards.ru/"] body
+[data-location*="http://duckduckgo.com"] data-testid="mainline"
 {
+  max-width: 90ch;
 }
