@@ -2,6 +2,12 @@
   max-width: 100ch !important;
 }
 
-[data-location*="youtube.com"] .ytd-rich-section-renderer:has(#dismissible) {
-  display: none;
+[data-location*="youtube.com"] {
+  .ytd-rich-section-renderer:has(#dismissible) {
+    display: none;
+  }
+
+  #items > ytd-guide-entry-renderer:nth-child(2) {
+    display: none;
+  }
 }
