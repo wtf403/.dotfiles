@@ -3,11 +3,11 @@
 }
 
 [data-location*="youtube.com"] {
-  .ytd-rich-section-renderer:has(#dismissible) {
+  [title="Shorts"] {
     display: none;
   }
 
-  [title="Shorts"] {
+  .ytd-rich-section-renderer:has(#dismissible) {
     display: none;
   }
 }
