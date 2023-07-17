@@ -15,3 +15,7 @@
 #items > ytd-guide-entry-renderer:nth-child(2) {
   display: none;
 }
+
+.ytd-guide-entry-renderer {
+  display: none;
+}
