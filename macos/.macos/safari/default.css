@@ -7,7 +7,7 @@
     display: none;
   }
 
-  #items > ytd-guide-entry-renderer:nth-child(2) {
+  [title="Shorts"] {
     display: none;
   }
 }
