@@ -15,7 +15,7 @@
 }
 
 [data-location*="app.smalltalk2.me"] {
-  footer {
-    display: none;
+  html {
+    display: none !important;
   }
 }
