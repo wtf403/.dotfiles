@@ -11,3 +11,9 @@
     display: none;
   }
 }
+
+[data-location*="app.smalltalk2.me"] {
+  footer {
+    display: none;
+  }
+}
