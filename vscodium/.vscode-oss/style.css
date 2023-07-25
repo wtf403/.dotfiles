@@ -1,5 +1,5 @@
 .review-widget .body .review-comment .review-comment-contents .comment-body {
-  max-height: initial !important;
+  /* max-height: initial !important; */
 }
 
 @media (prefers-color-scheme: dark) {
