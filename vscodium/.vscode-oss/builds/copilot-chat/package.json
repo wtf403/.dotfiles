@@ -20,7 +20,7 @@
   "qna": "https://github.com/github-community/community/discussions/categories/copilot",
   "icon": "assets/Copilot-App-Icon.png",
   "pricing": "Trial",
-  "engines": { "vscode": "^1.81.0", "vscodium": "^1.80.0", "npm": ">=8.0.0" },
+  "engines": { "vscode": "^1.81.0", "codium": "^1.80.0", "npm": ">=8.0.0" },
   "categories": [
     "Programming Languages",
     "Machine Learning",
