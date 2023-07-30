@@ -16,6 +16,8 @@ alias documents="cd ~/Documents"
 alias applications="cd /Applications"
 alias desktop="cd ~/Desktop"
 alias pictures="cd ~/Pictures"
+alias trash="~/.Trash"
+
 
 sudo () {
     unset -f sudo
