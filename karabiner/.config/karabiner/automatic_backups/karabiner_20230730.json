@@ -256,6 +256,85 @@
                         ]
                     },
                     {
+                        "description": "Ctrl+{u,k} --> Delete before/after carriage",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "option",
+                                            "shift"
+                                        ]
+                                    },
+                                    {
+                                        "key_code": "delete_or_backspace"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
                         "manipulators": [
                             {
@@ -681,87 +760,6 @@
                                             "option",
                                             "shift"
                                         ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+{u,k} --> Delete before/after carriage",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^org\\.yanex\\.marta$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "u",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "option",
-                                            "shift"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
-                                            "^com\\.vscodium$",
-                                            "^com\\.vscodium\\.VSCodiumInsiders$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^org\\.yanex\\.marta$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "k",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "option",
-                                            "shift"
-                                        ]
-                                    },
-                                    {
-                                        "key_code": "delete_or_backspace"
                                     }
                                 ],
                                 "type": "basic"
