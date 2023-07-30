@@ -127,6 +127,15 @@ function _brew {
     COMPREPLY=($(compgen -W "$(brew commands)" -- "${cur}"))
 }
 
+function clear {
+  if [[ "$(pwd)" == '/Users/maxkiselev/.Trash' ]]
+  than
+    rm -rf /Users/maxkiselev/.Trash/*
+  else
+    clear
+  fi
+}
+
 complete -F _brew brew
 
 if command -v ngrok &>/dev/null; then
