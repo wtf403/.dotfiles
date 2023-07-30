@@ -11,7 +11,7 @@ alias cat='bat -p --theme=gruvbox-$(defaults read -g AppleInterfaceStyle &> /dev
 
 
 alias maxkiselev="cd ~"
-alias download="cd ~/Downloads"
+alias downloads="cd ~/Downloads"
 alias documents="cd ~/Documents"
 alias applications="cd /Applications"
 alias desktop="cd ~/Desktop"
