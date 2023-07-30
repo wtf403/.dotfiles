@@ -16,7 +16,7 @@ alias documents="cd ~/Documents"
 alias applications="cd /Applications"
 alias desktop="cd ~/Desktop"
 alias pictures="cd ~/Pictures"
-alias trash="~/.Trash"
+#alias trash="~/.Trash"
 
 
 sudo () {
@@ -70,7 +70,7 @@ asdf () {
 
 
 ### trash ###
-function del {
+function trash {
     if [[ "$@" == "." ]]; then
       D=${PWD##*/} && cd .. && command /opt/homebrew/bin/trash $D || cd $D
     else 
@@ -79,7 +79,7 @@ function del {
 }
 
 
-function _del {
+function _trash {
   local cur
   COMPREPLY=()
   cur="${COMP_WORDS[COMP_CWORD]}"
@@ -93,7 +93,7 @@ function _del {
   esac
 }
 
-complete -F _del del
+complete -F _trash trash
 
 
 ### brew ###
