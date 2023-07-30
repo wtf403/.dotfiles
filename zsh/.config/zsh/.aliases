@@ -70,16 +70,16 @@ asdf () {
 
 
 ### trash ###
-function trash {
+function del {
     if [[ "$@" == "." ]]; then
-      D=${PWD##*/} && cd .. && command trash $D || cd $D
+      D=${PWD##*/} && cd .. && command /opt/homebrew/bin/trash $D || cd $D
     else 
-      command trash "$@"
+      command /opt/homebrew/bin/trash "$@"
     fi
 }
 
 
-function _trash {
+function _del {
   local cur
   COMPREPLY=()
   cur="${COMP_WORDS[COMP_CWORD]}"
@@ -93,7 +93,7 @@ function _trash {
   esac
 }
 
-complete -F _trash trash
+complete -F _del del
 
 
 ### brew ###
