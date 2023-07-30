@@ -129,10 +129,10 @@ function _brew {
 
 function clear {
   if [[ "$(pwd)" == '/Users/maxkiselev/.Trash' ]]
-  than
+  then
     rm -rf /Users/maxkiselev/.Trash/*
   else
-    clear
+    command clear
   fi
 }
 
