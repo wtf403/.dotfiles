@@ -129,12 +129,10 @@ function _brew {
 
 function clear {
   file_count=$(ls -A "$HOME/.Trash" | grep -v '^\.DS_Store$' | wc -l)
-  echo $file_count
-  if [[ $file_count -eq 0 ]]; then
-    echo "[[ $file_count -eq 0 ]]"
+  if [[ $file_count -ne 0 ]]; then
     rm -rf "$HOME/.Trash"/*
   else
-    command clear
+   command clear
   fi
 }
 
