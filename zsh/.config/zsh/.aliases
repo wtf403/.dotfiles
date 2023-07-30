@@ -128,9 +128,7 @@ function _brew {
 }
 
 function clear {
-  file_count=$(la | wc -l)
-  if [[ "$(pwd)" == '/Users/maxkiselev/.Trash' ]] && [[ $file_count -gt 0 ]] 
-  then
+  if [ $(ls -A '~/.Trash' | grep -v '^\.DS_Store$' | wc -l) -eq 0 ]; then
     rm -rf /Users/maxkiselev/.Trash/*
   else
     command clear
