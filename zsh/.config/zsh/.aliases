@@ -128,7 +128,7 @@ function _brew {
 }
 
 function clear {
-  file_count=$(find "$trash_dir" -mindepth 1 -maxdepth 1 | wc -l)
+  file_count=$(la | wc -l)
   if [[ "$(pwd)" == '/Users/maxkiselev/.Trash' ]] && [[ $file_count -gt 0 ]] 
   then
     rm -rf /Users/maxkiselev/.Trash/*
