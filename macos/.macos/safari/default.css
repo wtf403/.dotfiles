@@ -19,3 +19,9 @@
     display: none !important;
   }
 }
+
+[data-location*="youtube.com"] {
+  body::-webkit-scrollbar {
+    display: none;
+  }
+}
