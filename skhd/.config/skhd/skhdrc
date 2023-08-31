@@ -54,10 +54,10 @@ fn + cmd - h : yabai -m space --focus prev
 fn - t : ~/.config/yabai/float.sh
 
 # windows movements
-fn - j : yabai -m window --focus south  yabai -m display --focus south  yabai -m window --focus north  yabai -m display --focus north && ~/.config/yabai/focus.sh
-fn - k : yabai -m window --focus north  yabai -m display --focus north  yabai -m window --focus south  yabai -m display --focus south && ~/.config/yabai/focus.sh
-fn - h : yabai -m window --focus west  yabai -m display --focus west  yabai -m window --focus east  yabai -m display --focus east && ~/.config/yabai/focus.sh
-fn - l : yabai -m window --focus east  yabai -m display --focus east  yabai -m window --focus west  yabai -m display --focus west && ~/.config/yabai/focus.sh
+fn - j : yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north && ~/.config/yabai/focus.sh
+fn - k : yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south && ~/.config/yabai/focus.sh
+fn - h : yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east && ~/.config/yabai/focus.sh
+fn - l : yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west && ~/.config/yabai/focus.sh
 
 # swap windows
 fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh && ~/.config/yabai/focus.sh
@@ -66,10 +66,10 @@ fn + shift - h : ~/.config/yabai/moveRightAndFollowFocus.sh && ~/.config/yabai/f
 fn + shift - l : ~/.config/yabai/moveLeftAndFollowFocus.sh && ~/.config/yabai/focus.sh
 
 # resize windows
-fn - 0x21 : yabai -m window --resize left:-60:0  yabai -m window --resize right:-100:0
-fn - 0x1E : yabai -m window --resize right:60:0  yabai -m window --resize left:100:0
-fn + shift - 0x21 : yabai -m window --resize top:0:-30  yabai -m window --resize bottom:0:-60
-fn + shift - 0x1E : yabai -m window --resize bottom:0:30  yabai -m window --resize top:0:60
+fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
+fn - 0x1E : yabai -m window --resize right:60:0 || yabai -m window --resize left:100:0
+fn + shift - 0x21 : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-60
+fn + shift - 0x1E : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
 
 ################################################################
 ############################# UNUSED ###########################
