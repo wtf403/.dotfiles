@@ -9,6 +9,10 @@
     display: none !important;
   }
 
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
   .ytd-rich-section-renderer:has(#dismissible) {
     display: none;
   }
@@ -17,11 +21,5 @@
 [data-location*="app.smalltalk2.me"] {
   #app > div > div > div:nth-child(2) > footer {
     display: none !important;
-  }
-}
-
-[data-location*="youtube.com"] {
-  body::-webkit-scrollbar {
-    display: none;
   }
 }

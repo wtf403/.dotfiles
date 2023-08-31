@@ -6,7 +6,7 @@ sudo yabai --load-sa
 DISPLAY_COUNT=$(yabai -m query --displays | jq length)
 if [ $DISPLAY_COUNT -eq 2 ]; then
     yabai -m config layout float
-    yabai -m config split_ratio 0.388
+    yabai -m config split_ratio 0.37
     yabai -m space 1 --layout bsp
     yabai -m space 2 --layout stack
     yabai -m space 2 --padding abs:0:0:0:0
