@@ -35,8 +35,8 @@ fn + shift - d : yabai -m space --destroy
 fn - f : yabai -m window --toggle zoom-fullscreen
 
 # next/prev stack window
-fn - n : yabai -m window --focus stack.next  yabai -m window --focus stack.first
-fn - p : yabai -m window --focus stack.prev  yabai -m window --focus stack.last
+fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # Destroy space
 fn + shift - d: yabai -m space --destroy && yabai -m space --focus prev
