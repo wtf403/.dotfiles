@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 
-# Define variables to store the last known position
-last_x=0
-last_y=0
-
-# Check if the last position is stored in a file
+# Check if a file exists to store the last focused window's position
 if [ -f ~/.last_window_position ]; then
-  read -r last_x last_y < ~/.last_window_position
+    # Read the last position from the file
+    read -r last_x last_y < ~/.last_window_position
+else
+    # If the file doesn't exist, set initial position to the center of the screen
+    last_x=$(expr $(yabai -m query --displays --display | jq '.frame.x') + $(yabai -m query --displays --display | jq '.frame.w') / 2)
+    last_y=$(expr $(yabai -m query --displays --display | jq '.frame.y') + $(yabai -m query --displays --display | jq '.frame.h') / 2)
 fi
 
 # Get the focused window's ID
@@ -22,8 +23,10 @@ height=$(yabai -m query --windows --window | jq '.frame.h')
 center_x=$((x + width / 2))
 center_y=$((y + height / 2))
 
-# Store the current position as the last known position
-echo "$center_x $center_y" > ~/.last_window_position
+# Move the mouse cursor to the last position if it's not the same as the focused window
+if [ "$center_x" -ne "$last_x" ] || [ "$center_y" -ne "$last_y" ]; then
+    cliclick m:"$last_x","$last_y"
+fi
 
-# Move the mouse cursor to the last known position
-cliclick m:"$last_x","$last_y"
+# Update the last window position
+echo "$center_x $center_y" > ~/.last_window_position
