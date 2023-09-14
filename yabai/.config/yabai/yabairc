@@ -11,9 +11,6 @@ for event in "mission_control_exit" "display_added" "display_removed" "display_m
   yabai -m signal --add event=$event action="~/.yabai_configure_space_layouts.sh"
 done
 
-
-
-
 yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus on
 

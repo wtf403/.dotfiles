@@ -11,11 +11,11 @@ secondary_display_spaces=($(echo "$displays" | jq -r '.[1:][] | .spaces[]'))
 
 # Configure spaces on the primary display to use the float layout
 for space in "${primary_display_spaces[@]}"; do
-  yabai -m config --space "$space" layout stack
+  yabai -m space "$space" --layout stack
 done
 
 # Configure spaces on the secondary displays to use the bsp layout
 for space in "${secondary_display_spaces[@]}"; do
-  yabai -m config --space "$space" layout bsp
+  yabai -m space "$space" --layout bsp
 done
 
