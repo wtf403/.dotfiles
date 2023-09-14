@@ -6,10 +6,16 @@ sudo yabai --load-sa
 DISPLAY_COUNT=$(yabai -m query --displays | jq length)
 
 yabai -m config external_bar all:0:1
+yabai -m config layout stack
 
-for event in "mission_control_exit" "display_added" "display_removed" "display_moved"; do
-  yabai -m signal --add event=$event action="~/.yabai_configure_space_layouts.sh"
-done
+if [ $DISPLAY_COUNT -eq 2 ]; then
+    yabai -m config split_ratio 0.37
+    for event in "mission_control_exit" "display_added" "display_removed" "display_moved"; do
+      yabai -m signal --add event=$event action="~/.yabai_configure_space_layouts.sh"
+    done
+else [ $DISPLY_COUNT -eq 1 ]; then
+    yabai -m config layout stack
+fi
 
 yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus on
@@ -26,8 +32,8 @@ yabai -m config mouse_action1 resize
 yabai -m config mouse_action2 move
 # yabai -m mouse_drop_action swap
 
-yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=window_destroyed action="~/.yabai_open_next_window.sh"
+yabai -m signal --add event=application_terminated action="~/.yabai_open_next_window.sh"
 
 yabai -m rule --add app="System Settings" sticky=on layer=above manage=off
 yabai -m rule --add app="Karabiner-Elements" sticky=on layer=above manage=off
