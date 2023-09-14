@@ -33,6 +33,8 @@ yabai -m config mouse_action2 move
 # yabai -m mouse_drop_action swap
 
 yabai -m signal --add event=application_hidden action=="~/.yabai_open_next_window.sh"
+yabai -m signal --add event=window_destroy action=="~/.yabai_open_next_window.sh"
+yabai -m signal --add event=application_terminated action=="~/.yabai_open_next_window.sh"
 
 yabai -m rule --add app="System Settings" sticky=on layer=above manage=off
 yabai -m rule --add app="Karabiner-Elements" sticky=on layer=above manage=off
