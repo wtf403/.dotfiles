@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=dock_did_change_pref action="sudo yabai --load-sa"
 sudo yabai --load-sa
-
-DISPLAY_COUNT=$(yabai -m query --displays | jq length)
 
 yabai -m config external_bar all:0:1
 yabai -m config layout stack
+
+
+DISPLAY_COUNT=$(yabai -m query --displays | jq length)
+
 
 if [ $DISPLAY_COUNT -eq 2 ]; then
     yabai -m config split_ratio 0.37
@@ -19,6 +22,7 @@ fi
 
 yabai -m config focus_follows_mouse autofocus
 yabai -m config mouse_follows_focus on
+# (switched to https://github.com/sbmpost/AutoRaise)
 
 # yabai -m config window_animation_duration 1
 yabai -m config window_zoom_persist on
@@ -32,9 +36,8 @@ yabai -m config mouse_action1 resize
 yabai -m config mouse_action2 move
 # yabai -m mouse_drop_action swap
 
-yabai -m signal --add event=application_hidden action=="~/.yabai_open_next_window.sh"
-yabai -m signal --add event=window_destroyed action=="~/.yabai_open_next_window.sh"
-yabai -m signal --add event=application_terminated action=="~/.yabai_open_next_window.sh"
+yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
 yabai -m rule --add app="System Settings" sticky=on layer=above manage=off
 yabai -m rule --add app="Karabiner-Elements" sticky=on layer=above manage=off
@@ -53,8 +56,6 @@ yabai -m rule --add app="Xnip" manage=off
 yabai -m rule --add app="App Store" manage=off
 yabai -m rule --add app="Stats" manage=off
 yabai -m rule --add app="Color Picker" manage=off
-yabai -m rule --add app="Archive Utility" manage=off
-yabai -m rule --add app="Photo Booth" manage=off
 
 # Safari settings
 yabai -m rule --add app="Safari" title="General" manage=off
