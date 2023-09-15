@@ -25,6 +25,8 @@ function yabai_spaces () {
   done
 }
 
+yabai_spaces
+
 for event in "mission_control_exit" "display_added" "display_removed" "display_moved"; do
   yabai -m signal --add event=$event action="source ~/.config/yabai/yabairc && yabai_spaces"
 done
