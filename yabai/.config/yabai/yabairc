@@ -1,25 +1,34 @@
 #!/usr/bin/env bash
 
-yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-yabai -m signal --add event=dock_did_change_pref action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=dock_did_change_pref action="sudo yabai --load-sa"
+
 yabai -m config external_bar all:0:1
+yabai -m config split_ratio 0.37
 
-DISPLAYS=$(yabai -m query --displays | jq length)
-for event in "mission_control_exit" "display_added" "display_removed" "display_moved" "space_created" "space_destroyed" "space_changed"; do
-    yabai -m config split_ratio 0.37
-    primary_display_spaces=($(echo "$DISPLAYS" | jq -r '.[0].spaces[]'))
-    secondary_display_spaces=($(echo "$DISPLAYS" | jq -r '.[1:][] | .spaces[]'))
 
-    for space in "${primary_display_spaces[@]}"; do
-      yabai -m space $space --layout stack
-    done
 
-    for space in "${secondary_display_spaces[@]}"; do
-      yabai -m space $space --layout bsp
-    done
+function yabai_configure_space_layouts () {
+  displays=$(yabai -m query --displays)
+  primary_display_spaces=($(echo "$displays" | jq -r '.[0].spaces[]'))
+  secondary_display_spaces=($(echo "$displays" | jq -r '.[1:][] | .spaces[]'))
+
+  for space in "${primary_display_spaces[@]}"; do
+    yabai -m space $space --layout stack
+  done
+
+  for space in "${secondary_display_spaces[@]}"; do
+    yabai -m space $space --layout bsp
+  done
+}
+
+for event in "mission_control_exit" "display_added" "display_removed" "display_moved"; do
+  yabai -m signal --add event=$event action="yabai_configure_space_layouts"
 done
+
+yabai_configure_space_layouts
 
 
 yabai -m config focus_follows_mouse autofocus
