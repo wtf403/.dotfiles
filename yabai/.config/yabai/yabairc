@@ -8,9 +8,9 @@ yabai -m signal --add event=dock_did_change_pref action="sudo yabai --load-sa"
 yabai -m config external_bar all:0:1
 yabai -m config split_ratio 0.37
 
-
 function yabai_spaces () {
-  terminal-notifier -message "Note..."
+
+  terminal-notifier -message "Test..."
 
   displays=$(yabai -m query --displays)
   primary_display_spaces=($(echo "$displays" | jq -r '.[0].spaces[]'))
@@ -27,7 +27,7 @@ function yabai_spaces () {
 
 yabai_spaces
 
-for event in "mission_control_exit" "display_added" "display_removed" "display_moved"; do
+for event in "mission_control_exit" "display_added" "display_removed" "display_moved" "space_created" "space_destroyed"; do
   yabai -m signal --add event=$event action="source ~/.config/yabai/yabairc && yabai_spaces"
 done
 
