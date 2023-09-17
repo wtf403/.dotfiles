@@ -49,13 +49,20 @@ yabai -m config mouse_action2 move
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
-for event in "application_hidden" "application_visible"; do
-  yabai -m signal --add event=$event action="source ~/.config/yabai/yabairc && center_app_in_stack"
-done
+apps_to_center=("System Settings" "YourAppNameHere")
 
-function center_app_in_stack () {
-
+center_app_in_stack() {
+  for app in "${apps_to_center[@]}"; do
+    terminal-notifier -message "$app"
+    if yabai -m query --windows --window | jq -r --arg app "$app" 'map(select(.app == $app)) | length > 0' | grep -q "true"; then
+      space_id=$(yabai -m query --windows | jq -r '.[] | select(.app == $app).space')
+      ter
+      yabai -m config --space "$space_id" --padding abs:50:50:50:50
+    fi
+  done
 }
+
+yabai -m signal --add event="application_front_switched" action="source ~/.config/yabai/yabairc && center_app_in_stack"
 
 
 yabai -m rule --add app="System Settings" manage=on grid=4:4:1:1:1:1
