@@ -30,7 +30,7 @@ for event in "mission_control_exit" "display_added" "display_removed" "display_m
   yabai -m signal --add event=$event action="source ~/.config/yabai/yabairc && yabai_spaces"
 done
 
-yabai -m config focus_follows_mouse autofocus
+yabai -m config focus_follows_mouse autoraise
 yabai -m config mouse_follows_focus on
 # (switched to https://github.com/sbmpost/AutoRaise)
 
@@ -49,7 +49,8 @@ yabai -m config mouse_action2 move
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
-yabai -m rule --add app="System Settings" manage=off
+yabai -m rule --add app="System Settings" native-fullscreen=on
+yabai -m rule --add app="Finder" opacity=0.95
 # yabai -m rule --add app="Karabiner-Elements" sticky=on layer=above manage=off
 # yabai -m rule --add app="Karabiner-EventViewer" sticky=on layer=above manage=off
 # yabai -m rule --add app="Finder" sticky=on layer=above manage=off
