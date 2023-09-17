@@ -49,8 +49,8 @@ yabai -m config mouse_action2 move
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 
-yabai -m rule --add app="System Settings" native-fullscreen=on
-yabai -m rule --add app="Finder" opacity=0.95
+yabai -m rule --add app="System Settings" manage=on grid=4:4:1:1:1:1
+yabai -m rule --add app="Finder" opacity=0.95 grid=4:4:1:1:1:1
 # yabai -m rule --add app="Karabiner-Elements" sticky=on layer=above manage=off
 # yabai -m rule --add app="Karabiner-EventViewer" sticky=on layer=above manage=off
 # yabai -m rule --add app="Finder" sticky=on layer=above manage=off
