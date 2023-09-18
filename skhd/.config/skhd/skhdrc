@@ -32,7 +32,8 @@ fn - e : yabai -m window --toggle split
 fn + shift - d : yabai -m space --destroy
 
 # toggle window fullscreen zoom
-fn - f : yabai -m window --toggle zoom-fullscreen
+# fn - f : yabai -m window --toggle zoom-fullscreen
+fn -f : yabai -m window --toggle native-fullscreen
 
 # next/prev stack window
 fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
