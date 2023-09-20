@@ -116,6 +116,7 @@ fi
 }
 zle -N autosuggest_partial_wordwise 
 
+export TLDR_AUTO_UPDATE_DISABLED=1
 
 # Add autosuggest_partial_wordwise to IGNORE
 export ZSH_AUTOSUGGEST_STRATEGY=(match_prev_cmd completion)
