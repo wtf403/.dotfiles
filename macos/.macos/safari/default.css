@@ -23,3 +23,9 @@
     display: none !important;
   }
 }
+
+[data-location*="spotify.com"] {
+  [title="Upgrade to Premium"] {
+    display: none !important;
+  }
+}

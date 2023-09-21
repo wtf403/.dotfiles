@@ -4,3 +4,4 @@
 // @match       *://*/*
 // ==/UserScript==
 document.documentElement.setAttribute("data-location", window.location.href);
+alert(location.hostname);
