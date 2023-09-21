@@ -157,3 +157,4 @@ bindkey '^M' accept-line
 
 . "$HOME/.asdf/asdf.sh"
 
+export PATH=$PATH:/Users/maxkiselev/.spicetify

@@ -4,4 +4,3 @@
 // @match       *://*/*
 // ==/UserScript==
 document.documentElement.setAttribute("data-location", window.location.href);
-window.alert("Hello world!");
