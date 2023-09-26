@@ -3,7 +3,7 @@
     max-width: 100ch !important;
   }
 
-  .site-wrapper {
+  .site-wrapper:has(.web_content_wrapper) {
     margin: 0 auto !important;
     width: min-content !important;
   }
