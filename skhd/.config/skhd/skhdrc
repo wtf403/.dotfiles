@@ -54,9 +54,9 @@ fn - w : yabai -m space --toggle mission-control
 fn - i : yabai -m space --toggle show-desktop
 
 # Move between spaces
-fn - l : yabai -m space --focus next || yabai -m space --swap first
+fn - l : yabai -m space --focus next || yabai -m space --focus first
 
-fn - h : yabai -m space --focus prev || yabai -m space --swap last 
+fn - h : yabai -m space --focus prev || yabai -m space --focus last 
 
 
 # Move window to next/prev space
