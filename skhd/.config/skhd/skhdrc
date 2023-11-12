@@ -50,7 +50,7 @@ fn - l : yabai -m space --focus next
 
 fn - h : yabai -m space --focus prev
 
-fn - x : yabai -m space --toggle mission-control
+fn - w : yabai -m space --toggle mission-control
 fn - i : yabai -m space --toggle show-desktop
 
 
