@@ -40,16 +40,17 @@ fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.fir
 fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
 # Destroy space
-fn + shift - d: yabai -m space --destroy && yabai -m space --focus prev
+fn - d: yabai -m space --destroy && yabai -m space --focus prev
 
 # Create space
-fn + shift - c: yabai -m space --create && yabai -m space --focus next
+fn - c: yabai -m space --create && yabai -m space --focus next
 
 # Move between spaces
 
 # Move window to next/prev space
-fn + cmd - l : yabai -m space --focus next
-fn + cmd - h : yabai -m space --focus prev
+fn - l : yabai -m space --focus next
+
+fn - h : yabai -m space --focus prev
 
 # floating window at center of the screen
 fn - t : ~/.config/yabai/float.sh
