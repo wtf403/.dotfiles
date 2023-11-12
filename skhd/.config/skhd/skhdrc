@@ -46,11 +46,18 @@ fn - d: yabai -m space --destroy && yabai -m space --focus prev
 fn - c: yabai -m space --create && yabai -m space --focus next
 
 # Move between spaces
-
-# Move window to next/prev space
 fn - l : yabai -m space --focus next
 
 fn - h : yabai -m space --focus prev
+
+fn - x : yabai -m space --toggle mission-control
+fn - i : yabai -m space --toggle show-desktop
+
+
+# Move window to next/prev space
+fn + shift - l : yabai -m space --focus next
+
+fn + shift - h : yabai -m space --focus prev
 
 # floating window at center of the screen
 fn - t : ~/.config/yabai/float.sh
