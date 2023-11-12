@@ -29,7 +29,7 @@ fn - y : yabai -m space --mirror y-axis
 fn - e : yabai -m window --toggle split
 
 # destroy desktop
-fn + shift - d : yabai -m space --destroy
+fn + shift - d : yabai -m space --destroy && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
 
 # toggle window fullscreen zoom
 # fn - f : yabai -m window --toggle zoom-fullscreen
@@ -44,6 +44,9 @@ fn - d: yabai -m space --destroy && yabai -m space --focus prev
 
 # Create space
 fn - c: yabai -m space --create && yabai -m space --focus next
+
+fn + alt - c: yabai -m space --create
+
 
 # Spaces 
 fn - w : yabai -m space --toggle mission-control
