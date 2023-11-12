@@ -53,11 +53,14 @@ fn - h : yabai -m space --focus prev
 fn - w : yabai -m space --toggle mission-control
 fn - i : yabai -m space --toggle show-desktop
 
-
 # Move window to next/prev space
-fn + shift - l : yabai -m space --focus next
+fn + shift - l : yabai -m space --move next
 
-fn + shift - h : yabai -m space --focus prev
+fn + shift - h : yabai -m space --move prev
+
+fn + shift - j : yabai -m space --swap next
+
+fn + shift - k : yabai -m space --swap prev 
 
 # floating window at center of the screen
 fn - t : ~/.config/yabai/float.sh
