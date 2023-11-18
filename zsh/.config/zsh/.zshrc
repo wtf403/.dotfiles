@@ -158,3 +158,12 @@ bindkey '^M' accept-line
 . "$HOME/.asdf/asdf.sh"
 
 export PATH=$PATH:/Users/maxkiselev/.spicetify
+
+
+echo 'export PATH="/opt/homebrew/opt/mysql-client/bin:$PATH"' >> ~/.zshrc
+
+export LDFLAGS="-L/opt/homebrew/opt/mysql-client/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/mysql-client/include"
+
+export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client/lib/pkgconfig"
+
