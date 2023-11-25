@@ -1,2 +1,1 @@
-
-Saving session...echo Restored session: "$(/bin/date -r 1700951389)"
+echo Restored session: "$(/bin/date -r 1700952099)"
