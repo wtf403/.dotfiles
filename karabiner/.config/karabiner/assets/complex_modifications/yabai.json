@@ -7,15 +7,15 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "any",
+            "any": "key_code",
             "modifiers": {
-              "mandatory": ["right_control", "left_option"]
+              "mandatory": ["right_control"],
+              "optional": ["left_option", "right_option"]
             }
           },
           "to": [
             {
-              "key_code": "any",
-              "modifiers": ["fn"]
+              "key_code": "fn"
             }
           ]
         }
