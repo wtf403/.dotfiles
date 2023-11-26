@@ -12,29 +12,13 @@
               "optional": ["left_option", "right_option"]
             }
           },
-          "to": [
-            {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "fn to sticky_fn",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn"
+          "parameters": {
+            "basic.to_if_alone_timeout_milliseconds": 250,
+            "basic.to_if_held_down_threshold_milliseconds": 250
           },
-          "to": [
+          "to_if_held_down": [
             {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
+              "key_code": "fn"
             }
           ]
         }
