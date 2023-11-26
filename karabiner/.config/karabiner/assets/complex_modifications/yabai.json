@@ -16,7 +16,7 @@
           "to": [
             {
               "key_code": "fn",
-              "repeat": false
+              "repeat": true
             }
           ]
         }
