@@ -7,7 +7,6 @@
         {
           "type": "basic",
           "from": {
-            "any": "key_code",
             "modifiers": {
               "mandatory": ["control"],
               "optional": ["left_option", "right_option"]
@@ -15,8 +14,27 @@
           },
           "to": [
             {
-              "key_code": "fn",
-              "repeat": true
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn to sticky_fn",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn"
+          },
+          "to": [
+            {
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
             }
           ]
         }
