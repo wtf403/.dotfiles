@@ -39,6 +39,32 @@
                         ]
                     },
                     {
+                        "description": "10 Control + Option to Fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "any": "key_code",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "left_option",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn",
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Ctrl+{n,p} --> Vertial movement",
                         "manipulators": [
                             {
@@ -755,49 +781,19 @@
                         ]
                     },
                     {
-                        "description": "10 Control + LOption to Fn",
+                        "description": "escape = emoji menu. (Simplifies default command + control + space)",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_option",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "escape"
                                 },
-                                "to": [
+                                "to_if_alone": [
                                     {
-                                        "key_code": "fn",
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "10 Control + ROption to Fn",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_option",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
+                                        "key_code": "spacebar",
+                                        "modifiers": [
+                                            "left_command",
+                                            "left_control"
                                         ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "fn",
-                                        "repeat": false
                                     }
                                 ],
                                 "type": "basic"
@@ -966,11 +962,11 @@
             "simple_modifications": [
                 {
                     "from": {
-                        "key_code": "escape"
+                        "apple_vendor_top_case_key_code": "keyboard_fn"
                     },
                     "to": [
                         {
-                            "apple_vendor_keyboard_key_code": "function"
+                            "key_code": "fn"
                         }
                     ]
                 }

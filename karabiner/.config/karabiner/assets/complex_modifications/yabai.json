@@ -2,36 +2,15 @@
   "title": "10 Map Control + Option to Fn",
   "rules": [
     {
-      "description": "10 Control + LOption to Fn",
+      "description": "10 Control + Option to Fn",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_option",
+            "any": "key_code",
             "modifiers": {
               "mandatory": ["control"],
-              "optional": ["any"]
-            }
-          },
-          "to": [
-            {
-              "key_code": "fn",
-              "repeat": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "10 Control + ROption to Fn",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "right_option",
-            "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "optional": ["left_option", "right_option"]
             }
           },
           "to": [
