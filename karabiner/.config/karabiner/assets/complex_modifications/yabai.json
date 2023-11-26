@@ -9,13 +9,14 @@
           "from": {
             "all": "key_code",
             "modifiers": {
-              "mandatory": ["right_control"],
+              "mandatory": ["caps_lock"],
               "optional": ["right_option", "left_option"]
             }
           },
           "to": [
             {
-              "apple_vendor_keyboard_key_code": "keyboard_fn"
+              "key_code": "fn",
+              "optional": "any"
             }
           ]
         }
