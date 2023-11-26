@@ -19,9 +19,42 @@
               }
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_option",
+            "modifiers": {
+              "mandatory": ["right_control"]
+            }
+          },
+          "to": [
+            {
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option",
+            "modifiers": {
+              "mandatory": ["right_control"]
+            }
+          },
+          "to": [
+            {
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
+            }
+          ]
         }
       ]
     },
+
     {
       "description": "fn to sticky_fn",
       "manipulators": [

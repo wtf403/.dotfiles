@@ -39,11 +39,34 @@
                         ]
                     },
                     {
-                        "description": "fn to sticky_fn",
+                        "description": "10 Control + Option to Fn",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "left_option",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_option",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -57,16 +80,11 @@
                         ]
                     },
                     {
-                        "description": "10 Control + Option to Fn",
+                        "description": "fn to sticky_fn",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "left_option",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_control"
-                                        ]
-                                    }
+                                    "key_code": "fn"
                                 },
                                 "to": [
                                     {
