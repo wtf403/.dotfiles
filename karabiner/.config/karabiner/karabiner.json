@@ -61,17 +61,19 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "control",
+                                    "any": "key_code",
                                     "modifiers": {
-                                        "optional": [
+                                        "mandatory": [
                                             "left_option",
-                                            "right_option"
+                                            "right_control"
                                         ]
                                     }
                                 },
-                                "to_if_alone": [
+                                "to": [
                                     {
-                                        "key_code": "fn"
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
                                     }
                                 ],
                                 "type": "basic"

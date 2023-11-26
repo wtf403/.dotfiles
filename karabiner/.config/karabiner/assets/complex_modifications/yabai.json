@@ -7,14 +7,15 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_control",
             "modifiers": {
-              "optional": ["left_option", "right_option"]
+              "mandatory": ["left_option", "right_control"]
             }
           },
-          "to_if_alone": [
+          "to": [
             {
-              "key_code": "fn"
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
             }
           ]
         }
