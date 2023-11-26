@@ -32,8 +32,8 @@ fn - e : yabai -m window --toggle split
 fn + shift - d : yabai -m space --destroy && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
 
 # toggle window fullscreen zoom
-# fn - f : yabai -m window --toggle zoom-fullscreen
-fn -f : yabai -m window --toggle native-fullscreen
+fn - f : yabai -m window --toggle zoom-fullscreen
+fn - w : yabai -m window --toggle native-fullscreen
 
 # next/prev stack window
 fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
@@ -45,11 +45,8 @@ fn - d: yabai -m space --destroy && yabai -m space --focus prev
 # Create space
 fn - c: yabai -m space --create && yabai -m space --focus next
 
-fn + alt - c: yabai -m space --create
-
-
 # Spaces 
-fn - w : yabai -m space --toggle mission-control
+# n - w : yabai -m space --toggle mission-control
 
 fn - i : yabai -m space --toggle show-desktop
 
@@ -61,18 +58,18 @@ fn - h : yabai -m space --focus prev || yabai -m space --focus last
 
 # Move window to next/prev space
 
-fn + shift - j : yabai -m space --swap next || yabai -m space --swap first
+fn - j : yabai -m space --swap next || yabai -m space --swap first
 
-fn + shift - k : yabai -m space --swap prev || yabai -m space --swap last 
+fn - k : yabai -m space --swap prev || yabai -m space --swap last 
 
 # floating window at center of the screen
 fn - t : ~/.config/yabai/float.sh
 
 # windows movements
-fn - j : ~/.config/yabai/focus.sh && yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
-fn - k : ~/.config/yabai/focus.sh && yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
-fn - h : ~/.config/yabai/focus.sh && yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east 
-fn - l : ~/.config/yabai/focus.sh && yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
+# fn - j : ~/.config/yabai/focus.sh && yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
+# fn - k : ~/.config/yabai/focus.sh && yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
+# fn - h : ~/.config/yabai/focus.sh && yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east 
+# fn - l : ~/.config/yabai/focus.sh && yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
 
 # swap windows
 fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh && ~/.config/yabai/focus.sh
