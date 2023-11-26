@@ -14,8 +14,11 @@ fn - 0x32 : yabai --restart-service
 fn - w : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
 
 ## destroy desktop
-fn - d : yabai -m space --destroy && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
+fn - d : yabai -m space --toggle mission-control && sleep 1 && yabai -m space --destroy && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)" && yabai -m space --toggle mission-control
 # fn - d: yabai -m space --destroy && yabai -m space --focus prev
+
+## Create space
+fn - c: yabai -m space --create && yabai -m space --focus next && yabai -m space --toggle mission-control
 
 ## toggle window fullscreen zoom
 # fn - w : yabai -m window --toggle zoom-fullscreen
@@ -28,8 +31,6 @@ fn - t : ~/.config/yabai/float.sh
 fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
-## Create space
-fn - c: yabai -m space --create && yabai -m space --focus next && yabai -m space --toggle mission-control
 
 ## Show mission control
 fn - o : yabai -m space --toggle mission-control
