@@ -39,20 +39,11 @@
                         ]
                     },
                     {
-                        "description": "10 Control + Option to Fn",
+                        "description": "fn to sticky_fn",
                         "manipulators": [
                             {
                                 "from": {
-                                    "any": "key_code",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "left_option",
-                                            "right_option"
-                                        ]
-                                    }
+                                    "key_code": "fn"
                                 },
                                 "to": [
                                     {
@@ -66,17 +57,21 @@
                         ]
                     },
                     {
-                        "description": "fn to sticky_fn",
+                        "description": "10 Control + Option to Fn",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "control",
+                                    "modifiers": {
+                                        "optional": [
+                                            "left_option",
+                                            "right_option"
+                                        ]
+                                    }
                                 },
-                                "to": [
+                                "to_if_alone": [
                                     {
-                                        "sticky_modifier": {
-                                            "fn": "toggle"
-                                        }
+                                        "key_code": "fn"
                                     }
                                 ],
                                 "type": "basic"
