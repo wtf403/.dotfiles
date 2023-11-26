@@ -2,15 +2,14 @@
   "title": "Yabai Ctrl+G",
   "rules": [
     {
-      "description": "Ctrl+G to Sticky Meh with sticky",
+      "description": "Ctrl+Shift to Sticky fn with sticky",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "g",
+            "key_code": "right_control",
             "modifiers": {
-              "mandatory": ["control"],
-              "optional": ["any"]
+              "mandatory": ["left_option"]
             }
           },
           "to": [

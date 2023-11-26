@@ -416,11 +416,16 @@
                         ]
                     },
                     {
-                        "description": "fn to sticky_fn",
+                        "description": "Ctrl+Shift to Sticky fn with sticky",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "right_control",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -434,19 +439,11 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+G to Sticky Meh with sticky",
+                        "description": "fn to sticky_fn",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "g",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "fn"
                                 },
                                 "to": [
                                     {
