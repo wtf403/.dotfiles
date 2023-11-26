@@ -31,7 +31,7 @@ plugins=(
   colored-man-pages
   npm
   undollar
-
+  tmux
 )
 source $ZSH/oh-my-zsh.sh
 
