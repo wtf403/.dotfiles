@@ -39,38 +39,20 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+Option+Key to Fn+Key",
+                        "description": "10 Control + Option to Fn",
                         "manipulators": [
                             {
                                 "from": {
+                                    "key_code": "right_control",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_control",
                                             "left_option"
                                         ]
                                     }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "fn",
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_control",
-                                            "right_option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "fn",
-                                        "repeat": true
+                                        "key_code": "fn"
                                     }
                                 ],
                                 "type": "basic"
