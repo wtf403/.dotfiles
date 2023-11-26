@@ -25,6 +25,7 @@
                 "^com\\.googlecode\\.iterm2$",
                 "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCodeInsiders$",
                 "^com\\.microsoft\\.VSCode$"
               ]
             }
@@ -52,6 +53,7 @@
                 "^com\\.googlecode\\.iterm2$",
                 "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCodeInsiders$",
                 "^com\\.microsoft\\.VSCode$"
               ]
             }
@@ -87,6 +89,7 @@
                 "^com\\.googlecode\\.iterm2$",
                 "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCodeInsiders$",
                 "^com\\.microsoft\\.VSCode$",
                 "^org\\.yanex\\.marta$"
               ]
@@ -118,9 +121,9 @@
                 "^com\\.googlecode\\.iterm2$",
                 "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCodeInsiders$",
                 "^com\\.microsoft\\.VSCode$",
                 "^org\\.yanex\\.marta$"
-
               ]
             }
           ],
