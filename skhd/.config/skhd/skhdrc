@@ -1,84 +1,86 @@
 #shellcheck disable=all
 
-## General
+### General
 cmd - h [
 "safari" : skhd -k ""
 ]
 
-## Yabai
+### Yabai
 
-# restart
+## restart
 fn - 0x32 : yabai --restart-service
 
-# close
-fn + shift - x : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
+## close window
+fn - w : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
 
-# rotate tree 90deg clockwise
-fn - r : yabai -m space --rotate 90
-
-# rotate tree 90deg counter-clockwise
-fn + shift - r : yabai -m space --rotate 270
-
-# mirror horizontally
-fn - x : yabai -m space --mirror x-axis
-
-# mirror vertically
-fn - y : yabai -m space --mirror y-axis
-
-# toggle window split type
-fn - e : yabai -m window --toggle split
-
-# destroy desktop
+## destroy desktop
 fn - d : yabai -m space --destroy && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
-#
-# Destroy space
-fn - d: yabai -m space --destroy && yabai -m space --focus prev
+# fn - d: yabai -m space --destroy && yabai -m space --focus prev
 
-# toggle window fullscreen zoom
+## toggle window fullscreen zoom
 # fn - w : yabai -m window --toggle zoom-fullscreen
-fn - w : yabai -m window --toggle native-fullscreen
+fn - u : yabai -m window --toggle native-fullscreen
 
-# next/prev stack window
+## floating window at center of the screen
+fn - t : ~/.config/yabai/float.sh
+
+## next/prev stack window
 fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
-# Create space
-fn - c: yabai -m space --create && yabai -m space --focus next
+## Create space
+fn - c: yabai -m space --create && yabai -m space --focus next && yabai -m space --toggle mission-control
 
-# Spaces 
+## Show mission control
 fn - o : yabai -m space --toggle mission-control
 
+## Show desktop
 fn - i : yabai -m space --toggle show-desktop
 
 # Move between spaces
 fn - l : yabai -m space --focus next || yabai -m space --focus first
-
 fn - h : yabai -m space --focus prev || yabai -m space --focus last 
 
+# Move spaces forward/backwards
+fn - j : yabai -m space --move next || yabai -m space --move first
+fn - k : yabai -m space --move prev || yabai -m space --move last 
 
 # Move window to next/prev space
+fn - f : yabai -m space --swap next || yabai -m space --swap first
+fn - b : yabai -m space --swap prev || yabai -m space --swap last 
 
-fn - j : yabai -m space --swap next || yabai -m space --swap first
 
-fn - k : yabai -m space --swap prev || yabai -m space --swap last 
-
-# floating window at center of the screen
-fn - t : ~/.config/yabai/float.sh
-
-# windows movements
+### Two displays 
+## windows movements
 # fn + shift - j : ~/.config/yabai/focus.sh && yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
 # fn + shift - k : ~/.config/yabai/focus.sh && yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
 # fn + shift - h : ~/.config/yabai/focus.sh && yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east 
 # fn + shift - l : ~/.config/yabai/focus.sh && yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
 
-# swap windows
+## swap windows
 # fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh && ~/.config/yabai/focus.sh
 # fn + shift - k : ~/.config/yabai/moveUpAndFollowFocus.sh && ~/.config/yabai/focus.sh
 # fn + shift - h : ~/.config/yabai/moveRightAndFollowFocus.sh && ~/.config/yabai/focus.sh
 # fn + shift - l : ~/.config/yabai/moveLeftAndFollowFocus.sh && ~/.config/yabai/focus.sh
 
-# resize windows
-fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
-fn - 0x1E : yabai -m window --resize right:60:0 || yabai -m window --resize left:100:0
-fn + shift - 0x21 : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-60
-fn + shift - 0x1E : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
+## resize windows
+# fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
+# fn - 0x1E : yabai -m window --resize right:60:0 || yabai -m window --resize left:100:0
+# fn + shift - 0x21 : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-60
+# fn + shift - 0x1E : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
+
+## rotate tree 90deg clockwise
+# fn - r : yabai -m space --rotate 90
+
+# # rotate tree 90deg counter-clockwise
+# fn + shift - r : yabai -m space --rotate 270
+
+## mirror horizontally
+# fn - x : yabai -m space --mirror x-axis
+
+## mirror vertically
+# fn - y : yabai -m space --mirror y-axis
+
+## toggle window split type
+# fn - e : yabai -m window --toggle split
+
