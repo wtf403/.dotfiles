@@ -1054,7 +1054,7 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "right_option",
+                                    "key_code": "left_option",
                                     "modifiers": {
                                         "mandatory": [
                                             "right_control"
@@ -1072,10 +1072,9 @@
                             },
                             {
                                 "from": {
-                                    "key_code": "right_control",
+                                    "key_code": "caps_lock",
                                     "modifiers": {
                                         "mandatory": [
-                                            "right_option",
                                             "left_option"
                                         ]
                                     }
@@ -1085,6 +1084,63 @@
                                         "sticky_modifier": {
                                             "fn": "toggle"
                                         }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "fn to sticky_fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock --> Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
                                     }
                                 ],
                                 "type": "basic"

@@ -39,7 +39,7 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_control",
+            "key_code": "caps_lock",
             "modifiers": {
               "mandatory": ["left_option"]
             }
@@ -55,9 +55,9 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_control",
+            "key_code": "caps_lock",
             "modifiers": {
-              "optional": ["any"]
+              "mandatory": ["right_option"]
             }
           },
           "to": [
