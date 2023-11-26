@@ -19,6 +19,17 @@
               "repeat": false
             }
           ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "apple_vendor_keyboard_key_code": "mission_control"
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ]
         }
       ]
     }
