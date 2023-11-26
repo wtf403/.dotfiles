@@ -43,21 +43,11 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "all": "key_code",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_control"
-                                        ],
-                                        "optional": [
-                                            "right_option",
-                                            "left_option"
-                                        ]
-                                    }
+                                    "key_code": "left_command"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "fn",
-                                        "optional": "any"
+                                        "key_code": "fn"
                                     }
                                 ],
                                 "type": "basic"

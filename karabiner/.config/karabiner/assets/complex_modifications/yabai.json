@@ -7,7 +7,11 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "left_control"
+            "key_code": "left_option",
+            "modifiers": {
+              "mandatory": ["right_control"],
+              "optional": ["any"]
+            }
           },
           "to": [
             {
