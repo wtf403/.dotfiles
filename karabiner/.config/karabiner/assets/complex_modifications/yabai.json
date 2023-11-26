@@ -7,18 +7,35 @@
         {
           "type": "basic",
           "from": {
+            "any": "key_code",
             "modifiers": {
               "mandatory": ["control"],
               "optional": ["left_option", "right_option"]
             }
           },
-          "parameters": {
-            "basic.to_if_alone_timeout_milliseconds": 250,
-            "basic.to_if_held_down_threshold_milliseconds": 250
-          },
-          "to_if_held_down": [
+          "to": [
             {
-              "key_code": "fn"
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "fn to sticky_fn",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "fn"
+          },
+          "to": [
+            {
+              "sticky_modifier": {
+                "fn": "toggle"
+              }
             }
           ]
         }

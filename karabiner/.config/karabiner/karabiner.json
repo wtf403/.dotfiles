@@ -39,6 +39,51 @@
                         ]
                     },
                     {
+                        "description": "10 Control + Option to Fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "any": "key_code",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "left_option",
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "fn to sticky_fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Ctrl+{n,p} --> Vertial movement",
                         "manipulators": [
                             {
