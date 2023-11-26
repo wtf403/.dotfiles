@@ -1,40 +1,21 @@
 {
-  "title": "Yabai Ctrl+G",
+  "title": "Map Ctrl+Option+Key to Fn+Key",
   "rules": [
     {
-      "description": "Ctrl+Opt to Sticky fn",
+      "description": "Ctrl+Option+Key to Fn+Key",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "any": "key_code",
+            "key_code": "any",
             "modifiers": {
-              "mandatory": ["right_control", "option"]
+              "mandatory": ["right_control", "left_option"]
             }
           },
           "to": [
             {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "fn to sticky_fn",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn"
-          },
-          "to": [
-            {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
+              "key_code": "any",
+              "modifiers": ["fn"]
             }
           ]
         }

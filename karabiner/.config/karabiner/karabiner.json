@@ -39,17 +39,24 @@
                         ]
                     },
                     {
-                        "description": "fn to sticky_fn",
+                        "description": "Ctrl+Option+Key to Fn+Key",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "fn"
+                                    "key_code": "any",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control",
+                                            "left_option"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "sticky_modifier": {
-                                            "fn": "toggle"
-                                        }
+                                        "key_code": "any",
+                                        "modifiers": [
+                                            "fn"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -741,30 +748,6 @@
                                     },
                                     {
                                         "key_code": "delete_or_backspace"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Ctrl+Opt to Sticky fn",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "any": "key_code",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_control",
-                                            "option"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "sticky_modifier": {
-                                            "fn": "toggle"
-                                        }
                                     }
                                 ],
                                 "type": "basic"
