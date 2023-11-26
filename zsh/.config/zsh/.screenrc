@@ -1,0 +1,2 @@
+# screen -c ~/.config/zsh/.screenrc
+altscreen on
