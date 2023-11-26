@@ -13,7 +13,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 HISTFILESIZE=10000000
 HISTORY_IGNORE="(*[\n]*|exit|ls|bg|fg|history|clear)"
-
+MAILCHECK=0
 
 
 plugins=(
