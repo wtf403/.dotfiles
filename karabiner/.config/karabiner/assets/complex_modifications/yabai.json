@@ -7,14 +7,15 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "right_control",
+            "all": "key_code",
             "modifiers": {
-              "mandatory": ["left_option"]
+              "mandatory": ["right_control"],
+              "optional": ["right_option", "left_option"]
             }
           },
           "to": [
             {
-              "key_code": "fn"
+              "apple_vendor_keyboard_key_code": "keyboard_fn"
             }
           ]
         }
