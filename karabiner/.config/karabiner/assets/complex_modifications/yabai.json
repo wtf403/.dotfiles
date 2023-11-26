@@ -7,18 +7,32 @@
         {
           "type": "basic",
           "from": {
-            "any": "key_code",
+            "key_code": "right_control",
             "modifiers": {
-              "mandatory": ["right_control"],
-              "optional": ["left_option", "right_option"]
+              "mandatory": ["left_option"]
             }
           },
           "to": [
             {
-              "key_code": "fn"
+              "key_code": "fn",
+              "repeat": true
             }
           ]
-        }
+        },
+        {
+          "type": "basic",
+            "key_code": "right_control",
+            "modifiers": {
+              "mandatory": ["right_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn",
+              "repeat": true
+            }
+          ]
+    }}
       ]
     }
   ]
