@@ -96,9 +96,6 @@ complete -F _del del
 
 ### open ###
 
-function open {
-  open -a Marta $1
-}
 
 
 ### brew ###
