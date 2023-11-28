@@ -9,6 +9,9 @@ alias grep="rg"
 alias find="fd"
 alias cat='bat -p --theme=gruvbox-$(defaults read -g AppleInterfaceStyle &> /dev/null && echo dark || echo light)'
 
+alias \?\!="gh copilot explain"
+alias \?\?="gh copilot suggest"
+
 
 alias maxkiselev="cd ~"
 alias downloads="cd ~/Downloads"
