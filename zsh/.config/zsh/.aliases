@@ -38,7 +38,7 @@ sudo () {
 
 alias -s git="git clone"
 alias ip="echo Your ip is; dig +short myip.opendns.com @resolver1.opendns.com;"
-alias chrome='open -a "/Applications/Google Chrome.app" --args --force-renderer-accessibility'
+alias chrome='\open -a "/Applications/Google Chrome.app" --args --force-renderer-accessibility'
 alias chromeDebug='chrome --remote-debugging-port=9222'
 alias rsync="rsync --info=progress2"
 alias crontab="EDITOR=/Users/maxkiselev/.asdf/shims/nvim crontab"
@@ -93,6 +93,12 @@ function _del {
 }
 
 complete -F _del del
+
+### open ###
+
+function open {
+  open -a Marta $1
+}
 
 
 ### brew ###
