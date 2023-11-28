@@ -5,4 +5,6 @@
 # bundle id       UTI                  role
 com.apple.Safari  json
 org.vim.MacVim    public.ruby-script
+#com.vscodium     code
+
 
