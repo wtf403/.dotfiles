@@ -68,7 +68,6 @@ alias rsync="rsync --info=progress2"
 alias crontab="EDITOR=/Users/maxkiselev/.asdf/shims/nvim crontab"
 
 alias git-graph="viddy -t git-graph --color always"
-alias git="/opt/homebrew/bin/git"  
 alias pgcli="export EDITOR=nvim && pgcli"
 
 alias vim="nvim"
