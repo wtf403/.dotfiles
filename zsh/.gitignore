@@ -1,2 +1,3 @@
 .zsh_history
-.zcompdump*
+.zcompdump
+.zcompdump-MaxMac-5.9
