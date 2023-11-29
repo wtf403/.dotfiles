@@ -44,8 +44,6 @@ yabai -m config mouse_action2 move
 
 yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
 yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
-yabai -m signal --add event=window_focused action="terminal-notifier -message <<< \"yabai -m query --spaces --space | jq '.windows' | tr '
-' ' '\""
 
 yabai -m rule --add app="System Settings" manage=off grid=4:4:1:1:1:1
 yabai -m rule --add app="Finder" manage="off" grid="9:16:1:2:8:6"
