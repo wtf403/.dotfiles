@@ -17,7 +17,7 @@ done
 # Get next window index, wrap around to 0 if at end
 echo "$index $first_window"
 echo ${window_array[@]}
-next_index=$(( (index + 1) % ${#window_array[@]} ))
+next_index=$(( (index + ${#window_array[@]} - 1) % ${#window_array[@]} ))
 next_window=${window_array[$next_index]}
 echo $next_window
 
