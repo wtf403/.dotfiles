@@ -18,6 +18,75 @@
                 },
                 "rules": [
                     {
+                        "description": "999 Control + Option to Fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "CapsLock --> Ctrl",
                         "manipulators": [
                             {
@@ -75,46 +144,6 @@
                                 "to": [
                                     {
                                         "key_code": "up_arrow"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "111 Control + Option to Fn",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "right_control",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "repeat": true,
-                                "to": [
-                                    {
-                                        "key_code": "fn"
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_option",
-                                            "right_option"
-                                        ]
-                                    }
-                                },
-                                "repeat": true,
-                                "to": [
-                                    {
-                                        "key_code": "fn"
                                     }
                                 ],
                                 "type": "basic"
@@ -948,18 +977,7 @@
                 "delay_milliseconds_before_open_device": 1000
             },
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "key_code": "fn"
-                    },
-                    "to": [
-                        {
-                            "apple_vendor_top_case_key_code": "keyboard_fn"
-                        }
-                    ]
-                }
-            ],
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": false,

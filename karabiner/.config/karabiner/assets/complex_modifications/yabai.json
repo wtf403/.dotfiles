@@ -1,38 +1,64 @@
 {
-  "title": "111 Control + Option to Fn",
+  "title": "999 Map Control + Option to Fn",
   "rules": [
     {
-      "description": "111 Control + Option to Fn",
+      "description": "999 Control + Option to Fn",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "right_control",
+            "key_code": "left_option",
             "modifiers": {
-              "optional": ["any"]
+              "mandatory": ["right_control"]
             }
           },
           "to": [
             {
               "key_code": "fn"
             }
-          ],
-          "repeat": true
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_option",
+            "modifiers": {
+              "mandatory": ["right_control"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ]
         },
         {
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
             "modifiers": {
-              "mandatory": ["left_option", "right_option"]
+              "mandatory": ["left_option"]
             }
           },
           "to": [
             {
               "key_code": "fn"
             }
-          ],
-          "repeat": true
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "caps_lock",
+            "modifiers": {
+              "mandatory": ["right_option"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fn"
+            }
+          ]
         }
       ]
     }
