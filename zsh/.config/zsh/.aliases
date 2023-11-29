@@ -7,20 +7,23 @@ alias desktop="cd ~/Desktop"
 alias ls="lsd"
 alias grep="rg"
 alias find="fd"
-alias sourcezsh="source ~/.config/zsh/.zshrc"
+alias sourcezsh="source ~/.config/zsh/.aliases; source ~/.config/zsh/.zprofile; source ~/.config/zsh/.zshrc"
 alias cat='bat -p --theme=gruvbox-$(defaults read -g AppleInterfaceStyle &> /dev/null && echo dark || echo light)'
 
-function \?\?() {
+function "??" () {
     if [[ "$1" == *"git"* ]]; then
+        echo "git"
         gh copilot suggest -t git "$@"
     elif [[ "$1" == *"github"* ]]; then
+        echo "gh"
         gh copilot suggest -t gh "$@"
     else
+        echo "shell"
         gh copilot suggest -t shell "$@"
     fi
 }
 
-function \?\!() {
+function "?!" () {
     if [[ "$1" == *"git"* ]]; then
         gh copilot explain -t git "$@"
     elif [[ "$1" == *"github"* ]]; then

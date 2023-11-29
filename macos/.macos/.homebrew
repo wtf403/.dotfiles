@@ -204,6 +204,7 @@ pinentry
 pipenv
 pixman
 pkg-config
+plz-cli
 poetry
 poppler
 popt
