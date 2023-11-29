@@ -34,6 +34,9 @@ fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.las
 ## Show mission control
 fn - o : yabai -m space --toggle mission-control
 
+## Show Expose
+fn - e : yabai -m window --toggle expose
+
 ## Show desktop
 fn - i : yabai -m space --toggle show-desktop
 
