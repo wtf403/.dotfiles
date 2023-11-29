@@ -62,6 +62,8 @@ yabai -m rule --add app="Xnip" manage=off
 yabai -m rule --add app="App Store" manage=off
 yabai -m rule --add app="Stats" manage=off
 yabai -m rule --add app="Color Picker" manage=off
+yabai -m rule --add app="Marta" manage=off
+yabai -m rule --add app="iTerm2" manage=off
 
 # Safari settings
 yabai -m rule --add app="Safari" title="General" manage=off
