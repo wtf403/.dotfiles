@@ -11,8 +11,6 @@ add: auth sufficient pam_tid.so
 ## Shortcuts for Chrome
 [Extension Shortkey](https://chrome.google.com/webstore/detail/shortkeys-custom-keyboard/logpjaacgmcbpdkdchjiaagddngobkck)
 
-![[!/2023-01-21-19-57-19.png]]
-
 Send MacOS key:  
 `osascript -e 'tell application "System Events"' -e 'key code 144' -e ' end tell'`
 
