@@ -1,91 +1,38 @@
 {
-  "title": "10 Map Control + Option to Fn",
+  "title": "111 Control + Option to Fn",
   "rules": [
     {
-      "description": "10 Control + Option to Fn",
+      "description": "111 Control + Option to Fn",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "left_option",
+            "key_code": "right_control",
             "modifiers": {
-              "mandatory": ["right_control"]
+              "optional": ["any"]
             }
           },
           "to": [
             {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
+              "key_code": "fn"
             }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "left_option",
-            "modifiers": {
-              "mandatory": ["right_control"]
-            }
-          },
-          "to": [
-            {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
-            }
-          ]
+          ],
+          "repeat": true
         },
         {
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
             "modifiers": {
-              "mandatory": ["left_option"]
+              "mandatory": ["left_option", "right_option"]
             }
           },
           "to": [
             {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
+              "key_code": "fn"
             }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "caps_lock",
-            "modifiers": {
-              "mandatory": ["right_option"]
-            }
-          },
-          "to": [
-            {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
-            }
-          ]
-        }
-      ]
-    },
-
-    {
-      "description": "fn to sticky_fn",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "fn"
-          },
-          "to": [
-            {
-              "sticky_modifier": {
-                "fn": "toggle"
-              }
-            }
-          ]
+          ],
+          "repeat": true
         }
       ]
     }
