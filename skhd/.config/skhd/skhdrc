@@ -14,8 +14,7 @@ fn - 0x32 : yabai --restart-service
 fn - w : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
 
 ## destroy desktop
-fn - d : yabai -m space --toggle mission-control && sleep 1 && yabai -m space --destroy && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)" && yabai -m space --toggle mission-control
-# fn - d: yabai -m space --destroy && yabai -m space --focus prev
+fn - d: yabai -m space --destroy && yabai -m space --focus prev
 
 ## Create space
 fn - c: yabai -m space --create && yabai -m space --focus next && yabai -m space --toggle mission-control
@@ -43,12 +42,12 @@ fn - l : yabai -m space --focus next || yabai -m space --focus first
 fn - h : yabai -m space --focus prev || yabai -m space --focus last 
 
 # Move spaces forward/backwards
-fn - j : yabai -m space --move next || yabai -m space --move first
-fn - k : yabai -m space --move prev || yabai -m space --move last 
+fn - j : yabai -m space --swap next || yabai -m space --move first
+fn - k : yabai -m space --swap prev || yabai -m space --move last 
 
 # Move window to next/prev space
-fn - f : yabai -m space --swap next || yabai -m space --swap first
-fn - b : yabai -m space --swap prev || yabai -m space --swap last 
+fn - f : yabai -m window --space next || yabai -m window --space first
+fn - b : yabai -m window --space prev || yabai -m window --space last 
 
 
 ### Two displays 
