@@ -1,23 +1,25 @@
-first_window=$(yabai -m query --spaces --space | jq '.["first-window"]')
-windows=$(yabai -m query --spaces --space | jq -r '.windows'  | tr ' ' '\n')
-windows=$(echo "$windows" | tr -d '][')
-window_array=(${windows//,/})
+# Get current first window
+first_window=$(yabai -m query --spaces --space | jq -r '.["first-window"]')
 
-echo "${window_array[@]}"
+# Get array of all windows  
+windows=$(yabai -m query --spaces --space | jq -r '.windows')
+window_array=($(echo $windows | tr ',' '\n' | tr -d ']['))
 
+# Find index of current first window
 index=0
-next_window=""
-
 for window in "${window_array[@]}"; do
-  index=$(($index+1))
-  if [[ "$window" == "$first_window" ]]; then
-    echo "$window ?? $first_window"
-    next_window=${window_array[$index]}
-    break
-  fi
+    if [[ "$window" == "$first_window" ]]; then
+        break
+    fi
+    index=$((index+1))
 done
 
+# Get next window index, wrap around to 0 if at end
+echo "$index $first_window"
+echo ${window_array[@]}
+next_index=$(( (index + 1) % ${#window_array[@]} ))
+next_window=${window_array[$next_index]}
 echo $next_window
 
+# Focus next window 
 yabai -m window --focus $next_window
-
