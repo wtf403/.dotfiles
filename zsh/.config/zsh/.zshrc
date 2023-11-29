@@ -5,7 +5,8 @@ fi
 
 
 # default editor
-EDITOR="/Users/maxkiselev/.local/bin/nvim"
+EDITOR="/Users/maxkiselev/.asdf/shims/nvim"
+
 
 export PATH=/usr/local/bin:$PATH
 export ZSH="$HOME/.oh-my-zsh"

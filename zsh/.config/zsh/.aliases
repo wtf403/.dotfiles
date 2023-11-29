@@ -9,6 +9,7 @@ alias grep="rg"
 alias find="fd"
 alias sourcezsh="source ~/.config/zsh/.aliases; source ~/.config/zsh/.zprofile; source ~/.config/zsh/.zshrc"
 alias cat='bat -p --theme=gruvbox-$(defaults read -g AppleInterfaceStyle &> /dev/null && echo dark || echo light)'
+alias open='open -a Marta'
 
 function "??" () {
     if [[ "$1" == *"git"* ]]; then
