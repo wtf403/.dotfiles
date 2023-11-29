@@ -1,8 +1,8 @@
 {
-  "title": "999 Map Control + Option to Fn",
+  "title": "Yabai Map Control + Option to Fn",
   "rules": [
     {
-      "description": "999 Control + Option to Fn",
+      "description": "Yabai Control + Option to Fn",
       "manipulators": [
         {
           "type": "basic",

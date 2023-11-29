@@ -18,7 +18,96 @@
                 },
                 "rules": [
                     {
-                        "description": "999 Control + Option to Fn",
+                        "description": "Yabai Sticky Control + Option to Fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 500
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 500
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "left_option"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 500
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_option"
+                                        ]
+                                    }
+                                },
+                                "parameters": {
+                                    "basic.to_if_alone_timeout_milliseconds": 500
+                                },
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Yabai Control + Option to Fn",
                         "manipulators": [
                             {
                                 "from": {
@@ -80,6 +169,24 @@
                                 "to": [
                                     {
                                         "key_code": "fn"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "fn to sticky_fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "fn"
+                                },
+                                "to": [
+                                    {
+                                        "sticky_modifier": {
+                                            "fn": "toggle"
+                                        }
                                     }
                                 ],
                                 "type": "basic"
