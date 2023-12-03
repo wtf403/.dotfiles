@@ -76,13 +76,18 @@ yabai -m rule --add app="Safari" title="Websites" manage=off
 yabai -m rule --add app="Safari" title="Extensions" manage=off
 yabai -m rule --add app="Safari" title="Advanced" manage=off
 
+
+# Add signal to trigger when Simulator app launches
 yabai -m signal --add \
   event=application_launched \
-  app="Spotify" \
+  app="Simulator" \
   action="yabai -m space --layout bsp"
 
 # Add signal to trigger when Simulator app terminates 
 yabai -m signal --add \
   event=application_terminated \
-  app="Spotify" \
+  app="Simulator" \
   action="yabai -m space --layout stack"
+
+# Add rule to make Simulator app float
+yabai -m rule --add app="Simulator" manage=off
