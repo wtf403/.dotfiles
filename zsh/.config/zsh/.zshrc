@@ -137,6 +137,7 @@ if [[ "$(defaults read -g AppleInterfaceStyle 2&>/dev/null)" != "Dark" ]]; then
     export MCFLY_LIGHT=TRUE
 fi
 
+tmux source-file ~/.config/tmux/.tmux.conf
 
 # McFly
 bindkey '^R' mcfly-history-widget
