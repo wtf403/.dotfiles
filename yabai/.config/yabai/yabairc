@@ -76,4 +76,4 @@ yabai -m rule --add app="Safari" title="Privacy" manage=off
 yabai -m rule --add app="Safari" title="Websites" manage=off
 yabai -m rule --add app="Safari" title="Extensions" manage=off
 yabai -m rule --add app="Safari" title="Advanced" manage=off
-yabai -m rule --add app="Simulator" manage=off
+#yabai -m rule --add app="Simulator" manage=off
