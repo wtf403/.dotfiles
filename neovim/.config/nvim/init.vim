@@ -23,6 +23,7 @@ set expandtab
 set shiftwidth=2
 
 call plug#begin('~/.vim/plugged')
+Plug 'github/copilot.vim'
 Plug 'kevinhwang91/nvim-ufo'
 Plug 'kevinhwang91/promise-async'
 Plug 'tpope/vim-repeat'

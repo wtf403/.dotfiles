@@ -5,6 +5,7 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 yabai -m signal --add event=dock_did_change_pref action="sudo yabai --load-sa"
 yabai -m config external_bar all:1:0
 yabai -m config split_ratio 0.37
+yabai -m config window_topmost off
 
 function yabai_spaces () {
   displays=$(yabai -m query --displays)
@@ -75,19 +76,4 @@ yabai -m rule --add app="Safari" title="Privacy" manage=off
 yabai -m rule --add app="Safari" title="Websites" manage=off
 yabai -m rule --add app="Safari" title="Extensions" manage=off
 yabai -m rule --add app="Safari" title="Advanced" manage=off
-
-
-# Add signal to trigger when Simulator app launches
-yabai -m signal --add \
-  event=application_launched \
-  app="Simulator" \
-  action="yabai -m space --layout bsp"
-
-# Add signal to trigger when Simulator app terminates 
-yabai -m signal --add \
-  event=application_terminated \
-  app="Simulator" \
-  action="yabai -m space --layout stack"
-
-# Add rule to make Simulator app float
 yabai -m rule --add app="Simulator" manage=off
