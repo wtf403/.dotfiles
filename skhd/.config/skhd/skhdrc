@@ -9,10 +9,10 @@ cmd - h [
 ### Yabai
 
 ## toggle yabai bsp
-fn - y : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout bsp 
+fn - s : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout bsp 
 
 ## toggle yabai stack
-fn + shift - y : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout stack
+fn + shift - s : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout stack
 
 
 ## restart
@@ -81,16 +81,16 @@ fn - b : yabai -m window --space prev || yabai -m window --space last
 # fn + shift - 0x1E : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
 
 ## rotate tree 90deg clockwise
-# fn - r : yabai -m space --rotate 90
+fn - r : yabai -m space --rotate 90
 
 # # rotate tree 90deg counter-clockwise
-# fn + shift - r : yabai -m space --rotate 270
+fn + shift - r : yabai -m space --rotate 270
 
 ## mirror horizontally
-# fn - x : yabai -m space --mirror x-axis
+fn - x : yabai -m space --mirror x-axis
 
 ## mirror vertically
-# fn - y : yabai -m space --mirror y-axis
+fn - y : yabai -m space --mirror y-axis
 
 ## toggle window split type
 # fn - e : yabai -m window --toggle split
