@@ -9,7 +9,7 @@ cmd - h [
 ### Yabai
 
 ## toggle yabai bsp
-fn - y : yabai -m space --toggle split
+fn - y : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --toggle split
 
 ## restart
 fn - 0x32 : yabai --restart-service
