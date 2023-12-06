@@ -6,7 +6,7 @@
 [core]
 	excludesfile = /Users/maxkiselev/.gitignore
   editor = /Users/maxkiselev/.asdf/shims/nvim
-	autocrlf = true
+	autocrlf = input
 [mergetool "nvim"]
   cmd = nvim --merge -- %O %B %A %A
 [merge]
