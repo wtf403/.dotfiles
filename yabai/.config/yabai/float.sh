@@ -8,6 +8,3 @@ if [[ $DISPLAY -eq 2 ]]; then
 elif [[ $DISPLAY -eq 1 ]]; then
   yabai -m window --toggle float --grid 8:12:2:1:8:6
 fi
-
-terminal-notifier -message "$DISPLAY"
-
