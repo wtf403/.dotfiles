@@ -5,7 +5,7 @@ fi
 
 
 # default editor
-# EDITOR="/Users/maxkiselev/.asdf/shims/nvim"
+EDITOR="/Users/maxkiselev/.asdf/shims/nvim"
 
 
 export PATH=/usr/local/bin:$PATH
@@ -18,6 +18,7 @@ MAILCHECK=0
 
 
 plugins=(
+  asdf
   docker
   docker-compose
   kubectl
@@ -156,6 +157,7 @@ precmd() {
 
 bindkey '^M' accept-line
 
+. "$HOME/.asdf/asdf.sh"
 
 export PATH=$PATH:/Users/maxkiselev/.spicetify
 
