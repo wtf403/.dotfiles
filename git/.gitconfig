@@ -20,3 +20,5 @@
 [user]
 	name = wtf403
 	email = wtf403@yandex.ru
+[push]
+	autoSetupRemote = true
