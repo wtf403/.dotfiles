@@ -18,6 +18,7 @@ bash-completion@2
 bat
 bdw-gc
 berkeley-db
+berkeley-db@5
 bison
 black
 blueutil
@@ -124,6 +125,7 @@ libidn2
 libksba
 liblqr
 libmediainfo
+libmicrohttpd
 libmms
 libnghttp2
 libogg
@@ -213,6 +215,7 @@ pipenv
 pixman
 pkg-config
 plz-cli
+pocketbase
 poetry
 poppler
 popt
@@ -225,12 +228,14 @@ pycparser
 pyenv
 pygments
 pyqt@5
+python-attrs
 python-certifi
 python-click
 python-cryptography
 python-dateutil
 python-distlib
 python-filelock
+python-idna
 python-jinja
 python-lxml
 python-markupsafe
