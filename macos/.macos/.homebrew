@@ -53,6 +53,7 @@ edencommon
 elinks
 exiftool
 fb303
+ffmpeg
 ffmpeg@4
 fizz
 flac
@@ -65,6 +66,7 @@ freetype
 frei0r
 fribidi
 fzf
+gcc
 gd
 gettext
 gflags
@@ -87,12 +89,14 @@ highlight
 highway
 htop
 httpstat
+hwloc
 icu4c
 ifstat
 imagemagick
 imath
 imlib2
 iproute2mac
+isl
 jack
 jansson
 jasper
@@ -127,6 +131,7 @@ liblqr
 libmediainfo
 libmicrohttpd
 libmms
+libmpc
 libnghttp2
 libogg
 libomp
@@ -138,6 +143,7 @@ libsamplerate
 libsndfile
 libsodium
 libsoxr
+libssh
 libssh2
 libtasn1
 libtermkey
@@ -179,6 +185,7 @@ minica
 moc
 mods
 mpdecimal
+mpfr
 mpg123
 msgpack
 mtr
@@ -193,14 +200,17 @@ node@16
 npth
 nspr
 nss
+numpy
 nvm
 oniguruma
+openblas
 opencore-amr
 openexr
 openjpeg
 openldap
 openssl@1.1
 openssl@3
+openvino
 opus
 p11-kit
 pam-reattach
@@ -224,6 +234,7 @@ postgresql@15
 prettier
 protobuf
 protobuf@21
+pugixml
 pycparser
 pyenv
 pygments
@@ -278,6 +289,7 @@ stow
 supervisor
 svt-av1
 switchaudio-osx
+tbb
 tcl-tk
 telnet
 terminal-notifier
