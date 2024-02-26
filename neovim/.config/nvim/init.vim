@@ -86,11 +86,8 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 
-if ~exists('g:vscode')
-  Plug 'github/copilot.vim'
-endif
-
 call plug#end()
+
 
 let mapleader = '<space>'
 
