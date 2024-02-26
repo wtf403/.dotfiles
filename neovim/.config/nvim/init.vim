@@ -23,7 +23,6 @@ set expandtab
 set shiftwidth=2
 
 call plug#begin('~/.vim/plugged')
-"Plug 'github/copilot.vim'
 Plug 'kevinhwang91/nvim-ufo'
 Plug 'kevinhwang91/promise-async'
 Plug 'tpope/vim-repeat'
@@ -86,6 +85,11 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
+
+if ~exists('g:vscode')
+  Plug 'github/copilot.vim'
+endif
+
 call plug#end()
 
 let mapleader = '<space>'
@@ -237,6 +241,7 @@ if exists('g:vscode')
   nnoremap <silent> zk <Cmd>call VSCodeNotify('editor.gotoPreviousFold')<CR>
   vnoremap <Space> zf
 endif
+
 
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
