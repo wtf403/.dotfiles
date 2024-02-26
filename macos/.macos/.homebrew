@@ -36,6 +36,7 @@ cliclick
 cmake
 cmatrix
 cocoapods
+code-server
 composer
 coreutils
 cowsay
@@ -51,6 +52,7 @@ dust
 duti
 edencommon
 elinks
+exercism
 exiftool
 fb303
 ffmpeg
@@ -93,6 +95,7 @@ hwloc
 icu4c
 ifstat
 imagemagick
+imap-uw
 imath
 imlib2
 iproute2mac
@@ -197,6 +200,7 @@ neofetch
 nettle
 node
 node@16
+node@18
 npth
 nspr
 nss
