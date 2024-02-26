@@ -120,7 +120,6 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
                                             "^com\\.vscodium\\.VSCodiumInsiders$",
                                             "^com\\.microsoft\\.VSCode$",
                                             "^com\\.microsoft\\.VSCodeInsiders$"
@@ -150,7 +149,6 @@
                                 "conditions": [
                                     {
                                         "bundle_identifiers": [
-                                            "^com\\.googlecode\\.iterm2$",
                                             "^com\\.vscodium\\.VSCodiumInsiders$",
                                             "^com\\.microsoft\\.VSCode$",
                                             "^com\\.microsoft\\.VSCodeInsiders$"
