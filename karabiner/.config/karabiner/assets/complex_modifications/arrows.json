@@ -5,6 +5,17 @@
       "description": "Ctrl+{n,p} --> Vertial movement",
       "manipulators": [
         {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCode$",
+                "^com\\.microsoft\\.VSCodeInsiders$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
           "from": {
             "key_code": "n",
             "modifiers": {
@@ -20,6 +31,18 @@
           "type": "basic"
         },
         {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCode$",
+                "^com\\.microsoft\\.VSCodeInsiders$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+
           "from": {
             "key_code": "p",
             "modifiers": {
@@ -66,6 +89,18 @@
           "type": "basic"
         },
         {
+          "conditions": [
+            {
+              "bundle_identifiers": [
+                "^com\\.googlecode\\.iterm2$",
+                "^com\\.vscodium\\.VSCodiumInsiders$",
+                "^com\\.microsoft\\.VSCode$",
+                "^com\\.microsoft\\.VSCodeInsiders$"
+              ],
+              "type": "frontmost_application_unless"
+            }
+          ],
+
           "from": {
             "key_code": "f",
             "modifiers": {
