@@ -25,3 +25,7 @@ export PATH="$HOME/bin:$PATH"
 #bindkey -r "^M"
 
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
+
