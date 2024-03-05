@@ -239,6 +239,8 @@ postgresql@15
 prettier
 protobuf
 protobuf@21
+protoc-gen-go
+protoc-gen-go-grpc
 pugixml
 pycparser
 pyenv
