@@ -52,7 +52,7 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'arp242/jumpy.vim'
 Plug 'fedepujol/move.nvim'
 " up/down move
-Plug 'vim-scripts/move_until_char_changes.vim'
+"Plug 'vim-scripts/move_until_char_changes.vim'
 
 " color schemas
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox
@@ -212,9 +212,6 @@ vnoremap <Space> zf
 
 if exists('g:vscode')
   " nnoremap <silent> <Space> @=(foldlevel('.')?'za':"\<Space>")<CR> | :call VSCodeNotify('editor.toggleFold')<CR>
-  nnoremap <silent> <C-p> :call <SID>FindNextChange("k")<Enter>
-  nnoremap <silent> <C-n> :call <SID>FindNextChange("j")<Enter>
-
   
   nnoremap <silent> h <Cmd>call VSCodeNotify('cursorLeft')<CR>
   nnoremap <silent> j <Cmd>call VSCodeNotify('cursorDown')<CR>
@@ -249,8 +246,9 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " Visual-mode commands
 vnoremap <silent> <A-j> :MoveBlock(1)<CR>
 vnoremap <silent> <A-k> :MoveBlock(-1)<CR>
-vnoremap <silent> <A-l> :MoveHBlock(1)<CR>
-vnoremap <silent> <A-h> :MoveHBlock(-1)<CR>
+"vnoremap <silent> <A-l> :MoveHBlock(1)<CR>
+"vnoremap <silent> <A-h> :MoveHBlock(-1)<CR>
+"
 
 nnoremap U u
 nnoremap u <Nop>
