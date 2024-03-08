@@ -52,7 +52,7 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'arp242/jumpy.vim'
 Plug 'fedepujol/move.nvim'
 " up/down move
-"Plug 'vim-scripts/move_until_char_changes.vim'
+Plug 'vim-scripts/move_until_char_changes.vim'
 
 " color schemas
 Plug 'morhetz/gruvbox'  " colorscheme gruvbox
@@ -118,7 +118,7 @@ vnoremap y ygv
  
 lua <<EOF
   require("pounce").setup({
-    accept_keys = "qwertyuiopasdfghjklzxcvbnm",
+    accept_keys = "QWERTYUIOPASDFGHJKLZXCVBNM",
     accept_best_key = "<enter>",
     multi_window = true,
     debug = false,
@@ -186,6 +186,11 @@ nmap <C-s> <cmd>Pounce<CR>
 nmap <C-S-s> <cmd>PounceRepeat<CR>
 vmap <C-s> <cmd>Pounce<CR>
 omap <C-S-s> <cmd>PounceRepeat<CR>
+
+highlight PounceMatch gui=bold guifg=#555555 guibg=#dddddd
+highlight PounceGap gui=bold guifg=#555555 guibg=#aaaaaa
+highlight PounceAccept gui=bold guifg=#111111 guibg=#eeeeee
+
 
 
 lua << EOF
