@@ -191,11 +191,6 @@ highlight PounceMatch gui=bold guifg=#555555 guibg=#dddddd
 highlight PounceGap gui=bold guifg=#555555 guibg=#aaaaaa
 highlight PounceAccept gui=bold guifg=#111111 guibg=#eeeeee
 
-nmap <silent> <C-n> :call <SID>FindNextChange("j")<Enter>
-nmap <silent> <C-p> :call <SID>FindNextChange("k")<Enter>
-
-
-
 lua << EOF
   require'lspconfig'.gopls.setup{
      init_options = { usePlaceholders = true }
@@ -254,9 +249,6 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " Visual-mode commands
 vnoremap <silent> <A-j> :MoveBlock(1)<CR>
 vnoremap <silent> <A-k> :MoveBlock(-1)<CR>
-"vnoremap <silent> <A-l> :MoveHBlock(1)<CR>
-"vnoremap <silent> <A-h> :MoveHBlock(-1)<CR>
-"
 
 nnoremap U u
 nnoremap u <Nop>
