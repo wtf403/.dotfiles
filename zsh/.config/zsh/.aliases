@@ -14,13 +14,13 @@ alias open='open -a Marta'
 function "??" () {
     if [[ "$1" == *"git"* ]]; then
         echo "git"
-        gh copilot suggest -t git "$@"
+        /opt/homeberw/bin/gh copilot suggest -t git "$@"
     elif [[ "$1" == *"github"* ]]; then
         echo "gh"
-        gh copilot suggest -t gh "$@"
+        /opt/homeberw/bin/gh copilot suggest -t gh "$@"
     else
         echo "shell"
-        gh copilot suggest -t shell "$@"
+        /opt/homeberw/bin/gh copilot suggest -t shell "$@"
     fi
 }
 
