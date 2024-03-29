@@ -55,19 +55,18 @@
       ]
     },
     {
-      "description": "Ctrl+; / Ctrl+' --> Telegram folder movement",
+      "description": "Ctrl+; / Ctrl+' --> Telegram scroll",
       "manipulators": [
         {
           "from": {
-            "key_code": "semicolon",
+            "key_code": "u",
             "modifiers": {
               "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "up_arrow",
-              "modifiers": ["control", "shift"]
+              "key_code": "PageUp"
             }
           ],
           "conditions": [
@@ -83,15 +82,14 @@
         },
         {
           "from": {
-            "key_code": "quote",
+            "key_code": "d",
             "modifiers": {
               "mandatory": ["control"]
             }
           },
           "to": [
             {
-              "key_code": "down_arrow",
-              "modifiers": ["control", "shift"]
+              "key_code": "PageDown"
             }
           ],
           "conditions": [
