@@ -10,7 +10,9 @@
               "bundle_identifiers": [
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$",
-                "^com\\.microsoft\\.VSCodeInsiders$"
+                "^com\\.microsoft\\.VSCodeInsiders$",
+                "^org\\.telegram\\.desktop$",
+                "^com\\.tdesktop\\.Telegram$"
               ],
               "type": "frontmost_application_unless"
             }
@@ -40,7 +42,9 @@
               "bundle_identifiers": [
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$",
-                "^com\\.microsoft\\.VSCodeInsiders$"
+                "^com\\.microsoft\\.VSCodeInsiders$",
+                "^org\\.telegram\\.desktop$",
+                "^com\\.tdesktop\\.Telegram$"
               ],
               "type": "frontmost_application_unless"
             }

@@ -26,7 +26,9 @@
                 "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCodeInsiders$",
-                "^com\\.microsoft\\.VSCode$"
+                "^com\\.microsoft\\.VSCode$",
+                "^org\\.telegram\\.desktop$",
+                "^com\\.tdesktop\\.Telegram$"
               ]
             }
           ],
@@ -54,7 +56,9 @@
                 "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCodeInsiders$",
-                "^com\\.microsoft\\.VSCode$"
+                "^com\\.microsoft\\.VSCode$",
+                "^org\\.telegram\\.desktop$",
+                "^com\\.tdesktop\\.Telegram$"
               ]
             }
           ],

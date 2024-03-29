@@ -18,43 +18,6 @@
                 },
                 "rules": [
                     {
-                        "description": "ctrl+' --> cmd+shift+]",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^com\\.vscodium\\.VSCodiumInsiders$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.microsoft\\.VSCodeInsiders$",
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
-                                        ],
-                                        "type": "frontmost_application_unless"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "quote",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "close_bracket",
-                                        "modifiers": [
-                                            "command",
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "ctrl+; --> cmd+shift+[",
                         "manipulators": [
                             {
@@ -63,9 +26,7 @@
                                         "bundle_identifiers": [
                                             "^com\\.vscodium\\.VSCodiumInsiders$",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.microsoft\\.VSCodeInsiders$",
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -81,6 +42,41 @@
                                 "to": [
                                     {
                                         "key_code": "open_bracket",
+                                        "modifiers": [
+                                            "command",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "ctrl+' --> cmd+shift+]",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
                                         "modifiers": [
                                             "command",
                                             "shift"
@@ -390,69 +386,6 @@
                         ]
                     },
                     {
-                        "description": "Ctrl+; / Ctrl+' --> Telegram folder movement",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "semicolon",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "up_arrow",
-                                        "modifiers": [
-                                            "control",
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "quote",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "control"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "down_arrow",
-                                        "modifiers": [
-                                            "control",
-                                            "shift"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "LeftShift + RightShift --> CapsLock",
                         "manipulators": [
                             {
@@ -496,6 +429,77 @@
                                 "to_if_alone": [
                                     {
                                         "key_code": "right_shift"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Cmd+Shift+[ / Cmd+Shift+] --> Telegram folder movement",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": [
+                                            "control",
+                                            "shift"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command",
+                                            "shift"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": [
+                                            "control",
+                                            "shift"
+                                        ]
                                     }
                                 ],
                                 "type": "basic"
@@ -726,9 +730,7 @@
                                             "^com\\.vscodium$",
                                             "^com\\.vscodium\\.VSCodiumInsiders$",
                                             "^com\\.microsoft\\.VSCodeInsiders$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
+                                            "^com\\.microsoft\\.VSCode$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -762,9 +764,7 @@
                                             "^com\\.vscodium$",
                                             "^com\\.vscodium\\.VSCodiumInsiders$",
                                             "^com\\.microsoft\\.VSCodeInsiders$",
-                                            "^com\\.microsoft\\.VSCode$",
-                                            "^org\\.telegram\\.desktop$",
-                                            "^com\\.tdesktop\\.Telegram$"
+                                            "^com\\.microsoft\\.VSCode$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
