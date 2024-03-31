@@ -82,12 +82,12 @@ export PATH="$HOME/.local/bin:$PATH"
 
 export PATH="$HOME/.poetry/bin:$PATH"
 export PATH="/Users/maxkiselev/Library/Python/3.9/bin:$PATH"
-export PATH="/Users/maxkiselev/go/bin/:$PATH"
 export PATH=$PATH:~/.spoof-dpi/bin
 
-#export GOROOT=/opt/homebrew/bin/go
-#export GOPATH=$HOME/go
-#export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export GOPATH=$ASDF_DIR/installs/golang/1.22.0/packages
+export GOROOT=$ASDF_DIR/installs/golang/1.22.0/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
 source "$HOME/.cargo/env"
 
 #source /Users/maxkiselev/.config/broot/launcher/bash/br
