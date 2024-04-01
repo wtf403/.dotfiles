@@ -30,6 +30,7 @@ ca-certificates
 cabextract
 cairo
 cdrtools
+certifi
 cffi
 cjson
 cliclick
@@ -41,6 +42,7 @@ composer
 coreutils
 cowsay
 create-dmg
+cryptography
 ctags
 curl
 dav1d
@@ -55,6 +57,7 @@ elinks
 exercism
 exiftool
 fb303
+fbthrift
 ffmpeg
 ffmpeg@4
 fizz
@@ -372,6 +375,7 @@ quicklookase
 rar
 suspicious-package
 swiftbar
+v2rayu
 vlc
 vscodium
 whichspace
