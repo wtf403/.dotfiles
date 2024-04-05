@@ -64,16 +64,5 @@ yabai -m rule --add app="App Store" manage=off
 yabai -m rule --add app="Stats" manage=off
 yabai -m rule --add app="Color Picker" manage=off
 yabai -m rule --add app="Marta" manage=off
-
-# Safari settings
-yabai -m rule --add app="Safari" title="General" manage=off
-yabai -m rule --add app="Safari" title="Tabs" manage=off
-yabai -m rule --add app="Safari" title="AutoFill" manage=off
-yabai -m rule --add app="Safari" title="Passwords" manage=off
-yabai -m rule --add app="Safari" title="Search" manage=off
-yabai -m rule --add app="Safari" title="Security" manage=off
-yabai -m rule --add app="Safari" title="Privacy" manage=off
-yabai -m rule --add app="Safari" title="Websites" manage=off
-yabai -m rule --add app="Safari" title="Extensions" manage=off
-yabai -m rule --add app="Safari" title="Advanced" manage=off
-#yabai -m rule --add app="Simulator" manage=off
+yabai -m rule --add app="V2BOX" manage=off
+yabai -m rule --add app="Simulator" manage=off
