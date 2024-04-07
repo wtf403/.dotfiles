@@ -62,6 +62,7 @@ fn - b : yabai -m window --space prev || yabai -m window --space last
 
 
 ### Two displays 
+
 ## windows movements
 fn - j : ~/.config/yabai/focus.sh && yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
 fn - k : ~/.config/yabai/focus.sh && yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
