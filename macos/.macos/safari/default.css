@@ -1,36 +1,34 @@
-[data-location*="duckduckgo.com"] {
-  [data-testid="mainline"] {
-    max-width: 100ch !important;
-  }
-
-  .site-wrapper:has(#web_content_wrapper) {
-    margin: 0 auto !important;
-    width: min-content !important;
-  }
+[data-location*="duckduckgo.com"] [data-testid="web-vertical"] {
+  width: fit-content !important;
+  margin: 0 auto !important;
 }
 
-[data-location*="youtube.com"] {
-  [title="Shorts"] {
-    display: none !important;
-  }
-
-  body::-webkit-scrollbar {
-    display: none;
-  }
-
-  .ytd-rich-section-renderer:has(#dismissible) {
-    display: none;
-  }
+[data-location*="duckduckgo.com"] #header {
+  margin: 0 auto !important;
+  max-width: 100ch !important;
 }
 
-[data-location*="app.smalltalk2.me"] {
-  #app > div > div > div:nth-child(2) > footer {
-    display: none !important;
-  }
+[data-location*="duckduckgo.com"] #spread {
+  display: none !important;
 }
 
-[data-location*="spotify.com"] {
-  [title="Upgrade to Premium"] {
-    display: none !important;
-  }
+[data-location*="duckduckgo.com"] #links_wrapper {
+  margin: 0 auto !important;
+  width: fit-content !important;
+}
+
+[data-location*="youtube.com"] [title="Shorts"] {
+  display: none !important;
+}
+
+[data-location*="youtube.com"] body::-webkit-scrollbar {
+  display: none;
+}
+
+[data-location*="youtube.com"] .ytd-rich-section-renderer:has(#dismissible) {
+  display: none;
+}
+
+[data-location*="spotify.com"] [title="Upgrade to Premium"] {
+  display: none !important;
 }

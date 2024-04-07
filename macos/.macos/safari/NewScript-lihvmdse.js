@@ -4,3 +4,7 @@
 // @match       *://*/*
 // ==/UserScript==
 document.documentElement.setAttribute("data-location", window.location.href);
+
+if (window.location.href.includes("duckduckgo.com")) {
+  document.getElementById("r1-0").focus();
+}
