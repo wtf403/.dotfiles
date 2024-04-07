@@ -8,6 +8,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
+                "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$",
                 "^com\\.microsoft\\.VSCodeInsiders$",
@@ -40,6 +41,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
+                "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$",
                 "^com\\.microsoft\\.VSCodeInsiders$",
@@ -73,6 +75,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
+                "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$",
                 "^com\\.microsoft\\.VSCodeInsiders$"
@@ -104,6 +107,7 @@
           "conditions": [
             {
               "bundle_identifiers": [
+                "^com\\.vscodium$",
                 "^com\\.vscodium\\.VSCodiumInsiders$",
                 "^com\\.microsoft\\.VSCode$",
                 "^com\\.microsoft\\.VSCodeInsiders$"
