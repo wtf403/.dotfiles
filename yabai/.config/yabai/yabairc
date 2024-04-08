@@ -66,3 +66,4 @@ yabai -m rule --add app="Color Picker" manage=off
 yabai -m rule --add app="Marta" manage=off
 yabai -m rule --add app="V2BOX" manage=off
 yabai -m rule --add app="Simulator" manage=off
+yabai -m rule --add title="Check Point Endpoint Security" manage=off
