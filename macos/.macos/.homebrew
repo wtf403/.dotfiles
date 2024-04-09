@@ -192,6 +192,9 @@ media-info
 minica
 moc
 mods
+mongodb-community
+mongodb-database-tools
+mongosh
 mpdecimal
 mpfr
 mpg123
