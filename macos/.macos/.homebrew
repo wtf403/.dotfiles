@@ -84,6 +84,7 @@ glib
 glog
 gmp
 gnupg
+gnupg@1.4
 gnutls
 goose
 gotop
@@ -233,6 +234,7 @@ pcre2
 pgcli
 php
 pinentry
+pinentry-mac
 pipenv
 pixman
 pkg-config
