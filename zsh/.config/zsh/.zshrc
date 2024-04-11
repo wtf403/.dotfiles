@@ -169,3 +169,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/mysql-client/include"
 
 export PKG_CONFIG_PATH="/opt/homebrew/opt/mysql-client/lib/pkgconfig"
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
