@@ -22,6 +22,9 @@ export XDG_STATE_HOME="${HOME}/.local/state"
 # for user scripts
 export PATH="$HOME/bin:$PATH"
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 #bindkey -r "^M"
 
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
