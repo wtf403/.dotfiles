@@ -80,6 +80,7 @@ ghostscript
 giflib
 git-filter-repo
 git-flow
+git-lfs
 glib
 glog
 gmp
