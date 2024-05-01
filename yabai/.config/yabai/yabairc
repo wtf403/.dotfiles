@@ -9,8 +9,8 @@ yabai -m config window_topmost off
 
 function yabai_spaces () {
   displays=$(yabai -m query --displays)
-  primary_display_spaces=($(echo "$displays" | jq -r '.[0].spaces[]'))
-  secondary_display_spaces=($(echo "$displays" | jq -r '.[1:][] | .spaces[]'))
+  primary_display_spaces=($(echo "$displays" | jq -r '.[1].spaces[]'))
+  secondary_display_spaces=($(echo "$displays" | jq -r '.[0:][] | .spaces[]'))
 
   for space in "${primary_display_spaces[@]}"; do
     yabai -m space $space --layout stack
