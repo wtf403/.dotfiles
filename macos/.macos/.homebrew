@@ -93,6 +93,7 @@ gpgme
 graphite2
 grpcui
 harfbuzz
+haskell-stack
 highlight
 highway
 htop
@@ -367,6 +368,7 @@ fluor
 hammerspoon
 hiddenbar
 ipatool
+keycastr
 launchcontrol
 mac-mouse-fix
 marta
