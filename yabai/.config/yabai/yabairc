@@ -8,19 +8,41 @@ yabai -m config split_ratio 0.37
 yabai -m config window_topmost off
 
 function yabai_spaces () {
-  displays=$(yabai -m query --displays)
-  mac_spaces=($(echo "$displays" | jq '.[] | select(.uuid == "37D8832A-2D66-02CA-B9F7-8F30A301B230") | .spaces'
+  macbook_spaces=($(yabai -m query --displays | jq '.[] | select(.uuid == "37D8832A-2D66-02CA-B9F7-8F30A301B230") | .spaces'
 ))
-  display_spaces=($(echo "$displays" | '.[] | select(.uuid == "F37D72DE-72F8-4D5B-0857-D6964E3302DB") | .spaces'
+  monitor_spaces=($(yabai -m query --displays | '.[] | select(.uuid == "F37D72DE-72F8-4D5B-0857-D6964E3302DB") | .spaces'
 ))
 
-  for space in "${primary_display_spaces[@]}"; do
-    yabai -m space $space --layout stack
-  done
+  display_count=$(yabai -m query --displays | jq 'length')
 
-  for space in "${secondary_display_spaces[@]}"; do
-    yabai -m space $space --layout bsp
-  done
+  # only macbook display
+  if [[ display_count -eq 1]] && [[ $(echo $monitor_spaces | jq 'length') -eq 0 ]] ; then
+    terminal-notifier -message "macbook"
+    for space in "${macbook_spaces[@]}"; do
+      yabai -m space $space --layout stack
+    done
+  fi
+
+  # only monitor display
+  if [[ display_count -eq 1]] && [[ $(echo $macbook_spaces | jq 'length') -eq 0 ]] ; then
+    terminal-notifier -message "display"
+    for space in "${monitor_spaces[@]}"; do
+      yabai -m space $space --layout bsp
+    done
+  fi
+
+  # both macbook and monitor displays
+  if [[ display_count -eq 2]] ; then
+    terminal-notifier -message "macbook & display"
+    for space in "${macbook_spaces[@]}"; do
+      yabai -m space $space --layout stack
+    done
+
+    for space in "${monitor_spaces[@]}"; do
+      yabai -m space $space --layout bsp
+    done
+  fi
+
 }
 
 yabai_spaces
