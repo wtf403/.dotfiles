@@ -9,8 +9,10 @@ yabai -m config window_topmost off
 
 function yabai_spaces () {
   displays=$(yabai -m query --displays)
-  primary_display_spaces=($(echo "$displays" | jq -r '.[1].spaces[]'))
-  secondary_display_spaces=($(echo "$displays" | jq -r '.[0:][] | .spaces[]'))
+  mac_spaces=($(echo "$displays" | jq '.[] | select(.uuid == "37D8832A-2D66-02CA-B9F7-8F30A301B230") | .spaces'
+))
+  display_spaces=($(echo "$displays" | '.[] | select(.uuid == "F37D72DE-72F8-4D5B-0857-D6964E3302DB") | .spaces'
+))
 
   for space in "${primary_display_spaces[@]}"; do
     yabai -m space $space --layout stack
