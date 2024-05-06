@@ -9,7 +9,6 @@ alias grep="rg"
 alias find="fd"
 alias sourcezsh="source ~/.config/zsh/.aliases; source ~/.config/zsh/.zprofile; source ~/.config/zsh/.zshrc"
 alias cat='bat -p --theme=gruvbox-$(defaults read -g AppleInterfaceStyle &> /dev/null && echo dark || echo light)'
-alias open='open -a Marta'
 
 function "??" () {
     if [[ "$1" == *"git"* ]]; then
@@ -127,11 +126,11 @@ function brew {
     if [[ "$1" == "install" && "$2" != '' ]]; then
       shift
       command brew install $@
-      command brew list > ~/.macos/.homebrew
+      command brew list > ~/.config/macos/.homebrew
     elif [[ "$1" == "uninstall" && "$2" != '' ]]; then
       shift
       command brew uninstall $@
-      command brew list > ~/.macos/.homebrew
+      command brew list > ~/.config/macos/.homebrew
     else 
       command brew $@
     fi
