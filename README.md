@@ -42,3 +42,8 @@ VScodium ext marketplace setup
 [damp of commands](https://gist.github.com/skfarhat/4e88ef386c93b9dceb98121d9457edbf)
 [WhichKey extension](https://vspacecode.github.io/docs/whichkey/extra/#conditional-bindings-experimental)
 [Sidebar keybinding](https://stackoverflow.com/questions/59522776/is-there-a-vscode-action-to-close-the-sidebar-if-open-otherwise-do-nothing)
+
+
+## Kanata
+
+(setting up launch deamon)[https://github.com/kmonad/kmonad/issues/105]
