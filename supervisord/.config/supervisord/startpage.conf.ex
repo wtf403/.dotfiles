@@ -1,1 +1,0 @@
-/Users/maxkiselev/work/start-page/startpage.conf
