@@ -18,101 +18,6 @@
                 },
                 "rules": [
                     {
-                        "description": "LeftCtrl to Sticky Hyper with sticky",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_control",
-                                    "modifiers": {
-                                        "mandatory": [],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_shift",
-                                        "lazy": true,
-                                        "modifiers": [
-                                            "left_control",
-                                            "left_option",
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "sticky_modifier": {
-                                            "left_shift": "toggle"
-                                        }
-                                    },
-                                    {
-                                        "sticky_modifier": {
-                                            "left_control": "toggle"
-                                        }
-                                    },
-                                    {
-                                        "sticky_modifier": {
-                                            "left_option": "toggle"
-                                        }
-                                    },
-                                    {
-                                        "sticky_modifier": {
-                                            "left_command": "toggle"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "CapsLock --> Ctrl",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "caps_lock",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_control"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "CapsLock (Ctrl) + [ --> Escape",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "right_control"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "escape"
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Yabai Sticky Control + Option to Fn",
                         "manipulators": [
                             {
@@ -511,6 +416,56 @@
                         ]
                     },
                     {
+                        "description": "LeftCtrl to Sticky Hyper with sticky",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "mandatory": [],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "lazy": true,
+                                        "modifiers": [
+                                            "left_control",
+                                            "left_option",
+                                            "left_command"
+                                        ]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "sticky_modifier": {
+                                            "left_shift": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_control": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_option": "toggle"
+                                        }
+                                    },
+                                    {
+                                        "sticky_modifier": {
+                                            "left_command": "toggle"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Option-F1 --> Decrement Illumination",
                         "manipulators": [
                             {
@@ -590,6 +545,30 @@
                                 "to": [
                                     {
                                         "key_code": "illumination_increment"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock (Ctrl) + [ --> Escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "right_control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "escape"
                                     }
                                 ],
                                 "type": "basic"
@@ -757,6 +736,27 @@
                         ]
                     },
                     {
+                        "description": "CapsLock --> Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_control"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "LeftShift + RightShift --> CapsLock",
                         "manipulators": [
                             {
@@ -863,6 +863,70 @@
                                 "to": [
                                     {
                                         "key_code": "up_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+{f,b} --> Horizontal movement",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow"
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "control"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow"
                                     }
                                 ],
                                 "type": "basic"
