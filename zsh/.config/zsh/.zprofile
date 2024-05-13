@@ -29,3 +29,6 @@ export PATH="$HOME/bin:$PATH"
 bindkey '^P' history-beginning-search-backward
 bindkey '^N' history-beginning-search-forward
 
+
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
