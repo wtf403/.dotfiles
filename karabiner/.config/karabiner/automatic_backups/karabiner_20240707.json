@@ -639,7 +639,7 @@
             ],
             "name": "main",
             "parameters": { "delay_milliseconds_before_open_device": 1000 },
-            "selected": false,
+            "selected": true,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
@@ -741,10 +741,32 @@
                 },
                 "rules": []
             },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 641,
+                        "vendor_id": 1452
+                    },
+                    "ignore": true
+                },
+                {
+                    "identifiers": {
+                        "is_game_pad": false,
+                        "is_keyboard": true,
+                        "is_pointing_device": false,
+                        "product_id": 666,
+                        "vendor_id": 76
+                    },
+                    "ignore": true
+                }
+            ],
             "fn_function_keys": [],
             "name": "clean",
             "parameters": { "delay_milliseconds_before_open_device": 1000 },
-            "selected": true,
+            "selected": false,
             "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "country_code": 0,
