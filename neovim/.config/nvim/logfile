@@ -15,3 +15,7 @@
 }
 2024-07-13T00:39:13.307Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
 2024-07-13T00:39:13.308Z CursorManager: No editor for gridId: 2
+2024-07-13T17:15:21.783Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-07-13T17:15:21.785Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-07-13T17:15:22.008Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-07-13T17:15:22.009Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
