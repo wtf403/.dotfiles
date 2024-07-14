@@ -1,21 +1,17 @@
-2024-07-14T01:17:24.013Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-07-14T01:17:27.195Z MainController: Nvim info: {
+2024-07-14T23:13:24.295Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-07-14T23:13:26.327Z MainController: Nvim info: {
+  configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
-    api_level: 12,
-    api_prerelease: true,
-    build: 'e6d38c7',
-    prerelease: true,
-    major: 0,
     minor: 10,
+    major: 0,
+    api_prerelease: true,
     patch: 0,
-    api_compatible: 0
+    api_compatible: 0,
+    prerelease: true,
+    api_level: 12,
+    build: 'e6d38c7'
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log',
-  configDir: '/Users/maxkiselev/.config/nvim'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log'
 }
-2024-07-14T01:17:27.237Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
-2024-07-14T01:17:27.243Z CursorManager: No editor for gridId: 2
-2024-07-14T16:45:57.617Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-07-14T16:45:57.619Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-07-14T16:45:57.838Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-07-14T16:45:57.839Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-07-14T23:13:26.455Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
+2024-07-14T23:13:26.457Z CursorManager: No editor for gridId: 2
