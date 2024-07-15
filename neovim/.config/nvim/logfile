@@ -317,3 +317,19 @@
 2024-07-15T08:26:08.433Z CursorManager: No editor for gridId: 246
 2024-07-15T08:28:14.592Z CursorManager: No editor for gridId: 247
 2024-07-15T08:29:36.910Z MessagesManager: 53 lines yanked
+2024-07-15T08:32:16.723Z CursorManager: No editor for gridId: 2
+2024-07-15T08:32:17.857Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/.dotfiles/vscodium/.vscode-oss/extensions/ms-vscode.vscode-typescript-next-5.6.20240712/node_modules/typescript/lib/lib.dom.d.ts, skipping
+2024-07-15T08:32:17.858Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/.dotfiles/vscodium/.vscode-oss/extensions/ms-vscode.vscode-typescript-next-5.6.20240712/node_modules/typescript/lib/lib.dom.d.ts, skipping
+2024-07-15T08:32:20.180Z CursorManager: No editor for gridId: 2
+2024-07-15T08:32:20.192Z CursorManager: No editor for gridId: 249
+2024-07-15T08:32:28.476Z CursorManager: No editor for gridId: 2
+2024-07-15T08:32:31.568Z CursorManager: No editor for gridId: 2
+2024-07-15T08:33:15.359Z CursorManager: No editor for gridId: 2
+2024-07-15T08:33:25.386Z CursorManager: No editor for gridId: 2
+2024-07-15T08:33:25.390Z CursorManager: No editor for gridId: 253
+2024-07-15T08:33:26.352Z CursorManager: No editor for gridId: 2
+2024-07-15T08:33:26.353Z CursorManager: No editor for gridId: 254
+2024-07-15T08:33:27.257Z CursorManager: No editor for gridId: 2
+2024-07-15T08:33:27.270Z CursorManager: No editor for gridId: 255
+2024-07-15T08:33:59.842Z CursorManager: No editor for gridId: 2
+2024-07-15T08:35:12.487Z CursorManager: No editor for gridId: 2
