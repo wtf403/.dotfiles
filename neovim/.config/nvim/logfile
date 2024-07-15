@@ -1,17 +1,17 @@
-2024-07-14T23:13:24.295Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-07-14T23:13:26.327Z MainController: Nvim info: {
-  configDir: '/Users/maxkiselev/.config/nvim',
+2024-07-14T23:51:44.210Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-07-14T23:51:46.584Z MainController: Nvim info: {
   nvimVersion: {
-    minor: 10,
-    major: 0,
-    api_prerelease: true,
     patch: 0,
-    api_compatible: 0,
-    prerelease: true,
     api_level: 12,
-    build: 'e6d38c7'
+    prerelease: true,
+    api_compatible: 0,
+    build: 'e6d38c7',
+    api_prerelease: true,
+    major: 0,
+    minor: 10
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
+  configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-07-14T23:13:26.455Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
-2024-07-14T23:13:26.457Z CursorManager: No editor for gridId: 2
+2024-07-14T23:51:46.599Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
+2024-07-14T23:51:46.601Z CursorManager: No editor for gridId: 2
