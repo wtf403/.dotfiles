@@ -15,7 +15,7 @@
 }
 2024-07-18T06:47:41.556Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
 2024-07-18T06:47:41.559Z CursorManager: No editor for gridId: 2
-2024-07-18T06:50:55.589Z CursorManager: No editor for gridId: 2
+2024-07-18T14:11:50.662Z CursorManager: No editor for gridId: 2
 2024-07-18T07:00:30.260Z CursorManager: No editor for gridId: 7
 2024-07-18T07:00:31.408Z CursorManager: No editor for gridId: 8
 2024-07-18T07:01:13.038Z CursorManager: No editor for gridId: 2
@@ -698,3 +698,4 @@
 2024-07-18T13:15:51.019Z CursorManager: No editor for gridId: 460
 2024-07-18T13:50:49.798Z CursorManager: No editor for gridId: 2
 2024-07-18T13:50:49.807Z CursorManager: No editor for gridId: 461
+2024-07-18T14:12:03.653Z MessagesManager: 3 fewer lines
