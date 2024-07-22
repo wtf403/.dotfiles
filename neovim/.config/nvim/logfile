@@ -1,16 +1,17 @@
-2024-07-22T06:22:31.679Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-07-22T06:22:32.231Z MainController: Nvim info: {
+2024-07-22T06:57:37.406Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-07-22T06:57:39.699Z MainController: Nvim info: {
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
-    api_compatible: 0,
+    build: 'e6d38c7',
+    prerelease: true,
     major: 0,
     minor: 10,
     patch: 0,
-    api_prerelease: true,
-    prerelease: true,
+    api_compatible: 0,
     api_level: 12,
-    build: 'e6d38c7'
+    api_prerelease: true
   }
 }
-2024-07-22T06:22:32.528Z CursorManager: No editor for gridId: 2
+2024-07-22T06:57:40.334Z CursorManager: No editor for gridId: 2
+2024-07-22T06:57:42.205Z MessagesManager: E99: Current buffer is not in diff mode
