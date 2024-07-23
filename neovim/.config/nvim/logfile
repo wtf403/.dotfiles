@@ -146,3 +146,17 @@
 2024-07-23T07:22:15.240Z CursorManager: No editor for gridId: 115
 2024-07-23T07:23:39.793Z MessagesManager: 232 lines yanked
 2024-07-23T07:26:57.633Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/taf/src/shared/containers/team-filters/elems/search/search.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftaf%2Fsrc%2Fshared%2Fcontainers%2Fteam-filters%2Felems%2Fsearch%2Fsearch.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T07:53:37.715Z CursorManager: No editor for gridId: 2
+2024-07-23T07:53:52.739Z CursorManager: No editor for gridId: 116
+2024-07-23T07:53:52.740Z CursorManager: No editor for gridId: 2
+2024-07-23T07:54:29.846Z CursorManager: No editor for gridId: 2
+2024-07-23T07:54:29.853Z CursorManager: No editor for gridId: 118
+2024-07-23T07:54:49.447Z CursorManager: No editor for gridId: 119
+2024-07-23T07:55:09.311Z CursorManager: No editor for gridId: 120
+2024-07-23T07:57:31.501Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/tam/src/modules/sap/sap.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftam%2Fsrc%2Fmodules%2Fsap%2Fsap.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T07:58:02.638Z CursorManager: No editor for gridId: 118
+2024-07-23T07:58:02.638Z CursorManager: No editor for gridId: 2
+2024-07-23T07:58:02.656Z CursorManager: No editor for gridId: 121
+2024-07-23T07:59:20.106Z CursorManager: No editor for gridId: 2
+2024-07-23T07:59:47.889Z CursorManager: No editor for gridId: 2
+2024-07-23T07:59:48.882Z CursorManager: No editor for gridId: 2
