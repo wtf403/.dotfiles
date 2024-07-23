@@ -160,3 +160,41 @@
 2024-07-23T07:59:20.106Z CursorManager: No editor for gridId: 2
 2024-07-23T07:59:47.889Z CursorManager: No editor for gridId: 2
 2024-07-23T07:59:48.882Z CursorManager: No editor for gridId: 2
+2024-07-23T08:00:21.440Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/taf/src/shared/containers/team-table/elems/row/row.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftaf%2Fsrc%2Fshared%2Fcontainers%2Fteam-table%2Felems%2Frow%2Frow.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T08:00:30.502Z CursorManager: No editor for gridId: 2
+2024-07-23T08:00:30.517Z CursorManager: No editor for gridId: 125
+2024-07-23T08:00:38.929Z CursorManager: No editor for gridId: 126
+2024-07-23T08:00:49.235Z CursorManager: No editor for gridId: 2
+2024-07-23T08:00:49.251Z CursorManager: No editor for gridId: 127
+2024-07-23T08:01:09.320Z CursorManager: No editor for gridId: 128
+2024-07-23T08:01:15.604Z CursorManager: No editor for gridId: 129
+2024-07-23T08:01:16.895Z CursorManager: No editor for gridId: 130
+2024-07-23T08:01:35.217Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/taf/src/shared/containers/team-table/elems/row/row.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftaf%2Fsrc%2Fshared%2Fcontainers%2Fteam-table%2Felems%2Frow%2Frow.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T08:01:42.980Z CursorManager: No editor for gridId: 131
+2024-07-23T08:02:24.205Z CursorManager: No editor for gridId: 132
+2024-07-23T08:02:27.111Z CursorManager: No editor for gridId: 133
+2024-07-23T08:03:16.544Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/taf/src/shared/containers/team-table/elems/row/row.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftaf%2Fsrc%2Fshared%2Fcontainers%2Fteam-table%2Felems%2Frow%2Frow.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T08:03:21.285Z CursorManager: No editor for gridId: 2
+2024-07-23T08:03:21.290Z CursorManager: No editor for gridId: 134
+2024-07-23T08:03:22.226Z CursorManager: No editor for gridId: 2
+2024-07-23T08:03:22.241Z CursorManager: No editor for gridId: 135
+2024-07-23T08:03:34.865Z CursorManager: No editor for gridId: 136
+2024-07-23T08:04:08.485Z CursorManager: No editor for gridId: 2
+2024-07-23T08:05:11.058Z CursorManager: No editor for gridId: 138
+2024-07-23T08:06:35.226Z CursorManager: No editor for gridId: 2
+2024-07-23T08:06:35.249Z CursorManager: No editor for gridId: 139
+2024-07-23T08:06:35.405Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/taf/src/shared/containers/team-table/helpers/use-pagination.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftaf%2Fsrc%2Fshared%2Fcontainers%2Fteam-table%2Fhelpers%2Fuse-pagination.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T08:06:36.099Z CursorManager: No editor for gridId: 2
+2024-07-23T08:06:36.107Z CursorManager: No editor for gridId: 140
+2024-07-23T08:06:37.349Z CursorManager: No editor for gridId: 2
+2024-07-23T08:06:37.362Z CursorManager: No editor for gridId: 141
+2024-07-23T08:06:47.987Z CursorManager: No editor for gridId: 2
+2024-07-23T08:06:48.691Z CursorManager: No editor for gridId: 2
+2024-07-23T08:07:10.801Z CursorManager: No editor for gridId: 144
+2024-07-23T08:07:39.208Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/taf/src/shared/containers/team-table/elems/row/row.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2Ftaf%2Fsrc%2Fshared%2Fcontainers%2Fteam-table%2Felems%2Frow%2Frow.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-23T08:07:41.270Z CursorManager: No editor for gridId: 2
+2024-07-23T08:07:41.275Z CursorManager: No editor for gridId: 145
+2024-07-23T08:07:42.128Z CursorManager: No editor for gridId: 2
+2024-07-23T08:07:42.139Z CursorManager: No editor for gridId: 146
+2024-07-23T08:07:47.459Z CursorManager: No editor for gridId: 2
+2024-07-23T08:07:47.472Z CursorManager: No editor for gridId: 147
