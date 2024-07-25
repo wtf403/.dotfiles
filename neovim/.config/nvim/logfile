@@ -31,3 +31,9 @@
 2024-07-25T09:05:44.462Z CursorManager: No editor for gridId: 14
 2024-07-25T09:11:12.706Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-middle/src/modules/sap/sap.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-middle%2Fsrc%2Fmodules%2Fsap%2Fsap.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
 2024-07-25T09:23:08.422Z CursorManager: No editor for gridId: 15
+2024-07-25T09:32:15.226Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-middle/src/modules/sap/sap.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-middle%2Fsrc%2Fmodules%2Fsap%2Fsap.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-25T09:44:10.612Z CursorManager: No editor for gridId: 16
+2024-07-25T09:44:12.003Z CursorManager: No editor for gridId: 17
+2024-07-25T09:44:23.182Z CursorManager: No editor for gridId: 18
+2024-07-25T09:44:29.707Z CursorManager: No editor for gridId: 19
+2024-07-25T09:44:33.491Z CursorManager: No editor for gridId: 20
