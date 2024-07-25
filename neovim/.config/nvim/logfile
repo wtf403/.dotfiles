@@ -18,3 +18,16 @@
 2024-07-25T08:57:53.423Z CursorManager: No editor for gridId: 2
 2024-07-25T08:59:32.736Z CursorManager: No editor for gridId: 2
 2024-07-25T08:59:49.389Z CursorManager: No editor for gridId: 2
+2024-07-25T09:00:24.527Z CursorManager: No editor for gridId: 2
+2024-07-25T09:00:35.900Z CursorManager: No editor for gridId: 9
+2024-07-25T09:00:35.901Z CursorManager: No editor for gridId: 2
+2024-07-25T09:00:35.907Z CursorManager: No editor for gridId: 10
+2024-07-25T09:01:03.409Z MessagesManager: 11 lines yanked
+2024-07-25T09:01:07.695Z MessagesManager: 11 lines yanked
+2024-07-25T09:01:13.940Z MessagesManager: 11 lines yanked
+2024-07-25T09:01:26.966Z CursorManager: No editor for gridId: 11
+2024-07-25T09:01:28.420Z CursorManager: No editor for gridId: 12
+2024-07-25T09:05:43.376Z CursorManager: No editor for gridId: 13
+2024-07-25T09:05:44.462Z CursorManager: No editor for gridId: 14
+2024-07-25T09:11:12.706Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-middle/src/modules/sap/sap.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-middle%2Fsrc%2Fmodules%2Fsap%2Fsap.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-25T09:23:08.422Z CursorManager: No editor for gridId: 15
