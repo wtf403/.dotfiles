@@ -1,87 +1,31 @@
-2024-07-25T17:36:56.485Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-07-25T17:36:56.888Z MainController: Nvim info: {
-  nvimVersion: {
-    prerelease: true,
-    minor: 10,
-    build: 'e6d38c7',
-    api_compatible: 0,
-    major: 0,
-    api_prerelease: true,
-    patch: 0,
-    api_level: 12
-  },
+2024-07-26T06:53:26.142Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-07-26T06:53:26.433Z MainController: Nvim info: {
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
-  configDir: '/Users/maxkiselev/.config/nvim'
+  configDir: '/Users/maxkiselev/.config/nvim',
+  nvimVersion: {
+    major: 0,
+    minor: 10,
+    api_level: 12,
+    api_prerelease: true,
+    api_compatible: 0,
+    prerelease: true,
+    build: 'e6d38c7',
+    patch: 0
+  }
 }
-2024-07-25T17:36:56.901Z CursorManager: No editor for gridId: 2
-2024-07-25T17:37:06.904Z CursorManager: No editor for gridId: 2
-2024-07-25T17:37:10.992Z CursorManager: No editor for gridId: 2
-2024-07-25T17:38:53.884Z CursorManager: No editor for gridId: 2
-2024-07-25T17:38:57.601Z CursorManager: No editor for gridId: 47
-2024-07-25T17:40:04.284Z CursorManager: No editor for gridId: 2
-2024-07-26T05:54:43.630Z CursorManager: No editor for gridId: 2
-2024-07-26T05:54:53.483Z CursorManager: No editor for gridId: 117
-2024-07-26T05:54:55.938Z CursorManager: No editor for gridId: 2
-2024-07-26T05:54:57.887Z CursorManager: No editor for gridId: 118
-2024-07-26T05:55:04.036Z CursorManager: No editor for gridId: 119
-2024-07-26T05:55:11.022Z CursorManager: No editor for gridId: 120
-2024-07-26T05:55:18.025Z CursorManager: No editor for gridId: 121
-2024-07-26T05:55:20.660Z CursorManager: No editor for gridId: 2
-2024-07-26T05:55:32.721Z CursorManager: No editor for gridId: 123
-2024-07-26T05:55:39.501Z CursorManager: No editor for gridId: 124
-2024-07-26T05:55:40.731Z CursorManager: No editor for gridId: 2
-2024-07-26T05:55:52.559Z CursorManager: No editor for gridId: 129
-2024-07-26T05:56:01.477Z CursorManager: No editor for gridId: 2
-2024-07-26T05:56:09.026Z CursorManager: No editor for gridId: 134
-2024-07-26T05:56:15.354Z CursorManager: No editor for gridId: 135
-2024-07-26T05:56:21.574Z CursorManager: No editor for gridId: 136
-2024-07-26T05:56:22.916Z CursorManager: No editor for gridId: 2
-2024-07-26T05:56:38.633Z CursorManager: No editor for gridId: 140
-2024-07-26T05:56:41.726Z CursorManager: No editor for gridId: 2
-2024-07-26T05:56:52.540Z CursorManager: No editor for gridId: 141
-2024-07-26T05:56:54.097Z CursorManager: No editor for gridId: 2
-2024-07-26T05:57:04.419Z CursorManager: No editor for gridId: 143
-2024-07-26T05:57:06.808Z CursorManager: No editor for gridId: 144
-2024-07-26T05:57:12.855Z CursorManager: No editor for gridId: 2
-2024-07-26T05:57:19.390Z CursorManager: No editor for gridId: 146
-2024-07-26T05:57:22.002Z CursorManager: No editor for gridId: 147
-2024-07-26T05:57:25.139Z CursorManager: No editor for gridId: 148
-2024-07-26T05:57:29.417Z CursorManager: No editor for gridId: 2
-2024-07-26T05:57:30.318Z CursorManager: No editor for gridId: 150
-2024-07-26T05:57:37.259Z CursorManager: No editor for gridId: 152
-2024-07-26T05:57:39.116Z CursorManager: No editor for gridId: 153
-2024-07-26T05:57:41.493Z CursorManager: No editor for gridId: 154
-2024-07-26T05:57:53.880Z CursorManager: No editor for gridId: 155
-2024-07-26T05:57:56.739Z CursorManager: No editor for gridId: 2
-2024-07-26T05:58:06.761Z CursorManager: No editor for gridId: 156
-2024-07-26T05:58:08.444Z CursorManager: No editor for gridId: 2
-2024-07-26T05:58:11.650Z CursorManager: No editor for gridId: 2
-2024-07-26T05:58:14.397Z CursorManager: No editor for gridId: 158
-2024-07-26T05:58:19.409Z CursorManager: No editor for gridId: 2
-2024-07-26T05:58:24.663Z CursorManager: No editor for gridId: 160
-2024-07-26T05:58:29.453Z CursorManager: No editor for gridId: 161
-2024-07-26T05:58:31.237Z CursorManager: No editor for gridId: 2
-2024-07-26T05:58:53.898Z CursorManager: No editor for gridId: 2
-2024-07-26T05:59:13.693Z CursorManager: No editor for gridId: 168
-2024-07-26T05:59:19.407Z CursorManager: No editor for gridId: 169
-2024-07-26T05:59:22.871Z CursorManager: No editor for gridId: 170
-2024-07-26T05:59:26.276Z CursorManager: No editor for gridId: 171
-2024-07-26T05:59:27.813Z CursorManager: No editor for gridId: 2
-2024-07-26T05:59:39.479Z CursorManager: No editor for gridId: 180
-2024-07-26T05:59:42.113Z CursorManager: No editor for gridId: 2
-2024-07-26T06:00:05.217Z CursorManager: No editor for gridId: 190
-2024-07-26T06:00:05.747Z CursorManager: No editor for gridId: 2
-2024-07-26T06:00:16.372Z CursorManager: No editor for gridId: 194
-2024-07-26T06:00:17.079Z CursorManager: No editor for gridId: 195
-2024-07-26T06:00:20.761Z CursorManager: No editor for gridId: 2
-2024-07-26T06:02:57.264Z CursorManager: No editor for gridId: 2
-2024-07-26T06:02:59.498Z CursorManager: No editor for gridId: 2
-2024-07-26T06:04:44.964Z CursorManager: No editor for gridId: 2
-2024-07-26T06:04:49.400Z CursorManager: No editor for gridId: 2
-2024-07-26T06:04:53.626Z CursorManager: No editor for gridId: 2
-2024-07-26T06:05:16.464Z CursorManager: No editor for gridId: 2
-2024-07-26T06:15:13.274Z CursorManager: No editor for gridId: 2
-2024-07-26T06:15:44.461Z CursorManager: No editor for gridId: 364
-2024-07-26T06:15:57.875Z CursorManager: No editor for gridId: 2
-2024-07-26T06:15:58.539Z CursorManager: No editor for gridId: 377
-2024-07-26T06:16:10.934Z CursorManager: No editor for gridId: 2
+2024-07-26T06:53:26.443Z MessagesManager: [coc.nvim] "node" is not executable, checkout https://nodejs.org/en/download/
+2024-07-26T06:53:26.444Z CursorManager: No editor for gridId: 2
+2024-07-26T06:53:36.889Z CursorManager: No editor for gridId: 2
+2024-07-26T06:54:29.611Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info/desktop/constants/sizes.module.css.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-components-lib-front%2Fsrc%2Fcomponents%2Finfo%2Fdesktop%2Fconstants%2Fsizes.module.css%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-07-26T06:54:30.070Z CursorManager: No editor for gridId: 2
+2024-07-26T06:54:37.930Z CursorManager: No editor for gridId: 2
+2024-07-26T06:54:47.988Z CursorManager: No editor for gridId: 2
+2024-07-26T06:55:09.252Z CursorManager: No editor for gridId: 10
+2024-07-26T06:55:12.505Z CursorManager: No editor for gridId: 11
+2024-07-26T06:55:18.492Z CursorManager: No editor for gridId: 12
+2024-07-26T06:55:35.155Z CursorManager: No editor for gridId: 2
+2024-07-26T06:58:49.799Z CursorManager: No editor for gridId: 2
+2024-07-26T06:59:05.829Z CursorManager: No editor for gridId: 2
+2024-07-26T06:59:05.830Z CursorManager: No editor for gridId: 15
+2024-07-26T06:59:16.870Z CursorManager: No editor for gridId: 16
+2024-07-26T06:59:20.840Z CursorManager: No editor for gridId: 17
