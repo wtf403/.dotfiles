@@ -1,16 +1,44 @@
-2024-07-29T06:48:15.951Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-07-29T06:48:16.692Z MainController: Nvim info: {
+2024-07-29T07:10:50.601Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-07-29T07:10:50.934Z MainController: Nvim info: {
   nvimVersion: {
-    build: 'e6d38c7',
-    minor: 10,
-    major: 0,
-    api_level: 12,
+    patch: 0,
     api_prerelease: true,
-    api_compatible: 0,
     prerelease: true,
-    patch: 0
+    api_level: 12,
+    build: 'e6d38c7',
+    api_compatible: 0,
+    major: 0,
+    minor: 10
   },
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-07-29T06:48:16.726Z CursorManager: No editor for gridId: 2
+2024-07-29T07:10:50.948Z CursorManager: No editor for gridId: 2
+2024-07-29T07:13:34.991Z CursorManager: No editor for gridId: 2
+2024-07-29T07:13:39.415Z MessagesManager: 20 lines yanked
+2024-07-29T07:13:50.939Z CursorManager: No editor for gridId: 2
+2024-07-29T07:13:57.462Z CursorManager: No editor for gridId: 2
+2024-07-29T07:14:11.108Z CursorManager: No editor for gridId: 2
+2024-07-29T07:14:16.766Z MessagesManager: 34 lines yanked
+2024-07-29T07:14:24.481Z CursorManager: No editor for gridId: 2
+2024-07-29T07:14:40.098Z CursorManager: No editor for gridId: 11
+2024-07-29T07:14:42.496Z CursorManager: No editor for gridId: 12
+2024-07-29T07:14:56.407Z MessagesManager: 5 fewer lines
+2024-07-29T07:14:59.987Z MessagesManager: 5 fewer lines
+2024-07-29T07:15:01.609Z CursorManager: No editor for gridId: 13
+2024-07-29T07:15:06.095Z CursorManager: No editor for gridId: 14
+2024-07-29T07:15:32.416Z CursorManager: No editor for gridId: 15
+2024-07-29T07:15:36.005Z CursorManager: No editor for gridId: 16
+2024-07-29T07:15:40.379Z MessagesManager: 3 fewer lines
+2024-07-29T07:15:44.734Z MessagesManager: 3 fewer lines
+2024-07-29T07:15:57.141Z CursorManager: No editor for gridId: 2
+2024-07-29T07:16:00.903Z CursorManager: No editor for gridId: 2
+2024-07-29T07:16:00.907Z CursorManager: No editor for gridId: 18
+2024-07-29T07:16:14.236Z CursorManager: No editor for gridId: 19
+2024-07-29T07:16:42.982Z CursorManager: No editor for gridId: 2
+2024-07-29T07:16:44.366Z CursorManager: No editor for gridId: 2
+2024-07-29T07:16:44.369Z CursorManager: No editor for gridId: 21
+2024-07-29T07:29:11.503Z CursorManager: No editor for gridId: 2
+2024-07-29T07:29:13.396Z CursorManager: No editor for gridId: 2
+2024-07-29T07:29:50.733Z CursorManager: No editor for gridId: 2
+2024-07-29T07:29:50.737Z CursorManager: No editor for gridId: 25
