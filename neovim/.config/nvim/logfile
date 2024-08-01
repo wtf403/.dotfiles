@@ -1,24 +1,16 @@
-2024-08-01T03:15:44.435Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-01T03:15:45.803Z MainController: Nvim info: {
+2024-08-01T04:15:38.114Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-01T04:15:39.231Z MainController: Nvim info: {
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
-    api_compatible: 0,
-    api_level: 12,
-    api_prerelease: true,
     build: 'e6d38c7',
     prerelease: true,
     major: 0,
     minor: 10,
-    patch: 0
-  },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log'
+    patch: 0,
+    api_compatible: 0,
+    api_level: 12,
+    api_prerelease: true
+  }
 }
-2024-08-01T03:15:46.152Z CursorManager: No editor for gridId: 2
-2024-08-01T03:58:41.284Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:41.288Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:41.560Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:41.562Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:42.876Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:42.881Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:42.964Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-2024-08-01T03:58:42.964Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-01T04:15:39.634Z CursorManager: No editor for gridId: 2
