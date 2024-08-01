@@ -105,3 +105,13 @@
 2024-08-01T05:56:57.636Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/Library/Application%20Support/VSCodium/Workspaces/1722490988605/workspace.json, skipping
 2024-08-01T05:56:57.649Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/Library/Application%20Support/VSCodium/Workspaces/1722490988605/workspace.json, skipping
 2024-08-01T05:56:57.649Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/Library/Application%20Support/VSCodium/Workspaces/1722490988605/workspace.json, skipping
+2024-08-01T06:28:10.448Z CursorManager: No editor for gridId: 2
+2024-08-01T06:28:23.007Z CursorManager: No editor for gridId: 2
+2024-08-01T06:28:49.173Z CursorManager: No editor for gridId: 2
+2024-08-01T06:28:49.177Z CursorManager: No editor for gridId: 67
+2024-08-01T06:29:39.746Z MessagesManager: 31 fewer lines
+2024-08-01T06:29:44.669Z CursorManager: No editor for gridId: 68
+2024-08-01T06:29:49.168Z CursorManager: No editor for gridId: 69
+2024-08-01T06:29:50.023Z CursorManager: No editor for gridId: 70
+2024-08-01T06:29:58.438Z CursorManager: No editor for gridId: 2
+2024-08-01T06:29:58.442Z CursorManager: No editor for gridId: 71
