@@ -508,3 +508,77 @@
 2024-08-01T07:55:56.079Z CursorManager: No editor for gridId: 2
 2024-08-01T07:56:36.167Z CursorManager: No editor for gridId: 2
 2024-08-01T07:56:36.171Z CursorManager: No editor for gridId: 347
+2024-08-01T08:07:21.658Z MessagesManager: 36 lines yanked
+2024-08-01T08:08:59.934Z CursorManager: No editor for gridId: 2
+2024-08-01T08:08:59.939Z CursorManager: No editor for gridId: 348
+2024-08-01T08:09:04.102Z MessagesManager: 10 lines yanked
+2024-08-01T08:09:12.679Z MessagesManager: 10 lines yanked
+2024-08-01T08:09:55.602Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.module.ts, skipping
+2024-08-01T08:09:55.604Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.module.ts, skipping
+2024-08-01T08:09:55.606Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.ts, skipping
+2024-08-01T08:09:55.606Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.ts, skipping
+2024-08-01T08:09:55.607Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.spec.ts, skipping
+2024-08-01T08:09:55.607Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.spec.ts, skipping
+2024-08-01T08:09:55.909Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.module.ts, skipping
+2024-08-01T08:09:55.910Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.module.ts, skipping
+2024-08-01T08:09:55.919Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.ts, skipping
+2024-08-01T08:09:55.922Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.ts, skipping
+2024-08-01T08:09:55.931Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.spec.ts, skipping
+2024-08-01T08:09:55.932Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/assessment-model.controller.spec.ts, skipping
+2024-08-01T08:10:15.910Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.module.ts, skipping
+2024-08-01T08:10:15.912Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.module.ts, skipping
+2024-08-01T08:10:15.914Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.controller.spec.ts, skipping
+2024-08-01T08:10:15.914Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.controller.spec.ts, skipping
+2024-08-01T08:10:16.203Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.module.ts, skipping
+2024-08-01T08:10:16.206Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.module.ts, skipping
+2024-08-01T08:10:16.206Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.controller.spec.ts, skipping
+2024-08-01T08:10:16.207Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/modules/backend/backend.controller.spec.ts, skipping
+2024-08-01T08:10:24.856Z CursorManager: No editor for gridId: 2
+2024-08-01T08:10:49.376Z CursorManager: No editor for gridId: 350
+2024-08-01T08:10:51.680Z CursorManager: No editor for gridId: 351
+2024-08-01T08:11:01.490Z CursorManager: No editor for gridId: 352
+2024-08-01T08:11:02.946Z CursorManager: No editor for gridId: 353
+2024-08-01T08:11:09.354Z CursorManager: No editor for gridId: 354
+2024-08-01T08:11:10.592Z CursorManager: No editor for gridId: 355
+2024-08-01T08:11:16.981Z CursorManager: No editor for gridId: 356
+2024-08-01T08:11:26.880Z CursorManager: No editor for gridId: 357
+2024-08-01T08:11:36.227Z CursorManager: No editor for gridId: 358
+2024-08-01T08:11:37.424Z CursorManager: No editor for gridId: 359
+2024-08-01T08:12:42.992Z CursorManager: No editor for gridId: 2
+2024-08-01T08:12:47.854Z CursorManager: No editor for gridId: 2
+2024-08-01T08:13:16.087Z CursorManager: No editor for gridId: 362
+2024-08-01T08:13:17.400Z CursorManager: No editor for gridId: 363
+2024-08-01T08:14:27.018Z CursorManager: No editor for gridId: 364
+2024-08-01T08:14:45.068Z CursorManager: No editor for gridId: 365
+2024-08-01T08:14:55.676Z CursorManager: No editor for gridId: 366
+2024-08-01T08:15:06.805Z CursorManager: No editor for gridId: 367
+2024-08-01T08:15:13.100Z CursorManager: No editor for gridId: 368
+2024-08-01T08:15:17.725Z CursorManager: No editor for gridId: 369
+2024-08-01T08:15:19.743Z CursorManager: No editor for gridId: 370
+2024-08-01T08:15:28.513Z CursorManager: No editor for gridId: 371
+2024-08-01T08:18:24.121Z CursorManager: No editor for gridId: 2
+2024-08-01T08:19:07.097Z CursorManager: No editor for gridId: 2
+2024-08-01T08:19:09.524Z CursorManager: No editor for gridId: 373
+2024-08-01T08:19:09.524Z CursorManager: No editor for gridId: 2
+2024-08-01T08:20:23.591Z CursorManager: No editor for gridId: 2
+2024-08-01T08:20:35.823Z CursorManager: No editor for gridId: 2
+2024-08-01T08:20:36.379Z CursorManager: No editor for gridId: 2
+2024-08-01T08:20:50.722Z CursorManager: No editor for gridId: 2
+2024-08-01T08:20:58.343Z CursorManager: No editor for gridId: 2
+2024-08-01T08:20:58.346Z CursorManager: No editor for gridId: 379
+2024-08-01T08:21:21.324Z CursorManager: No editor for gridId: 2
+2024-08-01T08:21:38.291Z CursorManager: No editor for gridId: 2
+2024-08-01T08:22:41.974Z CursorManager: No editor for gridId: 2
+2024-08-01T08:24:35.160Z CursorManager: No editor for gridId: 2
+2024-08-01T08:24:35.169Z CursorManager: No editor for gridId: 383
+2024-08-01T08:24:42.680Z CursorManager: No editor for gridId: 2
+2024-08-01T08:24:42.682Z CursorManager: No editor for gridId: 384
+2024-08-01T08:24:52.225Z CursorManager: No editor for gridId: 385
+2024-08-01T08:25:40.620Z CursorManager: No editor for gridId: 386
+2024-08-01T08:25:45.520Z CursorManager: No editor for gridId: 387
+2024-08-01T08:25:50.384Z CursorManager: No editor for gridId: 388
+2024-08-01T08:25:56.393Z CursorManager: No editor for gridId: 389
+2024-08-01T08:25:59.612Z CursorManager: No editor for gridId: 390
+2024-08-01T08:26:37.334Z CursorManager: No editor for gridId: 391
+2024-08-01T08:26:39.273Z CursorManager: No editor for gridId: 392
+2024-08-01T08:26:40.507Z CursorManager: No editor for gridId: 393
