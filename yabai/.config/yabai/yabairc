@@ -24,7 +24,7 @@ function yabai_spaces () {
     terminal-notifier -message "display"
     for space in "${monitor_spaces[@]}"; do
       echo $space
-      yabai -m space $space --layout bsp
+      yabai -m space $space --layout float
     done
   fi
 
@@ -38,7 +38,7 @@ function yabai_spaces () {
 
     for space in "${monitor_spaces[@]}"; do
       echo $space
-      yabai -m space $space --layout bsp
+      yabai -m space $space --layout float
     done
   fi
 
