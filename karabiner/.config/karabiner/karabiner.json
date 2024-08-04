@@ -651,7 +651,6 @@
                         "product_id": 666,
                         "vendor_id": 76
                     },
-                    "ignore": true,
                     "manipulate_caps_lock_led": false
                 }
             ],
@@ -664,7 +663,12 @@
             "name": "main",
             "parameters": { "delay_milliseconds_before_open_device": 1000 },
             "selected": true,
-            "simple_modifications": [],
+            "simple_modifications": [
+                {
+                    "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+                    "to": [{ "key_code": "f13" }]
+                }
+            ],
             "virtual_hid_keyboard": {
                 "country_code": 0,
                 "indicate_sticky_modifier_keys_state": false,
