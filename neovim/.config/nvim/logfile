@@ -1,16 +1,39 @@
-2024-08-06T02:24:47.842Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-06T02:24:49.288Z MainController: Nvim info: {
+2024-08-06T02:47:53.321Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-06T02:47:54.537Z MainController: Nvim info: {
   nvimVersion: {
+    api_level: 12,
+    api_prerelease: true,
+    api_compatible: 0,
     patch: 0,
+    build: 'e6d38c7',
     prerelease: true,
     major: 0,
-    minor: 10,
-    api_level: 12,
-    build: 'e6d38c7',
-    api_compatible: 0,
-    api_prerelease: true
+    minor: 10
   },
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-06T02:24:49.311Z CursorManager: No editor for gridId: 2
+2024-08-06T02:47:54.548Z CursorManager: No editor for gridId: 2
+2024-08-06T02:49:31.638Z CursorManager: No editor for gridId: 2
+2024-08-06T02:49:47.614Z CursorManager: No editor for gridId: 2
+2024-08-06T02:51:16.688Z CursorManager: No editor for gridId: 2
+2024-08-06T02:51:36.341Z CursorManager: No editor for gridId: 2
+2024-08-06T02:56:14.573Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/store/index.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fstore%2Findex.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-06T02:56:22.260Z CursorManager: No editor for gridId: 2
+2024-08-06T02:56:22.273Z CursorManager: No editor for gridId: 10
+2024-08-06T02:56:30.046Z CursorManager: No editor for gridId: 2
+2024-08-06T02:56:30.064Z CursorManager: No editor for gridId: 11
+2024-08-06T02:57:12.695Z CursorManager: No editor for gridId: 2
+2024-08-06T02:57:12.700Z CursorManager: No editor for gridId: 12
+2024-08-06T02:57:25.565Z CursorManager: No editor for gridId: 2
+2024-08-06T02:57:28.887Z CursorManager: No editor for gridId: 2
+2024-08-06T02:57:28.890Z CursorManager: No editor for gridId: 14
+2024-08-06T02:57:39.816Z CursorManager: No editor for gridId: 15
+2024-08-06T02:58:41.173Z CursorManager: No editor for gridId: 2
+2024-08-06T02:58:41.356Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/store/index.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fstore%2Findex.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-06T02:58:50.663Z CursorManager: No editor for gridId: 2
+2024-08-06T02:59:19.649Z CursorManager: No editor for gridId: 2
+2024-08-06T02:59:38.161Z CursorManager: No editor for gridId: 18
+2024-08-06T02:59:38.162Z CursorManager: No editor for gridId: 2
+2024-08-06T02:59:43.003Z CursorManager: No editor for gridId: 2
+2024-08-06T02:59:49.927Z CursorManager: No editor for gridId: 2
