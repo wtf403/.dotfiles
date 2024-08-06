@@ -1,159 +1,19 @@
-2024-08-06T02:47:53.321Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-06T02:47:54.537Z MainController: Nvim info: {
+2024-08-06T06:26:04.972Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-06T06:26:05.450Z MainController: Nvim info: {
+  configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
     api_level: 12,
-    api_prerelease: true,
-    api_compatible: 0,
-    patch: 0,
     build: 'e6d38c7',
-    prerelease: true,
+    api_prerelease: true,
     major: 0,
-    minor: 10
+    minor: 10,
+    patch: 0,
+    api_compatible: 0,
+    prerelease: true
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log',
-  configDir: '/Users/maxkiselev/.config/nvim'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log'
 }
-2024-08-06T02:47:54.548Z CursorManager: No editor for gridId: 2
-2024-08-06T02:49:31.638Z CursorManager: No editor for gridId: 2
-2024-08-06T02:49:47.614Z CursorManager: No editor for gridId: 2
-2024-08-06T02:51:16.688Z CursorManager: No editor for gridId: 2
-2024-08-06T02:51:36.341Z CursorManager: No editor for gridId: 2
-2024-08-06T02:56:14.573Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/store/index.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fstore%2Findex.ts%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-06T02:56:22.260Z CursorManager: No editor for gridId: 2
-2024-08-06T02:56:22.273Z CursorManager: No editor for gridId: 10
-2024-08-06T02:56:30.046Z CursorManager: No editor for gridId: 2
-2024-08-06T02:56:30.064Z CursorManager: No editor for gridId: 11
-2024-08-06T02:57:12.695Z CursorManager: No editor for gridId: 2
-2024-08-06T02:57:12.700Z CursorManager: No editor for gridId: 12
-2024-08-06T02:57:25.565Z CursorManager: No editor for gridId: 2
-2024-08-06T02:57:28.887Z CursorManager: No editor for gridId: 2
-2024-08-06T02:57:28.890Z CursorManager: No editor for gridId: 14
-2024-08-06T02:57:39.816Z CursorManager: No editor for gridId: 15
-2024-08-06T02:58:41.173Z CursorManager: No editor for gridId: 2
-2024-08-06T02:58:41.356Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/store/index.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fstore%2Findex.ts%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-06T02:58:50.663Z CursorManager: No editor for gridId: 2
-2024-08-06T02:59:19.649Z CursorManager: No editor for gridId: 2
-2024-08-06T02:59:38.161Z CursorManager: No editor for gridId: 18
-2024-08-06T02:59:38.162Z CursorManager: No editor for gridId: 2
-2024-08-06T02:59:43.003Z CursorManager: No editor for gridId: 2
-2024-08-06T02:59:49.927Z CursorManager: No editor for gridId: 2
-2024-08-06T03:00:20.100Z CursorManager: No editor for gridId: 2
-2024-08-06T03:00:38.026Z CursorManager: No editor for gridId: 23
-2024-08-06T03:00:49.341Z CursorManager: No editor for gridId: 24
-2024-08-06T03:00:53.066Z CursorManager: No editor for gridId: 25
-2024-08-06T03:01:00.742Z CursorManager: No editor for gridId: 26
-2024-08-06T03:01:04.007Z MessagesManager: man.lua: "no manual entry for Type"
-2024-08-06T03:01:15.395Z CursorManager: No editor for gridId: 27
-2024-08-06T03:01:22.327Z CursorManager: No editor for gridId: 28
-2024-08-06T03:01:27.004Z CursorManager: No editor for gridId: 29
-2024-08-06T03:01:28.496Z CursorManager: No editor for gridId: 30
-2024-08-06T03:01:36.653Z CursorManager: No editor for gridId: 31
-2024-08-06T03:02:07.958Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/store/slices/subordination-tabs-slice.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fstore%2Fslices%2Fsubordination-tabs-slice.ts%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-06T03:03:17.213Z CursorManager: No editor for gridId: 2
-2024-08-06T03:03:17.218Z CursorManager: No editor for gridId: 32
-2024-08-06T03:03:55.147Z CursorManager: No editor for gridId: 2
-2024-08-06T03:03:57.268Z CursorManager: No editor for gridId: 2
-2024-08-06T03:03:57.271Z CursorManager: No editor for gridId: 34
-2024-08-06T03:04:08.736Z CursorManager: No editor for gridId: 35
-2024-08-06T03:05:19.430Z CursorManager: No editor for gridId: 36
-2024-08-06T03:05:33.934Z MessagesManager: 32 more lines
-2024-08-06T03:05:45.252Z CursorManager: No editor for gridId: 37
-2024-08-06T03:05:55.667Z CursorManager: No editor for gridId: 2
-2024-08-06T03:05:55.672Z CursorManager: No editor for gridId: 38
-2024-08-06T03:10:15.101Z CursorManager: No editor for gridId: 2
-2024-08-06T03:10:32.275Z CursorManager: No editor for gridId: 2
-2024-08-06T03:10:35.337Z CursorManager: No editor for gridId: 2
-2024-08-06T03:10:38.541Z CursorManager: No editor for gridId: 2
-2024-08-06T03:10:39.250Z CursorManager: No editor for gridId: 2
-2024-08-06T03:10:41.909Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:09.969Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:09.976Z CursorManager: No editor for gridId: 47
-2024-08-06T03:11:11.001Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.002Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.007Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.007Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.012Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:11.015Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:11.015Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:11.048Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.048Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.052Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.052Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:11.056Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:11.059Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:11.059Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:12.763Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:12.763Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:12.765Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:12.766Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:12.769Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:12.771Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:12.771Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:15.625Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:18.315Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:21.254Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:21.262Z CursorManager: No editor for gridId: 52
-2024-08-06T03:11:21.741Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.742Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.753Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.754Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.760Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:21.765Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:21.765Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:21.804Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.804Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.809Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.809Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:21.817Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:21.821Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:21.821Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:23.736Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:23.737Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:23.739Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:23.739Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:23.744Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:23.748Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:23.748Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:25.368Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:27.226Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:32.410Z CursorManager: No editor for gridId: 2
-2024-08-06T03:11:32.418Z CursorManager: No editor for gridId: 57
-2024-08-06T03:11:32.829Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.829Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.833Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.834Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.839Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:32.842Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:32.842Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:32.873Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.874Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.880Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.881Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:32.893Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:32.940Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:32.942Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:34.487Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:34.489Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm2/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:34.490Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:34.490Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm3/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-06T03:11:34.493Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:11:34.495Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:34.496Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-06T03:11:36.317Z CursorManager: No editor for gridId: 2
-2024-08-06T03:12:51.703Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:19:50.797Z CursorManager: No editor for gridId: 2
-2024-08-06T03:19:52.393Z CursorManager: No editor for gridId: 2
-2024-08-06T03:20:57.802Z CursorManager: No editor for gridId: 2
-2024-08-06T03:21:02.076Z CursorManager: No editor for gridId: 2
-2024-08-06T03:21:07.097Z CursorManager: No editor for gridId: 2
-2024-08-06T03:21:12.505Z CursorManager: No editor for gridId: 2
-2024-08-06T03:21:12.512Z CursorManager: No editor for gridId: 64
-2024-08-06T03:22:29.532Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:22:29.537Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-middle, skipping
-2024-08-06T03:22:48.149Z CursorManager: No editor for gridId: 2
-2024-08-06T03:22:48.156Z CursorManager: No editor for gridId: 65
-2024-08-06T03:25:10.137Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-middle/src/modules/sap/sap.mocks.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-middle%2Fsrc%2Fmodules%2Fsap%2Fsap.mocks.ts%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-06T03:25:40.503Z CursorManager: No editor for gridId: 2
-2024-08-06T03:26:09.768Z CursorManager: No editor for gridId: 67
-2024-08-06T03:26:25.611Z CursorManager: No editor for gridId: 68
-2024-08-06T03:26:38.133Z CursorManager: No editor for gridId: 69
+2024-08-06T06:26:05.470Z CursorManager: No editor for gridId: 2
+2024-08-06T06:27:40.320Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/containers/team-table/team-table.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fcontainers%2Fteam-table%2Fteam-table.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-06T06:28:31.276Z CursorManager: No editor for gridId: 2
+2024-08-06T06:28:39.585Z CursorManager: No editor for gridId: 7
