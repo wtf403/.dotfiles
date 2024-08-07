@@ -1,28 +1,18 @@
-2024-08-07T03:03:45.563Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-07T03:03:45.852Z MainController: Nvim info: {
-  logFile: '/Users/maxkiselev/.local/state/nvim/log',
-  configDir: '/Users/maxkiselev/.config/nvim',
+2024-08-07T03:59:10.141Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-07T03:59:10.531Z MainController: Nvim info: {
   nvimVersion: {
-    prerelease: true,
-    api_compatible: 0,
-    build: 'e6d38c7',
+    api_level: 12,
     api_prerelease: true,
-    major: 0,
+    api_compatible: 0,
+    prerelease: true,
     minor: 10,
+    build: 'e6d38c7',
     patch: 0,
-    api_level: 12
-  }
+    major: 0
+  },
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
+  configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-07T03:03:45.861Z CursorManager: No editor for gridId: 2
-2024-08-07T03:11:28.199Z CursorManager: No editor for gridId: 6
-2024-08-07T03:13:01.631Z MessagesManager: 7 fewer lines
-2024-08-07T03:15:27.591Z CursorManager: No editor for gridId: 7
-2024-08-07T03:17:36.628Z CursorManager: No editor for gridId: 8
-2024-08-07T03:18:42.091Z MessagesManager: 5 fewer lines
-2024-08-07T03:19:14.315Z CursorManager: No editor for gridId: 2
-2024-08-07T03:19:17.705Z CursorManager: No editor for gridId: 2
-2024-08-07T03:19:17.707Z CursorManager: No editor for gridId: 10
-2024-08-07T03:28:36.459Z MessagesManager: 27 more lines
-2024-08-07T03:28:43.170Z CursorManager: No editor for gridId: 11
-2024-08-07T03:28:54.871Z CursorManager: No editor for gridId: 12
-2024-08-07T03:29:03.742Z CursorManager: No editor for gridId: 13
+2024-08-07T03:59:10.546Z CursorManager: No editor for gridId: 2
+2024-08-07T03:59:43.984Z CursorManager: No editor for gridId: 2
+2024-08-07T03:59:44.744Z CursorManager: No editor for gridId: 7
