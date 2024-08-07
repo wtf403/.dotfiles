@@ -1,21 +1,16 @@
-2024-08-07T10:56:38.969Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-07T10:56:39.232Z MainController: Nvim info: {
+2024-08-07T11:56:38.312Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-07T11:56:39.284Z MainController: Nvim info: {
   configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
     minor: 10,
-    prerelease: true,
-    api_compatible: 0,
+    patch: 0,
     build: 'e6d38c7',
     api_level: 12,
-    major: 0,
     api_prerelease: true,
-    patch: 0
+    api_compatible: 0,
+    prerelease: true,
+    major: 0
   },
   logFile: '/Users/maxkiselev/.local/state/nvim/log'
 }
-2024-08-07T10:56:39.241Z CursorManager: No editor for gridId: 2
-2024-08-07T10:57:03.181Z MessagesManager: 51 lines yanked
-2024-08-07T10:57:06.297Z CursorManager: No editor for gridId: 5
-2024-08-07T10:57:06.297Z CursorManager: No editor for gridId: 2
-2024-08-07T10:57:16.846Z MessagesManager: 51 more lines
-2024-08-07T10:58:22.443Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-07T11:56:39.317Z CursorManager: No editor for gridId: 2
