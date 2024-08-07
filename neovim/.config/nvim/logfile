@@ -803,3 +803,21 @@
 2024-08-07T09:58:47.887Z CursorManager: No editor for gridId: 2
 2024-08-07T09:58:47.893Z CursorManager: No editor for gridId: 633
 2024-08-07T09:59:54.263Z CursorManager: No editor for gridId: 634
+2024-08-07T10:04:41.414Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-07T10:04:55.078Z CursorManager: No editor for gridId: 2
+2024-08-07T10:04:55.082Z CursorManager: No editor for gridId: 635
+2024-08-07T10:04:56.288Z CursorManager: No editor for gridId: 2
+2024-08-07T10:04:57.860Z CursorManager: No editor for gridId: 2
+2024-08-07T10:04:57.862Z CursorManager: No editor for gridId: 637
+2024-08-07T10:05:00.171Z MessagesManager: 10 fewer lines
+2024-08-07T10:05:01.513Z CursorManager: No editor for gridId: 638
+2024-08-07T10:05:22.012Z CursorManager: No editor for gridId: 2
+2024-08-07T10:05:22.022Z CursorManager: No editor for gridId: 639
+2024-08-07T10:05:34.503Z CursorManager: No editor for gridId: 640
+2024-08-07T10:08:04.537Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-07T10:26:06.316Z CursorManager: No editor for gridId: 641
+2024-08-07T10:27:56.317Z CursorManager: No editor for gridId: 2
+2024-08-07T10:29:22.905Z CursorManager: No editor for gridId: 2
+2024-08-07T10:29:22.954Z CursorManager: No editor for gridId: 643
+2024-08-07T10:29:42.196Z CursorManager: No editor for gridId: 644
+2024-08-07T10:29:48.629Z CursorManager: No editor for gridId: 645
