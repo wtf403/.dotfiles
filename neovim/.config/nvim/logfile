@@ -56,3 +56,18 @@
 2024-08-08T03:21:55.846Z CursorManager: No editor for gridId: 38
 2024-08-08T03:22:00.114Z CursorManager: No editor for gridId: 39
 2024-08-08T03:29:53.583Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-08T03:50:59.411Z CursorManager: No editor for gridId: 40
+2024-08-08T03:51:07.654Z CursorManager: No editor for gridId: 41
+2024-08-08T03:51:16.131Z CursorManager: No editor for gridId: 42
+2024-08-08T03:51:43.440Z CursorManager: No editor for gridId: 43
+2024-08-08T03:51:47.419Z CursorManager: No editor for gridId: 44
+2024-08-08T03:51:57.420Z CursorManager: No editor for gridId: 45
+2024-08-08T03:52:22.646Z CursorManager: No editor for gridId: 46
+2024-08-08T03:52:33.224Z CursorManager: No editor for gridId: 47
+2024-08-08T03:52:34.615Z CursorManager: No editor for gridId: 48
+2024-08-08T03:52:36.117Z CursorManager: No editor for gridId: 49
+2024-08-08T03:52:38.999Z MessagesManager: 27 lines yanked
+2024-08-08T03:52:39.975Z MessagesManager: 28 lines yanked
+2024-08-08T03:52:42.129Z CursorManager: No editor for gridId: 50
+2024-08-08T03:52:46.513Z CursorManager: No editor for gridId: 51
+2024-08-08T03:52:48.643Z CursorManager: No editor for gridId: 52
