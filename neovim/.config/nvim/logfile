@@ -20,3 +20,7 @@
 2024-08-07T12:06:30.434Z CursorManager: No editor for gridId: 2
 2024-08-07T12:06:32.968Z CursorManager: No editor for gridId: 2
 2024-08-07T12:06:34.140Z CursorManager: No editor for gridId: 2
+2024-08-07T23:58:19.634Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-07T23:58:19.655Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-07T23:58:20.057Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-07T23:58:20.058Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
