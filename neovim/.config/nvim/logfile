@@ -1,16 +1,24 @@
-2024-08-08T22:39:09.034Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-08T22:39:10.340Z MainController: Nvim info: {
-  configDir: '/Users/maxkiselev/.config/nvim',
+2024-08-08T23:22:39.008Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-08T23:22:39.328Z MainController: Nvim info: {
   nvimVersion: {
+    api_level: 12,
+    api_prerelease: true,
     build: 'e6d38c7',
     prerelease: true,
     major: 0,
     minor: 10,
     patch: 0,
-    api_level: 12,
-    api_prerelease: true,
     api_compatible: 0
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
+  configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-08T22:39:10.409Z CursorManager: No editor for gridId: 2
+2024-08-08T23:22:39.339Z CursorManager: No editor for gridId: 2
+2024-08-08T23:22:58.843Z CursorManager: No editor for gridId: 2
+2024-08-08T23:23:00.680Z CursorManager: No editor for gridId: 2
+2024-08-08T23:23:21.342Z MessagesManager: man.lua: "no manual entry for create"
+2024-08-08T23:23:51.158Z CursorManager: No editor for gridId: 9
+2024-08-08T23:24:21.369Z MessagesManager: 34 fewer lines
+2024-08-08T23:29:11.914Z CursorManager: No editor for gridId: 10
+2024-08-08T23:29:12.582Z MessagesManager: 5 more lines
+2024-08-08T23:29:16.517Z CursorManager: No editor for gridId: 11
