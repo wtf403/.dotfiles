@@ -1,24 +1,16 @@
-2024-08-10T10:43:31.931Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-10T10:43:32.470Z MainController: Nvim info: {
-  logFile: '/Users/maxkiselev/.local/state/nvim/log',
-  configDir: '/Users/maxkiselev/.config/nvim',
+2024-08-10T11:06:19.596Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-10T11:06:20.294Z MainController: Nvim info: {
   nvimVersion: {
-    patch: 0,
-    minor: 10,
-    prerelease: true,
+    api_prerelease: true,
     api_compatible: 0,
+    patch: 0,
     build: 'e6d38c7',
-    api_level: 12,
+    prerelease: true,
     major: 0,
-    api_prerelease: true
-  }
+    minor: 10,
+    api_level: 12
+  },
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
+  configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-10T10:43:32.595Z CursorManager: No editor for gridId: 2
-2024-08-10T10:43:47.224Z CursorManager: No editor for gridId: 2
-2024-08-10T10:43:51.709Z CursorManager: No editor for gridId: 2
-2024-08-10T10:43:53.671Z CursorManager: No editor for gridId: 2
-2024-08-10T10:44:07.263Z CursorManager: No editor for gridId: 2
-2024-08-10T10:44:43.665Z CursorManager: No editor for gridId: 10
-2024-08-10T10:45:02.740Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/zettelkasten/main_test.go.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Fzettelkasten%2Fmain_test.go%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-10T10:51:39.218Z CursorManager: No editor for gridId: 14
-2024-08-10T10:51:44.017Z CursorManager: No editor for gridId: 15
+2024-08-10T11:06:20.408Z CursorManager: No editor for gridId: 2
