@@ -4,6 +4,13 @@
     "profiles": [
         {
             "complex_modifications": {
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
+                },
                 "rules": [
                     {
                         "description": "LeftCtrl to Sticky Hyper with sticky",
@@ -627,7 +634,9 @@
             "devices": [
                 {
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
+                        "is_pointing_device": false,
                         "product_id": 641,
                         "vendor_id": 1452
                     },
@@ -636,10 +645,13 @@
                 },
                 {
                     "identifiers": {
+                        "is_game_pad": false,
                         "is_keyboard": true,
+                        "is_pointing_device": false,
                         "product_id": 666,
                         "vendor_id": 76
                     },
+                    "ignore": true,
                     "manipulate_caps_lock_led": false
                 }
             ],
@@ -650,6 +662,7 @@
                 }
             ],
             "name": "main",
+            "parameters": { "delay_milliseconds_before_open_device": 1000 },
             "selected": true,
             "simple_modifications": [
                 {
@@ -657,10 +670,21 @@
                     "to": [{ "key_code": "f13" }]
                 }
             ],
-            "virtual_hid_keyboard": { "indicate_sticky_modifier_keys_state": false }
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "indicate_sticky_modifier_keys_state": false,
+                "mouse_key_xy_scale": 100
+            }
         },
         {
             "complex_modifications": {
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
+                },
                 "rules": [
                     {
                         "description": "10 Control + Option to Fn",
@@ -724,8 +748,38 @@
                     }
                 ]
             },
-            "name": "New profile"
+            "fn_function_keys": [],
+            "name": "New profile",
+            "parameters": { "delay_milliseconds_before_open_device": 1000 },
+            "selected": false,
+            "simple_modifications": [],
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "indicate_sticky_modifier_keys_state": true,
+                "mouse_key_xy_scale": 100
+            }
         },
-        { "name": "clean" }
+        {
+            "complex_modifications": {
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.to_delayed_action_delay_milliseconds": 500,
+                    "basic.to_if_alone_timeout_milliseconds": 1000,
+                    "basic.to_if_held_down_threshold_milliseconds": 500,
+                    "mouse_motion_to_scroll.speed": 100
+                },
+                "rules": []
+            },
+            "fn_function_keys": [],
+            "name": "clean",
+            "parameters": { "delay_milliseconds_before_open_device": 1000 },
+            "selected": false,
+            "simple_modifications": [],
+            "virtual_hid_keyboard": {
+                "country_code": 0,
+                "indicate_sticky_modifier_keys_state": true,
+                "mouse_key_xy_scale": 100
+            }
+        }
     ]
 }
