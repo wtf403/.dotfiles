@@ -1,16 +1,77 @@
-2024-08-12T01:48:09.062Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-12T01:48:09.380Z MainController: Nvim info: {
+2024-08-12T03:14:50.416Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-12T03:14:50.682Z MainController: Nvim info: {
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
-    api_compatible: 0,
-    patch: 0,
-    build: 'e6d38c7',
-    prerelease: true,
-    major: 0,
     minor: 10,
+    major: 0,
     api_level: 12,
-    api_prerelease: true
+    api_prerelease: true,
+    api_compatible: 0,
+    prerelease: true,
+    patch: 0,
+    build: 'e6d38c7'
   }
 }
-2024-08-12T01:48:09.387Z CursorManager: No editor for gridId: 2
+2024-08-12T03:14:50.690Z CursorManager: No editor for gridId: 2
+2024-08-12T03:14:54.146Z CursorManager: No editor for gridId: 2
+2024-08-12T03:21:18.327Z CursorManager: No editor for gridId: 2
+2024-08-12T03:21:22.335Z CursorManager: No editor for gridId: 2
+2024-08-12T03:21:49.781Z CursorManager: No editor for gridId: 2
+2024-08-12T03:21:51.590Z CursorManager: No editor for gridId: 10
+2024-08-12T03:22:01.826Z CursorManager: No editor for gridId: 11
+2024-08-12T03:22:03.841Z CursorManager: No editor for gridId: 12
+2024-08-12T03:22:11.011Z CursorManager: No editor for gridId: 13
+2024-08-12T03:22:14.319Z CursorManager: No editor for gridId: 14
+2024-08-12T03:22:17.080Z CursorManager: No editor for gridId: 15
+2024-08-12T03:22:24.271Z CursorManager: No editor for gridId: 16
+2024-08-12T03:22:26.768Z CursorManager: No editor for gridId: 17
+2024-08-12T03:22:27.576Z CursorManager: No editor for gridId: 18
+2024-08-12T03:22:46.200Z CursorManager: No editor for gridId: 19
+2024-08-12T03:22:48.549Z CursorManager: No editor for gridId: 20
+2024-08-12T03:22:50.060Z CursorManager: No editor for gridId: 21
+2024-08-12T03:23:15.993Z CursorManager: No editor for gridId: 22
+2024-08-12T03:23:25.595Z CursorManager: No editor for gridId: 23
+2024-08-12T03:23:36.311Z CursorManager: No editor for gridId: 24
+2024-08-12T03:23:37.880Z CursorManager: No editor for gridId: 25
+2024-08-12T03:23:38.950Z CursorManager: No editor for gridId: 26
+2024-08-12T03:23:49.380Z CursorManager: No editor for gridId: 27
+2024-08-12T03:24:03.677Z CursorManager: No editor for gridId: 28
+2024-08-12T03:24:22.859Z CursorManager: No editor for gridId: 29
+2024-08-12T03:24:27.427Z CursorManager: No editor for gridId: 30
+2024-08-12T03:24:28.039Z CursorManager: No editor for gridId: 31
+2024-08-12T03:24:41.390Z CursorManager: No editor for gridId: 32
+2024-08-12T03:24:51.176Z CursorManager: No editor for gridId: 33
+2024-08-12T03:25:02.956Z CursorManager: No editor for gridId: 34
+2024-08-12T03:25:09.093Z CursorManager: No editor for gridId: 35
+2024-08-12T03:25:26.744Z CursorManager: No editor for gridId: 36
+2024-08-12T03:25:28.423Z CursorManager: No editor for gridId: 37
+2024-08-12T03:25:40.579Z CursorManager: No editor for gridId: 38
+2024-08-12T03:25:42.470Z CursorManager: No editor for gridId: 39
+2024-08-12T03:25:51.097Z CursorManager: No editor for gridId: 2
+2024-08-12T03:25:51.103Z CursorManager: No editor for gridId: 40
+2024-08-12T03:26:09.922Z CursorManager: No editor for gridId: 41
+2024-08-12T03:26:26.793Z CursorManager: No editor for gridId: 2
+2024-08-12T03:26:26.797Z CursorManager: No editor for gridId: 42
+2024-08-12T03:27:02.179Z CursorManager: No editor for gridId: 43
+2024-08-12T03:27:06.404Z CursorManager: No editor for gridId: 44
+2024-08-12T03:27:20.040Z CursorManager: No editor for gridId: 45
+2024-08-12T03:27:20.675Z CursorManager: No editor for gridId: 46
+2024-08-12T03:27:38.942Z CursorManager: No editor for gridId: 47
+2024-08-12T03:28:06.488Z CursorManager: No editor for gridId: 2
+2024-08-12T03:28:12.875Z CursorManager: No editor for gridId: 49
+2024-08-12T03:28:17.595Z CursorManager: No editor for gridId: 50
+2024-08-12T03:28:24.295Z CursorManager: No editor for gridId: 51
+2024-08-12T03:28:26.752Z CursorManager: No editor for gridId: 2
+2024-08-12T03:28:26.754Z CursorManager: No editor for gridId: 52
+2024-08-12T03:28:43.351Z CursorManager: No editor for gridId: 2
+2024-08-12T03:28:45.650Z CursorManager: No editor for gridId: 2
+2024-08-12T03:28:50.624Z CursorManager: No editor for gridId: 55
+2024-08-12T03:29:07.397Z CursorManager: No editor for gridId: 56
+2024-08-12T03:29:10.617Z CursorManager: No editor for gridId: 57
+2024-08-12T03:29:16.089Z CursorManager: No editor for gridId: 58
+2024-08-12T03:29:18.158Z CursorManager: No editor for gridId: 59
+2024-08-12T03:29:21.595Z CursorManager: No editor for gridId: 60
+2024-08-12T03:29:35.201Z CursorManager: No editor for gridId: 2
+2024-08-12T03:29:50.001Z CursorManager: No editor for gridId: 2
+2024-08-12T03:29:50.005Z CursorManager: No editor for gridId: 62
