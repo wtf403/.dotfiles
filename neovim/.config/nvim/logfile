@@ -51,3 +51,41 @@
 2024-08-12T05:51:07.031Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/entities/competence.entity.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fentities%2Fcompetence.entity.ts%22%2C%22ref%22%3A%22%22%7D, skipping
 2024-08-12T05:55:14.395Z CursorManager: No editor for gridId: 2
 2024-08-12T05:55:14.398Z CursorManager: No editor for gridId: 35
+2024-08-12T06:05:01.474Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/config/app.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fconfig%2Fapp.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-12T06:06:51.903Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/config/app.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fconfig%2Fapp.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-12T06:06:54.497Z CursorManager: No editor for gridId: 2
+2024-08-12T06:07:03.430Z CursorManager: No editor for gridId: 2
+2024-08-12T06:07:04.012Z CursorManager: No editor for gridId: 2
+2024-08-12T06:07:08.878Z CursorManager: No editor for gridId: 2
+2024-08-12T06:07:09.256Z CursorManager: No editor for gridId: 2
+2024-08-12T06:18:30.508Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.controller.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.controller.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-12T06:21:36.490Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.controller.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.controller.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-12T06:22:38.647Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.controller.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.controller.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-12T06:28:18.861Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.controller.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.controller.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-12T06:28:25.037Z CursorManager: No editor for gridId: 2
+2024-08-12T06:28:25.886Z CursorManager: No editor for gridId: 2
+2024-08-12T06:28:28.384Z CursorManager: No editor for gridId: 2
+2024-08-12T06:28:28.385Z CursorManager: No editor for gridId: 43
+2024-08-12T06:28:30.755Z CursorManager: No editor for gridId: 2
+2024-08-12T06:28:30.756Z CursorManager: No editor for gridId: 44
+2024-08-12T06:28:35.785Z CursorManager: No editor for gridId: 2
+2024-08-12T06:28:55.943Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:04.981Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:18.096Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:18.098Z CursorManager: No editor for gridId: 48
+2024-08-12T06:29:18.775Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:26.201Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:26.202Z CursorManager: No editor for gridId: 50
+2024-08-12T06:29:26.592Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:26.593Z CursorManager: No editor for gridId: 51
+2024-08-12T06:29:26.877Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:26.880Z CursorManager: No editor for gridId: 52
+2024-08-12T06:29:27.586Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:27.591Z CursorManager: No editor for gridId: 53
+2024-08-12T06:29:32.364Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:32.369Z CursorManager: No editor for gridId: 54
+2024-08-12T06:29:52.441Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:55.876Z CursorManager: No editor for gridId: 55
+2024-08-12T06:29:55.876Z CursorManager: No editor for gridId: 2
+2024-08-12T06:29:59.817Z CursorManager: No editor for gridId: 56
+2024-08-12T06:29:59.818Z CursorManager: No editor for gridId: 2
