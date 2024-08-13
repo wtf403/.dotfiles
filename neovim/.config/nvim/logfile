@@ -90,3 +90,18 @@
 2024-08-13T06:59:12.199Z CursorManager: No editor for gridId: 63
 2024-08-13T06:59:37.632Z CursorManager: No editor for gridId: 2
 2024-08-13T06:59:37.641Z CursorManager: No editor for gridId: 64
+2024-08-13T08:07:06.320Z CursorManager: No editor for gridId: 2
+2024-08-13T08:07:08.816Z CursorManager: No editor for gridId: 2
+2024-08-13T08:07:11.312Z CursorManager: No editor for gridId: 2
+2024-08-13T08:07:11.315Z CursorManager: No editor for gridId: 67
+2024-08-13T08:08:38.381Z CursorManager: No editor for gridId: 2
+2024-08-13T08:08:38.388Z CursorManager: No editor for gridId: 68
+2024-08-13T08:09:03.042Z MessagesManager: 98 more lines
+2024-08-13T08:09:34.158Z CursorManager: No editor for gridId: 69
+2024-08-13T08:09:38.190Z CursorManager: No editor for gridId: 70
+2024-08-13T08:09:44.128Z CursorManager: No editor for gridId: 2
+2024-08-13T08:09:44.130Z CursorManager: No editor for gridId: 71
+2024-08-13T08:09:45.074Z CursorManager: No editor for gridId: 2
+2024-08-13T08:09:45.417Z CursorManager: No editor for gridId: 2
+2024-08-13T08:09:47.312Z CursorManager: No editor for gridId: 2
+2024-08-13T08:13:47.551Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
