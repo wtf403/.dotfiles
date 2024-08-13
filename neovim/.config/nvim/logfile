@@ -147,3 +147,39 @@
 2024-08-13T09:32:48.695Z CursorManager: No editor for gridId: 2
 2024-08-13T09:32:48.704Z CursorManager: No editor for gridId: 106
 2024-08-13T09:37:35.245Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-13T15:11:48.902Z CursorManager: No editor for gridId: 2
+2024-08-13T15:11:48.906Z CursorManager: No editor for gridId: 107
+2024-08-13T15:12:17.618Z CursorManager: No editor for gridId: 2
+2024-08-13T15:12:17.623Z CursorManager: No editor for gridId: 108
+2024-08-13T15:12:46.217Z CursorManager: No editor for gridId: 109
+2024-08-13T15:13:01.621Z CursorManager: No editor for gridId: 2
+2024-08-13T15:13:19.614Z CursorManager: No editor for gridId: 111
+2024-08-13T15:13:29.122Z MessagesManager: 4 fewer lines
+2024-08-13T15:13:35.515Z CursorManager: No editor for gridId: 112
+2024-08-13T15:13:56.092Z CursorManager: No editor for gridId: 2
+2024-08-13T15:13:56.099Z CursorManager: No editor for gridId: 113
+2024-08-13T15:15:27.138Z CursorManager: No editor for gridId: 114
+2024-08-13T15:15:30.100Z CursorManager: No editor for gridId: 115
+2024-08-13T15:16:25.684Z CursorManager: No editor for gridId: 2
+2024-08-13T15:16:25.688Z CursorManager: No editor for gridId: 116
+2024-08-13T15:17:08.076Z CursorManager: No editor for gridId: 117
+2024-08-13T15:17:16.304Z CursorManager: No editor for gridId: 2
+2024-08-13T15:17:16.311Z CursorManager: No editor for gridId: 118
+2024-08-13T15:17:23.352Z CursorManager: No editor for gridId: 2
+2024-08-13T15:17:23.356Z CursorManager: No editor for gridId: 119
+2024-08-13T15:17:33.825Z CursorManager: No editor for gridId: 120
+2024-08-13T15:17:39.335Z CursorManager: No editor for gridId: 2
+2024-08-13T15:17:45.897Z CursorManager: No editor for gridId: 2
+2024-08-13T15:17:45.902Z CursorManager: No editor for gridId: 122
+2024-08-13T15:17:48.990Z CursorManager: No editor for gridId: 123
+2024-08-13T15:18:17.392Z CursorManager: No editor for gridId: 2
+2024-08-13T15:22:04.656Z CursorManager: No editor for gridId: 125
+2024-08-13T15:25:21.347Z CursorManager: No editor for gridId: 2
+2024-08-13T15:25:24.018Z CursorManager: No editor for gridId: 2
+2024-08-13T15:25:27.170Z CursorManager: No editor for gridId: 128
+2024-08-13T15:26:35.203Z CursorManager: No editor for gridId: 2
+2024-08-13T15:26:35.207Z CursorManager: No editor for gridId: 129
+2024-08-13T15:26:40.726Z CursorManager: No editor for gridId: 2
+2024-08-13T15:26:40.736Z CursorManager: No editor for gridId: 130
+2024-08-13T15:26:54.234Z MessagesManager: 77 lines yanked
+2024-08-13T15:28:16.788Z MessagesManager: 77 lines yanked
