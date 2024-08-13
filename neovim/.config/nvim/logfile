@@ -62,3 +62,31 @@
 2024-08-13T06:27:49.576Z CursorManager: No editor for gridId: 40
 2024-08-13T06:28:11.099Z CursorManager: No editor for gridId: 41
 2024-08-13T06:29:21.424Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-13T06:34:23.629Z MessagesManager: 105 lines yanked
+2024-08-13T06:35:21.638Z MessagesManager: 9 lines yanked
+2024-08-13T06:53:01.885Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:03.816Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:04.647Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:05.661Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:06.387Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:09.685Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:10.242Z CursorManager: No editor for gridId: 2
+2024-08-13T06:53:14.255Z CursorManager: No editor for gridId: 49
+2024-08-13T06:54:27.807Z CursorManager: No editor for gridId: 2
+2024-08-13T06:54:51.144Z CursorManager: No editor for gridId: 51
+2024-08-13T06:54:58.800Z CursorManager: No editor for gridId: 52
+2024-08-13T06:55:02.400Z CursorManager: No editor for gridId: 53
+2024-08-13T06:55:06.856Z CursorManager: No editor for gridId: 54
+2024-08-13T06:55:12.158Z CursorManager: No editor for gridId: 55
+2024-08-13T06:55:13.820Z CursorManager: No editor for gridId: 56
+2024-08-13T06:55:17.612Z CursorManager: No editor for gridId: 57
+2024-08-13T06:55:34.079Z CursorManager: No editor for gridId: 58
+2024-08-13T06:55:41.400Z CursorManager: No editor for gridId: 59
+2024-08-13T06:55:48.810Z CursorManager: No editor for gridId: 60
+2024-08-13T06:56:13.545Z CursorManager: No editor for gridId: 61
+2024-08-13T06:57:38.470Z CursorManager: No editor for gridId: 2
+2024-08-13T06:58:18.422Z MessagesManager: 31 lines yanked
+2024-08-13T06:59:12.194Z CursorManager: No editor for gridId: 2
+2024-08-13T06:59:12.199Z CursorManager: No editor for gridId: 63
+2024-08-13T06:59:37.632Z CursorManager: No editor for gridId: 2
+2024-08-13T06:59:37.641Z CursorManager: No editor for gridId: 64
