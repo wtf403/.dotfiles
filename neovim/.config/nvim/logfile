@@ -141,3 +141,9 @@
 2024-08-13T09:29:19.810Z CursorManager: No editor for gridId: 2
 2024-08-13T09:29:30.194Z CursorManager: No editor for gridId: 101
 2024-08-13T09:29:40.326Z CursorManager: No editor for gridId: 102
+2024-08-13T09:31:10.976Z CursorManager: No editor for gridId: 103
+2024-08-13T09:31:13.332Z CursorManager: No editor for gridId: 104
+2024-08-13T09:31:31.395Z CursorManager: No editor for gridId: 2
+2024-08-13T09:32:48.695Z CursorManager: No editor for gridId: 2
+2024-08-13T09:32:48.704Z CursorManager: No editor for gridId: 106
+2024-08-13T09:37:35.245Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
