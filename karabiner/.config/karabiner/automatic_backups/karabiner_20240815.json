@@ -662,51 +662,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "F6 --> Toggle System Appearance",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "dark",
-                                        "type": "variable_if",
-                                        "value": 0
-                                    }
-                                ],
-                                "from": { "key_code": "f6" },
-                                "to": [
-                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'" },
-                                    {
-                                        "set_variable": {
-                                            "name": "dark",
-                                            "value": 1
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "conditions": [
-                                    {
-                                        "name": "dark",
-                                        "type": "variable_if",
-                                        "value": 1
-                                    }
-                                ],
-                                "from": { "key_code": "f6" },
-                                "to": [
-                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'" },
-                                    {
-                                        "set_variable": {
-                                            "name": "dark",
-                                            "value": 0
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "CapsLock (Ctrl) + [ --> Escape",
                         "manipulators": [
                             {
