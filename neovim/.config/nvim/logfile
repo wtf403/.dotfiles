@@ -17,3 +17,5 @@
 2024-08-15T07:26:22.386Z CursorManager: No editor for gridId: 6
 2024-08-15T07:27:20.532Z CursorManager: No editor for gridId: 2
 2024-08-15T07:27:45.498Z MessagesManager: 11 more lines
+2024-08-15T07:30:09.116Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/config/backend-api.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fconfig%2Fbackend-api.ts%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-15T07:30:09.775Z CursorManager: No editor for gridId: 2
