@@ -1,16 +1,31 @@
-2024-08-16T09:26:47.065Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-16T09:26:47.336Z MainController: Nvim info: {
+2024-08-16T09:31:35.160Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-16T09:31:35.461Z MainController: Nvim info: {
   nvimVersion: {
-    api_level: 12,
     api_prerelease: true,
     api_compatible: 0,
     build: 'e6d38c7',
     prerelease: true,
     major: 0,
     minor: 10,
-    patch: 0
+    patch: 0,
+    api_level: 12
   },
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-16T09:26:47.344Z CursorManager: No editor for gridId: 2
+2024-08-16T09:31:35.467Z CursorManager: No editor for gridId: 2
+2024-08-16T09:32:11.819Z MessagesManager: 15 lines yanked
+2024-08-16T09:32:18.862Z MessagesManager: 15 fewer lines
+2024-08-16T09:32:23.559Z MessagesManager: 14 lines yanked
+2024-08-16T09:32:30.853Z CursorManager: No editor for gridId: 6
+2024-08-16T09:32:32.018Z CursorManager: No editor for gridId: 7
+2024-08-16T09:32:53.172Z MessagesManager: 14 fewer lines
+2024-08-16T09:32:59.842Z MessagesManager: 276 lines yanked
+2024-08-16T09:33:36.498Z MessagesManager: 276 lines yanked
+2024-08-16T09:58:33.555Z MessagesManager: 280 more lines
+2024-08-16T09:58:38.841Z CursorManager: No editor for gridId: 2
+2024-08-16T09:58:44.706Z MessagesManager: man.lua: "no manual entry for searchedEmployee"
+2024-08-16T09:58:46.194Z MessagesManager: man.lua: "no manual entry for searchedEmployee"
+2024-08-16T09:59:08.599Z MessagesManager: man.lua: "no manual entry for searchedEmployee"
+2024-08-16T09:59:35.630Z CursorManager: No editor for gridId: 9
+2024-08-16T09:59:40.462Z CursorManager: No editor for gridId: 10
