@@ -1,28 +1,18 @@
-2024-08-16T12:26:08.944Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-16T12:26:09.313Z MainController: Nvim info: {
+2024-08-16T12:46:02.617Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-16T12:46:03.012Z MainController: Nvim info: {
+  configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
-    minor: 10,
     prerelease: true,
-    api_prerelease: true,
+    minor: 10,
     build: 'e6d38c7',
-    api_level: 12,
+    patch: 0,
     major: 0,
-    api_compatible: 0,
-    patch: 0
+    api_level: 12,
+    api_prerelease: true,
+    api_compatible: 0
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log',
-  configDir: '/Users/maxkiselev/.config/nvim'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log'
 }
-2024-08-16T12:26:09.326Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:32.162Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:33.965Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:36.340Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:37.415Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:38.783Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:40.824Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:41.916Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:42.917Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:43.621Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:44.314Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:46.151Z CursorManager: No editor for gridId: 2
-2024-08-16T12:26:47.381Z CursorManager: No editor for gridId: 2
+2024-08-16T12:46:03.030Z CursorManager: No editor for gridId: 2
+2024-08-16T12:46:22.884Z MessagesManager: 16 fewer lines
+2024-08-16T12:46:35.658Z MessagesManager: 16 fewer lines
