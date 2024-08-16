@@ -17,3 +17,11 @@
 2024-08-16T12:46:22.884Z MessagesManager: 16 fewer lines
 2024-08-16T12:46:35.658Z MessagesManager: 16 fewer lines
 2024-08-16T13:00:03.515Z CursorManager: No editor for gridId: 2
+2024-08-16T13:36:33.909Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:45:34.046Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:46:12.158Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:46:15.886Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:46:51.195Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:46:55.020Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:47:25.885Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
+2024-08-16T13:47:29.966Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
