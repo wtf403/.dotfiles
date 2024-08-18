@@ -1,54 +1,16 @@
-2024-08-16T12:46:02.617Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-16T12:46:03.012Z MainController: Nvim info: {
-  configDir: '/Users/maxkiselev/.config/nvim',
+2024-08-18T12:42:51.223Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-18T12:42:52.164Z MainController: Nvim info: {
   nvimVersion: {
-    prerelease: true,
-    minor: 10,
-    build: 'e6d38c7',
-    patch: 0,
-    major: 0,
     api_level: 12,
+    build: 'e6d38c7',
+    api_compatible: 0,
+    major: 0,
+    minor: 10,
+    patch: 0,
     api_prerelease: true,
-    api_compatible: 0
+    prerelease: true
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
+  configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-16T12:46:03.030Z CursorManager: No editor for gridId: 2
-2024-08-16T12:46:22.884Z MessagesManager: 16 fewer lines
-2024-08-16T12:46:35.658Z MessagesManager: 16 fewer lines
-2024-08-16T13:00:03.515Z CursorManager: No editor for gridId: 2
-2024-08-16T13:36:33.909Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:45:34.046Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:46:12.158Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:46:15.886Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:46:51.195Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:46:55.020Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:47:25.885Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T13:47:29.966Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/tsconfig.json, skipping
-2024-08-16T14:25:42.432Z CursorManager: No editor for gridId: 2
-2024-08-16T14:26:34.804Z CursorManager: No editor for gridId: 2
-2024-08-16T14:27:04.307Z CursorManager: No editor for gridId: 2
-2024-08-16T14:27:05.657Z CursorManager: No editor for gridId: 2
-2024-08-16T14:27:12.433Z CursorManager: No editor for gridId: 2
-2024-08-16T14:31:00.337Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/docs/asciidoc/index.adoc.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fdocs%2Fasciidoc%2Findex.adoc%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-16T14:31:57.955Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts, skipping
-2024-08-16T14:32:05.534Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-16T14:32:53.487Z CursorManager: No editor for gridId: 11
-2024-08-16T14:32:53.487Z CursorManager: No editor for gridId: 2
-2024-08-16T14:32:53.495Z CursorManager: nvim_win_set_cursor: Cursor position outside buffer
-2024-08-16T14:32:53.496Z CursorManager: nvim_win_set_cursor: Cursor position outside buffer
-2024-08-16T14:38:15.828Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-16T14:40:01.544Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-16T14:42:39.321Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts, skipping
-2024-08-16T14:52:19.008Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-assessment-admin-middle, skipping
-2024-08-16T14:52:19.010Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-assessment-admin-middle, skipping
-2024-08-16T14:55:28.746Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-assessment-admin-middle, skipping
-2024-08-16T14:55:28.935Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-18T11:37:09.143Z CursorManager: No editor for gridId: 12
-2024-08-18T11:37:09.188Z CursorManager: No editor for gridId: 13
-2024-08-18T11:37:09.188Z CursorManager: No editor for gridId: 2
-2024-08-18T11:37:09.195Z CursorManager: nvim_win_set_cursor: Cursor position outside buffer
-2024-08-18T11:37:09.198Z CursorManager: nvim_win_set_cursor: Cursor position outside buffer
-2024-08-18T11:41:00.069Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-18T11:41:48.241Z CursorManager: No editor for gridId: 2
-2024-08-18T11:41:48.803Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-18T12:42:52.213Z CursorManager: No editor for gridId: 2
