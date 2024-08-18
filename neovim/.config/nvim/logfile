@@ -44,3 +44,11 @@
 2024-08-16T14:52:19.010Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-assessment-admin-middle, skipping
 2024-08-16T14:55:28.746Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-assessment-admin-middle, skipping
 2024-08-16T14:55:28.935Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-18T11:37:09.143Z CursorManager: No editor for gridId: 12
+2024-08-18T11:37:09.188Z CursorManager: No editor for gridId: 13
+2024-08-18T11:37:09.188Z CursorManager: No editor for gridId: 2
+2024-08-18T11:37:09.195Z CursorManager: nvim_win_set_cursor: Cursor position outside buffer
+2024-08-18T11:37:09.198Z CursorManager: nvim_win_set_cursor: Cursor position outside buffer
+2024-08-18T11:41:00.069Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-18T11:41:48.241Z CursorManager: No editor for gridId: 2
+2024-08-18T11:41:48.803Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/README.md.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2FREADME.md%22%2C%22ref%22%3A%22%22%7D, skipping
