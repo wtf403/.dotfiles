@@ -1,0 +1,927 @@
+{
+    "global": { "show_in_menu_bar": false },
+    "machine_specific": { "krbn-0ff74f9c-8399-45a9-9684-40dd3e8418e2": { "enable_multitouch_extension": true } },
+    "profiles": [
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "LeftCtrl to Sticky Hyper with sticky",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_control",
+                                    "modifiers": {
+                                        "mandatory": [],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "lazy": true,
+                                        "modifiers": ["left_control", "left_option", "left_command"]
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    { "sticky_modifier": { "left_shift": "toggle" } },
+                                    { "sticky_modifier": { "left_control": "toggle" } },
+                                    { "sticky_modifier": { "left_option": "toggle" } },
+                                    { "sticky_modifier": { "left_command": "toggle" } }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock --> Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "right_control" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock (Ctrl) + [ --> Escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": ["right_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Yabai Sticky Control + Option to Fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": { "mandatory": ["right_control"] }
+                                },
+                                "parameters": { "basic.to_if_alone_timeout_milliseconds": 500 },
+                                "to": [{ "key_code": "fn" }],
+                                "to_if_alone": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "mandatory": ["left_option"] }
+                                },
+                                "parameters": { "basic.to_if_alone_timeout_milliseconds": 500 },
+                                "to": [{ "key_code": "fn" }],
+                                "to_if_alone": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "fn to sticky_fn",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "fn" },
+                                "to": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "F6 --> Toggle System Appearance",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "dark",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "from": { "key_code": "f6" },
+                                "to": [
+                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'" },
+                                    {
+                                        "set_variable": {
+                                            "name": "dark",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "dark",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": { "key_code": "f6" },
+                                "to": [
+                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'" },
+                                    {
+                                        "set_variable": {
+                                            "name": "dark",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+; / Ctrl+' --> Telegram folder movement",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": ["control", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": ["control", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+; / Ctrl+' --> Telegram scroll",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [{ "key_code": "PageUp" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "d",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [{ "key_code": "PageDown" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "ctrl+; --> cmd+shift+[",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "ctrl+' --> cmd+shift+]",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "cmd+ctrl+; --> cmd+opt+shift+[",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "mandatory": ["control", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["command", "option", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "cmd+ctrl+'--> cmd+opt+shift+]",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": { "mandatory": ["control", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": ["command", "option", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Option-F1 --> Decrement Illumination",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": {
+                                        "mandatory": ["right_option"],
+                                        "optional": ["left_option"]
+                                    }
+                                },
+                                "to": [{ "key_code": "illumination_decrement" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f1",
+                                    "modifiers": {
+                                        "mandatory": ["left_option"],
+                                        "optional": ["right_option"]
+                                    }
+                                },
+                                "to": [{ "key_code": "illumination_decrement" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Option-F2 --> Increment Illumination",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": ["right_option"],
+                                        "optional": ["left_option"]
+                                    }
+                                },
+                                "to": [{ "key_code": "illumination_increment" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "f2",
+                                    "modifiers": {
+                                        "mandatory": ["left_option"],
+                                        "optional": ["right_option"]
+                                    }
+                                },
+                                "to": [{ "key_code": "illumination_increment" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+{a,e} --> End/Beginning of the line",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "a",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": ["option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": ["option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+{u,k} --> Delete before/after carriage",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^org\\.yanex\\.marta$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "u",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "up_arrow",
+                                        "modifiers": ["option", "shift"]
+                                    },
+                                    { "key_code": "delete_or_backspace" }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.googlecode\\.iterm2$",
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^org\\.yanex\\.marta$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "down_arrow",
+                                        "modifiers": ["option", "shift"]
+                                    },
+                                    { "key_code": "delete_or_backspace" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "LeftShift + RightShift --> CapsLock",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_shift",
+                                    "modifiers": { "mandatory": ["right_shift"] }
+                                },
+                                "to": [{ "key_code": "caps_lock" }],
+                                "to_if_alone": [{ "key_code": "left_shift" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_shift",
+                                    "modifiers": {
+                                        "mandatory": ["left_shift"],
+                                        "optional": ["caps_lock"]
+                                    }
+                                },
+                                "to": [{ "key_code": "caps_lock" }],
+                                "to_if_alone": [{ "key_code": "right_shift" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Ctrl+{n,p} --> Vertial movement",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "n",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "down_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "p",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "up_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "escape = emoji menu. (Simplifies default command + control + space)",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "escape" },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command", "left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "devices": [
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 641,
+                        "vendor_id": 1452
+                    },
+                    "ignore": true,
+                    "manipulate_caps_lock_led": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 666,
+                        "vendor_id": 76
+                    },
+                    "manipulate_caps_lock_led": false
+                }
+            ],
+            "fn_function_keys": [
+                {
+                    "from": { "key_code": "f5" },
+                    "to": [{ "key_code": "f5" }]
+                }
+            ],
+            "name": "main",
+            "simple_modifications": [
+                {
+                    "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
+                    "to": [{ "key_code": "f13" }]
+                }
+            ],
+            "virtual_hid_keyboard": { "indicate_sticky_modifier_keys_state": false }
+        },
+        {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "F6 --> Toggle System Appearance",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "dark",
+                                        "type": "variable_if",
+                                        "value": 0
+                                    }
+                                ],
+                                "from": { "key_code": "f6" },
+                                "to": [
+                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to true'" },
+                                    {
+                                        "set_variable": {
+                                            "name": "dark",
+                                            "value": 1
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "conditions": [
+                                    {
+                                        "name": "dark",
+                                        "type": "variable_if",
+                                        "value": 1
+                                    }
+                                ],
+                                "from": { "key_code": "f6" },
+                                "to": [
+                                    { "shell_command": "osascript -e 'tell application \"System Events\" to tell appearance preferences to set dark mode to false'" },
+                                    {
+                                        "set_variable": {
+                                            "name": "dark",
+                                            "value": 0
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock (Ctrl) + [ --> Escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": ["right_control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "escape = emoji menu. (Simplifies default command + control + space)",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "escape" },
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command", "left_control"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "ctrl+; --> cmd+shift+[",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "ctrl+' --> cmd+shift+]",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$",
+                                            "^org\\.telegram\\.desktop$",
+                                            "^com\\.tdesktop\\.Telegram$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": ["command", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "cmd+ctrl+; --> cmd+opt+shift+[",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "semicolon",
+                                    "modifiers": { "mandatory": ["control", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "modifiers": ["command", "option", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "cmd+ctrl+'--> cmd+opt+shift+]",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.vscodium$",
+                                            "^com\\.vscodium\\.VSCodiumInsiders$",
+                                            "^com\\.microsoft\\.VSCode$",
+                                            "^com\\.microsoft\\.VSCodeInsiders$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "quote",
+                                    "modifiers": { "mandatory": ["control", "option"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "close_bracket",
+                                        "modifiers": ["command", "option", "shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "10 Control + Option to Fn",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": { "mandatory": ["right_control"] }
+                                },
+                                "to": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "left_option",
+                                    "modifiers": { "mandatory": ["right_control"] }
+                                },
+                                "to": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "mandatory": ["left_option"] }
+                                },
+                                "to": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "mandatory": ["right_option"] }
+                                },
+                                "to": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "fn to sticky_fn",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "fn" },
+                                "to": [{ "sticky_modifier": { "fn": "toggle" } }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "CapsLock --> Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "right_control" }],
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "name": "New profile",
+            "selected": true
+        },
+        { "name": "clean" }
+    ]
+}
