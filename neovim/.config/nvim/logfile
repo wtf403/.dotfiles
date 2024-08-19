@@ -51,3 +51,25 @@
 2024-08-19T16:14:34.195Z CursorManager: No editor for gridId: 27
 2024-08-19T16:20:43.679Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
 2024-08-19T16:29:34.095Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-19T16:30:32.728Z CursorManager: No editor for gridId: 2
+2024-08-19T16:46:01.136Z CursorManager: No editor for gridId: 2
+2024-08-19T16:46:01.145Z CursorManager: No editor for gridId: 29
+2024-08-19T16:46:06.079Z CursorManager: No editor for gridId: 2
+2024-08-19T16:48:08.956Z CursorManager: No editor for gridId: 2
+2024-08-19T16:48:08.963Z CursorManager: No editor for gridId: 31
+2024-08-19T16:48:22.400Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-19T16:48:43.985Z CursorManager: No editor for gridId: 2
+2024-08-19T16:49:25.251Z CursorManager: No editor for gridId: 2
+2024-08-19T16:49:25.257Z CursorManager: No editor for gridId: 33
+2024-08-19T16:50:01.471Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-19T16:50:13.951Z CursorManager: No editor for gridId: 2
+2024-08-19T16:50:53.105Z CursorManager: No editor for gridId: 34
+2024-08-19T16:50:53.106Z CursorManager: No editor for gridId: 2
+2024-08-19T16:50:56.865Z CursorManager: No editor for gridId: 2
+2024-08-19T16:50:57.272Z CursorManager: No editor for gridId: 36
+2024-08-19T16:51:54.386Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/yarn.lock.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fyarn.lock%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-19T16:51:59.813Z CursorManager: No editor for gridId: 2
+2024-08-19T16:51:59.820Z CursorManager: No editor for gridId: 37
+2024-08-19T16:52:06.855Z CursorManager: No editor for gridId: 37
+2024-08-19T16:52:06.856Z CursorManager: No editor for gridId: 2
+2024-08-19T16:52:07.369Z CursorManager: No editor for gridId: 38
