@@ -18,19 +18,11 @@
 2024-08-21T18:50:35.236Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
 2024-08-21T18:50:35.713Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
 2024-08-21T18:50:36.823Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-
-2024-08-21T16:10:11.719Z CursorManager: No editor for gridId: 14
-2024-08-21T16:10:13.752Z CursorManager: No editor for gridId: 15
-2024-08-21T16:10:16.074Z CursorManager: No editor for gridId: 16
-2024-08-21T16:10:26.809Z CursorManager: No editor for gridId: 17
-2024-08-21T16:10:39.173Z CursorManager: No editor for gridId: 18
-2024-08-21T16:10:40.373Z CursorManager: No editor for gridId: 19
-2024-08-21T16:10:43.923Z CursorManager: No editor for gridId: 20
-2024-08-21T16:11:16.535Z CursorManager: No editor for gridId: 21
-2024-08-21T16:11:21.770Z CursorManager: No editor for gridId: 2
-2024-08-21T16:11:39.866Z CursorManager: No editor for gridId: 23
-2024-08-21T16:11:40.680Z CursorManager: No editor for gridId: 24
-2024-08-21T16:11:54.581Z CursorManager: No editor for gridId: 25
+2024-08-22T06:59:39.830Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:39.855Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:42.005Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:41.243Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+itor for gridId: 25
 2024-08-21T16:11:58.157Z CursorManager: No editor for gridId: 26
 2024-08-21T16:12:00.323Z CursorManager: No editor for gridId: 27
 2024-08-21T16:12:01.792Z CursorManager: No editor for gridId: 28
@@ -132,15 +124,10 @@
 2024-08-21T18:57:08.315Z CursorManager: No editor for gridId: 113
 2024-08-21T18:57:36.093Z CursorManager: No editor for gridId: 114
 2024-08-21T18:57:40.970Z CursorManager: No editor for gridId: 115
-2024-08-21T18:57:45.167Z CursorManager: No editor for gridId: 116
-2024-08-21T18:57:48.776Z CursorManager: No editor for gridId: 117
-2024-08-21T18:58:07.660Z CursorManager: No editor for gridId: 118
-2024-08-21T18:59:25.095Z CursorManager: No editor for gridId: 119
-2024-08-21T19:00:47.516Z CursorManager: No editor for gridId: 120
-2024-08-21T19:00:50.274Z CursorManager: No editor for gridId: 121
-2024-08-21T19:01:01.437Z MessagesManager: 4 lines yanked
-2024-08-21T19:01:03.851Z CursorManager: No editor for gridId: 122
-2024-08-21T19:01:08.795Z CursorManager: No editor for gridId: 123
+2024-2024-08-22T06:59:40.177Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:40.213Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:42.815Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+idId: 123
 2024-08-21T19:01:10.317Z CursorManager: No editor for gridId: 124
 2024-08-21T19:01:31.148Z CursorManager: No editor for gridId: 125
 2024-08-21T19:01:42.715Z CursorManager: No editor for gridId: 126
@@ -210,3 +197,72 @@
 2024-08-21T19:26:50.746Z CursorManager: No editor for gridId: 187
 2024-08-21T19:26:56.713Z CursorManager: No editor for gridId: 188
 2024-08-21T19:27:10.419Z CursorManager: No editor for gridId: 189
+2024-08-21T19:30:50.890Z CursorManager: No editor for gridId: 190
+2024-08-21T19:31:00.490Z CursorManager: No editor for gridId: 191
+2024-08-21T19:32:46.525Z CursorManager: No editor for gridId: 192
+2024-08-21T19:33:04.949Z CursorManager: No editor for gridId: 193
+2024-08-21T19:33:37.809Z CursorManager: No editor for gridId: 194
+2024-08-21T19:33:40.706Z CursorManager: No editor for gridId: 195
+2024-08-21T19:34:06.726Z CursorManager: No editor for gridId: 196
+2024-08-21T19:34:12.231Z CursorManager: No editor for gridId: 197
+2024-08-21T19:34:14.790Z CursorManager: No editor for gridId: 198
+2024-08-21T19:34:18.992Z CursorManager: No editor for gridId: 199
+2024-08-21T19:34:33.211Z CursorManager: No editor for gridId: 200
+2024-08-21T19:34:35.425Z CursorManager: No editor for gridId: 201
+2024-08-21T19:34:46.987Z CursorManager: No editor for gridId: 202
+2024-08-21T19:34:55.029Z CursorManager: No editor for gridId: 203
+2024-08-21T19:35:06.529Z CursorManager: No editor for gridId: 204
+2024-08-21T19:35:07.931Z CursorManager: No editor for gridId: 205
+2024-08-21T19:35:13.085Z CursorManager: No editor for gridId: 206
+2024-08-21T19:35:21.070Z CursorManager: No editor for gridId: 207
+2024-08-21T19:35:23.677Z CursorManager: No editor for gridId: 208
+2024-08-21T19:36:11.845Z CursorManager: No editor for gridId: 209
+2024-08-21T19:36:19.243Z CursorManager: No editor for gridId: 210
+2024-08-21T19:36:22.449Z CursorManager: No editor for gridId: 211
+2024-08-21T19:36:33.129Z CursorManager: No editor for gridId: 212
+2024-08-21T19:36:37.222Z CursorManager: No editor for gridId: 213
+2024-08-21T19:37:08.943Z CursorManager: No editor for gridId: 214
+2024-08-21T19:37:20.760Z CursorManager: No editor for gridId: 215
+2024-08-21T19:37:34.112Z CursorManager: No editor for gridId: 216
+2024-08-21T19:37:44.561Z CursorManager: No editor for gridId: 217
+2024-08-21T19:37:49.227Z CursorManager: No editor for gridId: 218
+2024-08-21T19:37:52.199Z CursorManager: No editor for gridId: 219
+2024-08-21T19:37:57.996Z CursorManager: No editor for gridId: 220
+2024-08-21T19:38:06.032Z CursorManager: No editor for gridId: 221
+2024-08-21T19:38:13.403Z CursorManager: No editor for gridId: 222
+2024-08-21T19:38:15.498Z CursorManager: No editor for gridId: 223
+2024-08-21T19:42:21.262Z CursorManager: No editor for gridId: 224
+2024-08-21T19:42:59.965Z MessagesManager: 6 fewer lines
+2024-08-21T19:43:02.587Z CursorManager: No editor for gridId: 225
+2024-08-21T19:43:12.564Z CursorManager: No editor for gridId: 226
+2024-08-21T19:43:25.615Z CursorManager: No editor for gridId: 227
+2024-08-21T19:43:55.848Z CursorManager: No editor for gridId: 228
+2024-08-21T19:44:32.592Z MessagesManager: block of 4 lines yanked
+2024-08-21T19:44:46.186Z CursorManager: No editor for gridId: 229
+2024-08-21T19:44:51.002Z CursorManager: No editor for gridId: 230
+2024-08-21T19:44:51.805Z CursorManager: No editor for gridId: 231
+2024-08-21T19:44:52.615Z CursorManager: No editor for gridId: 232
+2024-08-21T19:44:53.365Z CursorManager: No editor for gridId: 233
+2024-08-21T19:44:59.245Z MessagesManager: block of 4 lines yanked
+2024-08-21T19:45:36.568Z CursorManager: No editor for gridId: 234
+2024-08-21T19:45:42.065Z CursorManager: No editor for gridId: 235
+2024-08-21T19:45:47.683Z CursorManager: No editor for gridId: 236
+2024-08-21T19:46:30.786Z CursorManager: No editor for gridId: 237
+2024-08-21T19:47:22.570Z CursorManager: No editor for gridId: 238
+2024-08-21T19:47:32.035Z CursorManager: No editor for gridId: 239
+2024-08-21T19:47:35.472Z CursorManager: No editor for gridId: 240
+2024-08-21T19:47:36.451Z CursorManager: No editor for gridId: 241
+2024-08-21T19:48:03.358Z CursorManager: No editor for gridId: 242
+2024-08-21T19:48:09.634Z CursorManager: No editor for gridId: 243
+2024-08-21T19:48:11.424Z CursorManager: No editor for gridId: 244
+2024-08-21T19:48:13.600Z CursorManager: No editor for gridId: 245
+2024-08-21T19:48:16.769Z CursorManager: No editor for gridId: 246
+2024-08-21T19:48:30.076Z CursorManager: No editor for gridId: 247
+2024-08-21T19:48:32.143Z CursorManager: No editor for gridId: 248
+2024-08-21T19:48:39.496Z CursorManager: No editor for gridId: 249
+2024-08-21T19:48:40.771Z CursorManager: No editor for gridId: 250
+2024-08-21T19:48:41.852Z CursorManager: No editor for gridId: 251
+2024-08-21T19:48:43.572Z CursorManager: No editor for gridId: 252
+2024-08-22T06:59:40.883Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:40.954Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T06:59:45.224Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
