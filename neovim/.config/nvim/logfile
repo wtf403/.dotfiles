@@ -266,3 +266,27 @@ idId: 123
 2024-08-22T06:59:40.883Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
 2024-08-22T06:59:40.954Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
 2024-08-22T06:59:45.224Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-22T07:06:10.109Z CursorManager: No editor for gridId: 253
+2024-08-22T07:06:11.024Z CursorManager: No editor for gridId: 254
+2024-08-22T07:06:33.050Z CursorManager: No editor for gridId: 255
+2024-08-22T07:06:37.542Z CursorManager: No editor for gridId: 256
+2024-08-22T07:06:38.786Z CursorManager: No editor for gridId: 257
+2024-08-22T07:07:29.076Z MessagesManager: 365 lines yanked
+2024-08-22T07:13:06.492Z MessagesManager: 365 lines yanked
+2024-08-22T07:16:11.873Z MessagesManager: 32 lines yanked
+2024-08-22T07:16:14.685Z CursorManager: No editor for gridId: 258
+2024-08-22T07:16:16.108Z CursorManager: No editor for gridId: 259
+2024-08-22T07:18:47.591Z MessagesManager: 8 lines yanked
+2024-08-22T07:18:53.248Z CursorManager: No editor for gridId: 260
+2024-08-22T07:19:02.606Z CursorManager: No editor for gridId: 261
+2024-08-22T07:19:27.030Z MessagesManager: 6 lines <ed 1 time
+2024-08-22T07:19:31.224Z CursorManager: No editor for gridId: 262
+2024-08-22T07:20:08.587Z CursorManager: No editor for gridId: 263
+2024-08-22T07:21:10.886Z CursorManager: No editor for gridId: 264
+2024-08-22T07:21:15.162Z CursorManager: No editor for gridId: 265
+2024-08-22T07:21:29.714Z CursorManager: No editor for gridId: 266
+2024-08-22T07:24:31.481Z CursorManager: No editor for gridId: 267
+2024-08-22T07:24:37.732Z CursorManager: No editor for gridId: 268
+2024-08-22T07:25:42.481Z CursorManager: No editor for gridId: 269
+2024-08-22T07:25:58.914Z CursorManager: No editor for gridId: 270
+2024-08-22T07:29:51.729Z MessagesManager: 15 more lines
