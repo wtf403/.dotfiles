@@ -1,19 +1,16 @@
-2024-08-22T14:53:10.297Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-22T14:53:10.799Z MainController: Nvim info: {
+2024-08-22T18:17:42.741Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-22T18:17:45.120Z MainController: Nvim info: {
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim',
   nvimVersion: {
-    api_compatible: 0,
-    prerelease: true,
     minor: 10,
-    build: 'e6d38c7',
     patch: 0,
-    major: 0,
     api_level: 12,
-    api_prerelease: true
+    api_prerelease: true,
+    api_compatible: 0,
+    build: 'e6d38c7',
+    prerelease: true,
+    major: 0
   }
 }
-2024-08-22T14:53:11.464Z CursorManager: No editor for gridId: 2
-2024-08-22T14:53:46.065Z CursorManager: No editor for gridId: 6
-2024-08-22T14:53:49.105Z CursorManager: No editor for gridId: 7
-2024-08-22T14:55:07.500Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/containers/team-filters/elems/search/search.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fcontainers%2Fteam-filters%2Felems%2Fsearch%2Fsearch.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-22T18:17:47.990Z CursorManager: No editor for gridId: 2
