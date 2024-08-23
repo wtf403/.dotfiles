@@ -1,80 +1,27 @@
-2024-08-22T19:33:22.350Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-22T19:33:22.906Z MainController: Nvim info: {
+2024-08-23T04:21:02.885Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-23T04:21:03.234Z MainController: Nvim info: {
   nvimVersion: {
-    api_prerelease: true,
-    api_compatible: 0,
-    prerelease: true,
-    minor: 10,
-    build: 'e6d38c7',
-    patch: 0,
     major: 0,
-    api_level: 12
+    minor: 10,
+    patch: 0,
+    prerelease: true,
+    api_level: 12,
+    api_prerelease: true,
+    build: 'e6d38c7',
+    api_compatible: 0
   },
   logFile: '/Users/maxkiselev/.local/state/nvim/log',
   configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-22T19:33:23.460Z CursorManager: No editor for gridId: 2
-2024-08-22T19:33:33.290Z MessagesManager: 263 more lines
-2024-08-22T19:33:36.401Z MessagesManager: 263 more lines
-2024-08-22T19:36:40.847Z MessagesManager: 273 more lines
-2024-08-22T19:41:17.848Z MessagesManager: 273 more lines
-2024-08-22T19:41:22.969Z CursorManager: No editor for gridId: 2
-2024-08-22T19:41:24.305Z CursorManager: No editor for gridId: 2
-2024-08-22T19:41:40.038Z CursorManager: No editor for gridId: 2
-2024-08-22T19:41:40.047Z CursorManager: No editor for gridId: 8
-2024-08-22T19:41:52.663Z CursorManager: No editor for gridId: 2
-2024-08-22T19:42:36.506Z MessagesManager: 330 more lines
-2024-08-22T19:42:57.859Z MessagesManager: 5 lines yanked
-2024-08-22T19:45:00.840Z CursorManager: No editor for gridId: 2
-2024-08-22T19:45:00.853Z CursorManager: No editor for gridId: 10
-2024-08-22T19:45:01.846Z CursorManager: No editor for gridId: 2
-2024-08-22T19:45:03.697Z MessagesManager: 254 more lines
-2024-08-22T19:45:29.043Z CursorManager: No editor for gridId: 12
-2024-08-22T19:58:42.484Z MessagesManager: 260 more lines
-2024-08-22T20:02:01.588Z MessagesManager: 260 more lines
-2024-08-22T20:07:06.171Z MessagesManager: 257 more lines
-2024-08-22T20:07:09.385Z MessagesManager: 229 fewer lines
-2024-08-22T20:08:37.518Z MessagesManager: 229 fewer lines
-2024-08-22T20:09:30.028Z CursorManager: No editor for gridId: 13
-2024-08-22T20:10:05.924Z MessagesManager: 262 more lines
-2024-08-22T20:10:09.085Z CursorManager: No editor for gridId: 2
-2024-08-22T20:10:09.100Z CursorManager: No editor for gridId: 14
-2024-08-22T20:10:10.505Z CursorManager: No editor for gridId: 2
-2024-08-22T20:11:24.656Z CursorManager: No editor for gridId: 2
-2024-08-22T20:11:24.669Z CursorManager: No editor for gridId: 16
-2024-08-22T20:11:26.584Z CursorManager: No editor for gridId: 2
-2024-08-22T20:11:27.423Z CursorManager: No editor for gridId: 2
-2024-08-22T20:12:03.125Z CursorManager: No editor for gridId: 19
-2024-08-22T20:12:13.190Z CursorManager: No editor for gridId: 20
-2024-08-22T20:12:21.125Z CursorManager: No editor for gridId: 21
-2024-08-22T20:59:40.101Z MessagesManager: 3 lines yanked
-2024-08-22T21:00:31.469Z MessagesManager: 3 lines yanked
-2024-08-22T21:04:27.638Z MessagesManager: 6 more lines
-2024-08-22T21:04:34.639Z MessagesManager: 6 more lines
-2024-08-22T21:13:06.366Z CursorManager: No editor for gridId: 23
-2024-08-22T21:13:18.783Z CursorManager: No editor for gridId: 25
-2024-08-22T21:13:19.561Z CursorManager: No editor for gridId: 27
-2024-08-22T21:15:36.071Z CursorManager: No editor for gridId: 28
-2024-08-22T21:15:38.462Z CursorManager: No editor for gridId: 29
-2024-08-22T21:15:40.106Z CursorManager: No editor for gridId: 30
-2024-08-22T21:15:52.856Z CursorManager: No editor for gridId: 31
-2024-08-22T21:15:53.836Z CursorManager: No editor for gridId: 32
-2024-08-22T21:16:03.509Z CursorManager: No editor for gridId: 33
-2024-08-22T21:16:06.526Z CursorManager: No editor for gridId: 34
-2024-08-22T21:16:08.697Z CursorManager: No editor for gridId: 35
-2024-08-22T21:17:32.233Z CursorManager: No editor for gridId: 2
-2024-08-22T21:23:28.173Z CursorManager: No editor for gridId: 37
-2024-08-22T21:23:39.118Z CursorManager: No editor for gridId: 38
-2024-08-22T21:25:26.113Z CursorManager: No editor for gridId: 2
-2024-08-22T21:25:26.127Z CursorManager: No editor for gridId: 39
-2024-08-22T21:26:03.806Z MessagesManager: 3 lines yanked
-2024-08-22T21:26:10.864Z CursorManager: No editor for gridId: 40
-2024-08-22T21:26:16.625Z MessagesManager: 254 lines yanked
-2024-08-22T21:27:29.201Z CursorManager: No editor for gridId: 41
-2024-08-22T21:27:32.321Z CursorManager: No editor for gridId: 42
-2024-08-22T21:27:36.735Z CursorManager: No editor for gridId: 43
-2024-08-22T21:27:37.699Z CursorManager: No editor for gridId: 44
-2024-08-22T21:29:26.177Z CursorManager: No editor for gridId: 45
-2024-08-22T21:29:28.734Z CursorManager: No editor for gridId: 46
-2024-08-22T21:29:37.000Z CursorManager: No editor for gridId: 47
-2024-08-22T21:29:56.730Z CursorManager: No editor for gridId: 48
+2024-08-23T04:21:03.245Z CursorManager: No editor for gridId: 2
+2024-08-23T04:22:04.667Z CursorManager: No editor for gridId: 2
+2024-08-23T04:24:17.167Z CursorManager: No editor for gridId: 2
+2024-08-23T04:24:25.653Z CursorManager: No editor for gridId: 2
+2024-08-23T04:29:23.129Z CursorManager: No editor for gridId: 9
+2024-08-23T04:29:25.740Z MessagesManager: 5 lines yanked
+2024-08-23T04:29:30.623Z MessagesManager: 5 more lines
+2024-08-23T04:29:32.614Z MessagesManager: 5 more lines
+2024-08-23T04:29:37.793Z CursorManager: No editor for gridId: 2
+2024-08-23T04:29:37.800Z CursorManager: No editor for gridId: 10
+2024-08-23T04:29:39.493Z CursorManager: No editor for gridId: 2
+2024-08-23T04:29:40.733Z CursorManager: No editor for gridId: 2
