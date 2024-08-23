@@ -22,3 +22,4 @@
 2024-08-23T08:56:54.413Z MessagesManager: 3 fewer lines
 2024-08-23T08:59:10.463Z MessagesManager: 3 lines yanked
 2024-08-23T08:59:13.640Z CursorManager: No editor for gridId: 9
+2024-08-23T09:07:57.006Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22%2C%22ref%22%3A%22%22%7D, skipping
