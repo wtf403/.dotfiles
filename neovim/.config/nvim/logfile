@@ -1,23 +1,16 @@
-2024-08-23T13:43:26.765Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
-2024-08-23T13:43:27.339Z MainController: Nvim info: {
-  configDir: '/Users/maxkiselev/.config/nvim',
+2024-08-23T14:27:49.125Z MainController: Starting nvim: /Users/maxkiselev/.asdf/shims/nvim -N --embed --cmd source /Users/maxkiselev/.vscode-oss/extensions/asvetliakov.vscode-neovim-1.18.1/runtime/vscode-neovim.vim -u /Users/maxkiselev/.config/nvim/init.vim
+2024-08-23T14:27:49.457Z MainController: Nvim info: {
   nvimVersion: {
-    prerelease: true,
-    api_level: 12,
-    build: 'e6d38c7',
-    api_compatible: 0,
-    major: 0,
     minor: 10,
-    patch: 0,
-    api_prerelease: true
+    build: 'e6d38c7',
+    prerelease: true,
+    api_prerelease: true,
+    api_level: 12,
+    major: 0,
+    api_compatible: 0,
+    patch: 0
   },
-  logFile: '/Users/maxkiselev/.local/state/nvim/log'
+  logFile: '/Users/maxkiselev/.local/state/nvim/log',
+  configDir: '/Users/maxkiselev/.config/nvim'
 }
-2024-08-23T13:43:27.353Z CursorManager: No editor for gridId: 2
-2024-08-23T13:44:12.988Z CursorManager: No editor for gridId: 6
-2024-08-23T13:54:04.319Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/src/backend/backend.service.ts.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fsrc%2Fbackend%2Fbackend.service.ts%22024-08-23T13:54:38.295Z CursorManager: No editor for gridId: 12
-2024-08-23T13:56:13.742Z CursorManager: No editor for gridId: 13
-2024-08-23T13:57:20.775Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/containers/team-filters/elems/search/search.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Fcontainers%2Fteam-filters%2Felems%2Fsearch%2Fsearch.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-23T13:57:42.643Z CursorManager: No editor for gridId: 11
-2024-08-23T13:57:42.643Z CursorManager: No editor for gridId: 2
-2024-08-23T13:58:15.691Z CursorManager: No editor for gridId: 15
+2024-08-23T14:27:49.471Z CursorManager: No editor for gridId: 2
