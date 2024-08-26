@@ -650,7 +650,6 @@
                 }
             ],
             "name": "main",
-            "selected": true,
             "simple_modifications": [
                 {
                     "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
@@ -920,7 +919,8 @@
                     }
                 ]
             },
-            "name": "New profile"
+            "name": "New profile",
+            "selected": true
         },
         { "name": "clean" }
     ]
