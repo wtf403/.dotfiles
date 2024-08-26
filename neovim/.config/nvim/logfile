@@ -331,3 +331,62 @@
 2024-08-25T23:53:37.252Z CursorManager: No editor for gridId: 235
 2024-08-25T23:53:48.577Z CursorManager: No editor for gridId: 236
 2024-08-25T23:53:58.514Z CursorManager: No editor for gridId: 237
+2024-08-26T03:09:59.587Z MessagesManager: 11 fewer lines
+2024-08-26T03:10:13.213Z MessagesManager: 4 fewer lines
+2024-08-26T03:10:13.981Z CursorManager: No editor for gridId: 238
+2024-08-26T03:10:56.700Z CursorManager: No editor for gridId: 239
+2024-08-26T03:11:15.633Z CursorManager: No editor for gridId: 240
+2024-08-26T03:11:25.246Z CursorManager: No editor for gridId: 241
+2024-08-26T03:11:29.977Z CursorManager: No editor for gridId: 242
+2024-08-26T03:11:59.630Z CursorManager: No editor for gridId: 243
+2024-08-26T03:12:04.425Z CursorManager: No editor for gridId: 244
+2024-08-26T03:12:05.780Z CursorManager: No editor for gridId: 245
+2024-08-26T03:12:08.988Z CursorManager: No editor for gridId: 246
+2024-08-26T03:13:16.113Z CursorManager: No editor for gridId: 247
+2024-08-26T03:17:00.438Z MessagesManager: 79 lines yanked
+2024-08-26T03:18:56.737Z CursorManager: No editor for gridId: 2
+2024-08-26T03:19:01.558Z CursorManager: No editor for gridId: 2
+2024-08-26T03:19:02.886Z CursorManager: No editor for gridId: 250
+2024-08-26T03:20:08.046Z MessagesManager: 25 more lines
+2024-08-26T03:20:40.817Z CursorManager: No editor for gridId: 251
+2024-08-26T03:20:42.294Z CursorManager: No editor for gridId: 252
+2024-08-26T03:20:47.202Z CursorManager: No editor for gridId: 253
+2024-08-26T03:20:54.324Z CursorManager: No editor for gridId: 254
+2024-08-26T03:20:55.501Z CursorManager: No editor for gridId: 255
+2024-08-26T03:21:16.516Z CursorManager: No editor for gridId: 2
+2024-08-26T03:21:16.530Z CursorManager: No editor for gridId: 256
+2024-08-26T03:21:34.115Z CursorManager: No editor for gridId: 257
+2024-08-26T03:21:35.573Z CursorManager: No editor for gridId: 2
+2024-08-26T03:21:35.576Z CursorManager: No editor for gridId: 258
+2024-08-26T03:21:37.404Z CursorManager: No editor for gridId: 2
+2024-08-26T03:21:37.463Z CursorManager: No editor for gridId: 259
+2024-08-26T03:21:38.966Z CursorManager: No editor for gridId: 2
+2024-08-26T03:21:42.505Z CursorManager: No editor for gridId: 2
+2024-08-26T03:21:42.517Z CursorManager: No editor for gridId: 261
+2024-08-26T03:21:48.907Z CursorManager: No editor for gridId: 262
+2024-08-26T03:21:54.762Z CursorManager: No editor for gridId: 263
+2024-08-26T03:22:02.000Z CursorManager: No editor for gridId: 264
+2024-08-26T03:22:08.437Z CursorManager: No editor for gridId: 265
+2024-08-26T03:22:38.272Z CursorManager: No editor for gridId: 266
+2024-08-26T03:22:47.778Z CursorManager: No editor for gridId: 267
+2024-08-26T03:24:30.204Z CursorManager: No editor for gridId: 268
+2024-08-26T03:25:22.310Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info/docs/infobox.stories.tsx, skipping
+2024-08-26T03:25:22.316Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info/docs/infobox.stories.tsx, skipping
+2024-08-26T03:25:23.079Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info/docs/infobox.stories.tsx, skipping
+2024-08-26T03:25:23.079Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info/docs/infobox.stories.tsx, skipping
+2024-08-26T03:28:05.404Z CursorManager: No editor for gridId: 269
+2024-08-26T03:28:11.888Z CursorManager: No editor for gridId: 270
+2024-08-26T03:28:13.864Z CursorManager: No editor for gridId: 271
+2024-08-26T03:28:21.057Z CursorManager: No editor for gridId: 272
+2024-08-26T03:28:44.247Z CursorManager: No editor for gridId: 2
+2024-08-26T03:28:49.215Z CursorManager: No editor for gridId: 2
+2024-08-26T03:28:59.547Z CursorManager: No editor for gridId: 2
+2024-08-26T03:28:59.816Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info-box/helpers/infobox.stories.tsx, skipping
+2024-08-26T03:28:59.823Z DocumentChangeManager: Can't get last known neovim content for file:///Users/maxkiselev/alfa/.aliases/afront-components-lib-front/src/components/info-box/helpers/infobox.stories.tsx, skipping
+2024-08-26T03:29:10.029Z CursorManager: No editor for gridId: 276
+2024-08-26T03:29:15.549Z CursorManager: No editor for gridId: 277
+2024-08-26T03:29:20.379Z CursorManager: No editor for gridId: 278
+2024-08-26T03:29:24.308Z CursorManager: No editor for gridId: 279
+2024-08-26T03:29:26.920Z CursorManager: No editor for gridId: 280
+2024-08-26T03:29:28.302Z MessagesManager: 7 fewer lines
+2024-08-26T03:29:29.364Z CursorManager: No editor for gridId: 281
