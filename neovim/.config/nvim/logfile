@@ -143,3 +143,18 @@
 2024-08-27T22:18:23.383Z CursorManager: No editor for gridId: 58
 2024-08-27T22:19:14.061Z CursorManager: No editor for gridId: 2
 2024-08-27T22:29:34.892Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/swagger/schema/skill-schema.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fswagger%2Fschema%2Fskill-schema.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-27T22:46:49.368Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/swagger/schema/skill-schema.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fswagger%2Fschema%2Fskill-schema.json%22%2C%22ref%22%3A%22%22%7D, skipping
+2024-08-27T22:47:02.700Z MessagesManager: 128 lines yanked
+2024-08-27T22:47:18.257Z CursorManager: No editor for gridId: 59
+2024-08-27T22:47:18.257Z CursorManager: No editor for gridId: 2
+2024-08-27T22:47:18.265Z CursorManager: No editor for gridId: 60
+2024-08-27T22:47:21.907Z CursorManager: No editor for gridId: 2
+2024-08-27T22:47:29.074Z CursorManager: No editor for gridId: 62
+2024-08-27T22:47:37.210Z CursorManager: No editor for gridId: 63
+2024-08-27T22:48:06.033Z CursorManager: No editor for gridId: 64
+2024-08-27T22:48:24.815Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T22:48:24.824Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T22:48:24.941Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T22:48:24.941Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T22:50:58.452Z CursorManager: No editor for gridId: 65
+2024-08-27T22:51:09.710Z MessagesManager: 178 lines yanked
