@@ -30,25 +30,35 @@
 2024-08-27T17:46:31.715Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
 2024-08-27T17:46:31.778Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
 2024-08-27T17:46:31.778Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
-ssments-front%252Falfa-devops-scripts, skipping
-2024-08-27T13:33:45.600Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-27T13:33:45.608Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-27T13:33:46.478Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-27T13:33:46.478Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm1/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front%252Falfa-devops-scripts, skipping
-2024-08-27T13:33:46.482Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-27T13:33:50.769Z CursorManager: No editor for gridId: 2
-2024-08-27T13:34:46.713Z CursorManager: No editor for gridId: 2
-2024-08-27T13:34:46.720Z CursorManager: No editor for gridId: 11
-2024-08-27T13:36:58.550Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-27T13:36:58.554Z DocumentChangeManager: Can't get last known neovim content for vscode-scm:git/scm0/input?rootUri%3Dfile%253A%252F%252F%252FUsers%252Fmaxkiselev%252Falfa%252F.aliases%252Fafront-team-assessments-front, skipping
-2024-08-27T13:36:58.904Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/package.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fpackage.json%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-27T13:37:04.899Z CursorManager: No editor for gridId: 2
-2024-08-27T13:38:24.736Z CursorManager: No editor for gridId: 13
-2024-08-27T13:38:52.216Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/root.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Froot.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-27T13:47:40.620Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-team-assessments-front/src/shared/root.tsx.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-team-assessments-front%2Fsrc%2Fshared%2Froot.tsx%22%2C%22ref%22%3A%22%22%7D, skipping
-2024-08-27T17:40:50.968Z CursorManager: No editor for gridId: 14
-2024-08-27T17:41:03.463Z CursorManager: No editor for gridId: 2
-2024-08-27T17:41:03.486Z CursorManager: No editor for gridId: 15
-2024-08-27T17:43:11.257Z CursorManager: No editor for gridId: 2
-2024-08-27T17:43:11.740Z CursorManager: No editor for gridId: 16
-2024-08-27T17:43:14.200Z CursorManager: No editor for gridId: 2
+2024-08-27T18:07:22.666Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:22.674Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:22.803Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:22.804Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:26.004Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:26.009Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:26.078Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:26.078Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:39.082Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:39.084Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:39.140Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:07:39.140Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:26.621Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:26.624Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:26.680Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:26.681Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:28.457Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:28.458Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:28.515Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:28.515Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:29.447Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:29.449Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:29.510Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:08:29.511Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:48.238Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:48.242Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:48.306Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:48.306Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:49.402Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:49.406Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:49.454Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
+2024-08-27T18:10:49.454Z DocumentChangeManager: Can't get last known neovim content for vscode-userdata:/Users/maxkiselev/Library/Application%20Support/VSCodium/User/settings.json, skipping
