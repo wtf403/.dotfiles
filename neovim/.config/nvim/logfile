@@ -103,3 +103,43 @@
 2024-08-27T21:09:32.479Z CursorManager: No editor for gridId: 29
 2024-08-27T21:57:54.522Z CursorManager: No editor for gridId: 2
 2024-08-27T21:57:57.383Z CursorManager: No editor for gridId: 31
+2024-08-27T22:06:54.626Z CursorManager: No editor for gridId: 32
+2024-08-27T22:07:00.568Z CursorManager: No editor for gridId: 33
+2024-08-27T22:07:05.950Z CursorManager: No editor for gridId: 34
+2024-08-27T22:07:07.339Z CursorManager: No editor for gridId: 35
+2024-08-27T22:07:11.202Z CursorManager: No editor for gridId: 36
+2024-08-27T22:07:17.366Z CursorManager: No editor for gridId: 37
+2024-08-27T22:09:00.528Z CursorManager: No editor for gridId: 2
+2024-08-27T22:09:04.309Z CursorManager: No editor for gridId: 2
+2024-08-27T22:09:04.314Z CursorManager: No editor for gridId: 39
+2024-08-27T22:09:26.422Z CursorManager: No editor for gridId: 40
+2024-08-27T22:09:40.749Z CursorManager: No editor for gridId: 41
+2024-08-27T22:09:44.402Z CursorManager: No editor for gridId: 42
+2024-08-27T22:10:37.785Z CursorManager: No editor for gridId: 43
+2024-08-27T22:10:47.605Z CursorManager: No editor for gridId: 44
+2024-08-27T22:11:30.656Z CursorManager: No editor for gridId: 2
+2024-08-27T22:11:45.330Z CursorManager: No editor for gridId: 46
+2024-08-27T22:12:01.063Z CursorManager: No editor for gridId: 2
+2024-08-27T22:12:01.068Z CursorManager: No editor for gridId: 47
+2024-08-27T22:12:03.965Z CursorManager: No editor for gridId: 48
+2024-08-27T22:12:05.156Z MessagesManager: E20: Mark not set
+2024-08-27T22:12:07.776Z CursorManager: No editor for gridId: 49
+2024-08-27T22:12:28.001Z CursorManager: No editor for gridId: 50
+2024-08-27T22:12:29.122Z CursorManager: No editor for gridId: 51
+2024-08-27T22:12:32.927Z CursorManager: No editor for gridId: 52
+2024-08-27T22:12:34.774Z CursorManager: No editor for gridId: 53
+2024-08-27T22:12:44.046Z CursorManager: No editor for gridId: 54
+2024-08-27T22:13:36.140Z CursorManager: No editor for gridId: 55
+2024-08-27T22:15:33.144Z MessagesManager: 33 lines yanked
+2024-08-27T22:15:33.437Z MessagesManager: 33 lines yanked
+2024-08-27T22:16:26.053Z CursorManager: No editor for gridId: 47
+2024-08-27T22:16:26.055Z CursorManager: No editor for gridId: 2
+2024-08-27T22:16:26.069Z CursorManager: No editor for gridId: 56
+2024-08-27T22:16:33.291Z MessagesManager: 130 lines yanked
+2024-08-27T22:17:52.782Z CursorManager: No editor for gridId: 2
+2024-08-27T22:17:52.788Z CursorManager: No editor for gridId: 57
+2024-08-27T22:17:54.179Z MessagesManager: 40 more lines
+2024-08-27T22:18:23.378Z CursorManager: No editor for gridId: 2
+2024-08-27T22:18:23.383Z CursorManager: No editor for gridId: 58
+2024-08-27T22:19:14.061Z CursorManager: No editor for gridId: 2
+2024-08-27T22:29:34.892Z DocumentChangeManager: Can't get last known neovim content for git:/Users/maxkiselev/alfa/.aliases/afront-assessment-admin-middle/swagger/schema/skill-schema.json.git?%7B%22path%22%3A%22%2FUsers%2Fmaxkiselev%2Falfa%2F.aliases%2Fafront-assessment-admin-middle%2Fswagger%2Fschema%2Fskill-schema.json%22%2C%22ref%22%3A%22%22%7D, skipping
