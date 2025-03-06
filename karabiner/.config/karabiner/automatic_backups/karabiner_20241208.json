@@ -934,14 +934,6 @@
                     },
                     "ignore": true,
                     "manipulate_caps_lock_led": false
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 641,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true
                 }
             ],
             "name": "shortcuts",

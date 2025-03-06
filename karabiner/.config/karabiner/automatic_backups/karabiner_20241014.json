@@ -669,6 +669,7 @@
                 "rules": [
                     {
                         "description": "F6 --> Toggle System Appearance",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -714,6 +715,7 @@
                     },
                     {
                         "description": "CapsLock (Ctrl) + [ --> Escape",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -730,6 +732,7 @@
                     },
                     {
                         "description": "escape = emoji menu. (Simplifies default command + control + space)",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "escape" },
@@ -745,6 +748,7 @@
                     },
                     {
                         "description": "ctrl+; --> cmd+shift+[",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -776,6 +780,7 @@
                     },
                     {
                         "description": "ctrl+' --> cmd+shift+]",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -807,6 +812,7 @@
                     },
                     {
                         "description": "cmd+ctrl+; --> cmd+opt+shift+[",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -836,6 +842,7 @@
                     },
                     {
                         "description": "cmd+ctrl+'--> cmd+opt+shift+]",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "conditions": [
@@ -865,6 +872,7 @@
                     },
                     {
                         "description": "10 Control + Option to Fn",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -902,6 +910,7 @@
                     },
                     {
                         "description": "fn to sticky_fn",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "fn" },
@@ -912,6 +921,7 @@
                     },
                     {
                         "description": "CapsLock --> Ctrl",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -925,25 +935,6 @@
                     }
                 ]
             },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 666,
-                        "vendor_id": 76
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": false
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 641,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true
-                }
-            ],
             "name": "shortcuts",
             "selected": true,
             "virtual_hid_keyboard": {

@@ -1,10 +1,11 @@
 alias copy="pbcopy"
+alias .env="dotenvx"
 alias fuck="fuck --yeah"
-alias rc="nvim ~/.zshrc"
-alias aliases="nvim ~/.zsh_aliases"
-alias supervisord="supervisord -c ~/.config/supervisord/supervisord.conf"
-alias desktop="cd ~/Desktop"
 alias ls="lsd"
+alias mv="mv -i -v"
+alias finder="open -a 'Finder'"
+alias icloud="/Users/wtf403/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias cursor="cursor --disable-updates"
 alias sourcezsh="source ~/.config/zsh/.aliases; source ~/.config/zsh/.zprofile; source ~/.config/zsh/.zshrc"
 alias cat='bat -p --theme=gruvbox-$(defaults read -g AppleInterfaceStyle &> /dev/null && echo dark || echo light)'
 
@@ -31,7 +32,7 @@ function "?!" () {
     fi
 }
 
-alias maxkiselev="cd ~"
+alias wtf403="cd ~"
 alias downloads="cd ~/Downloads"
 alias documents="cd ~/Documents"
 alias applications="cd /Applications"
@@ -39,30 +40,12 @@ alias desktop="cd ~/Desktop"
 alias pictures="cd ~/Pictures"
 alias trash="~/.Trash"
 
-
-sudo () {
-    unset -f sudo
-    if [[ "$(uname)" == 'Darwin' ]]
-    then
-        if ! command grep 'pam_tid.so' /etc/pam.d/sudo --silent
-        then
-            command sudo sed -i -e '1s;^;auth       sufficient     pam_tid.so\n;' /etc/pam.d/sudo
-        fi
-        if ! command grep 'pam_reattach.so' /etc/pam.d/sudo --silent
-        then
-            command sudo sed -i -e '1s;^;auth     optional     pam_reattach.so\n;' /etc/pam.d/sudo
-        fi
-    fi
-    command sudo "$@"
-}
-
-
 alias -s git="git clone"
 alias ip="echo Your ip is; dig +short myip.opendns.com @resolver1.opendns.com;"
 alias chrome='\open -a "/Applications/Google Chrome.app" --args --force-renderer-accessibility'
 alias chromeDebug='chrome --remote-debugging-port=9222'
 alias rsync="rsync --info=progress2"
-alias crontab="EDITOR=/Users/maxkiselev/.asdf/shims/nvim crontab"
+alias crontab="EDITOR=/Users/wtf403/.asdf/shims/nvim crontab"
 
 alias git-graph="viddy -t git-graph --color always"
 alias pgcli="export EDITOR=nvim && pgcli"
@@ -75,17 +58,6 @@ alias watch="viddy --no-title"
 alias stow="stow -vt ~ --ignore='^(\.git|\.DS_Store)$' "
 alias tree="tree -a -I '.git|.DS_Store'"
 alias mk="bonk"
-
-### asdf ###
-
-asdf () {
-	if [[ $@ == "" ]]
-	then
-    /Users/maxkiselev/.asdf/bin/asdf list
-	else
-    /Users/maxkiselev/.asdf/bin/asdf $@
-	fi
-}
 
 
 ### trash ###

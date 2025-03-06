@@ -1,8 +1,5 @@
 {
-    "global": {
-        "enable_notification_window": false,
-        "show_in_menu_bar": false
-    },
+    "global": { "show_in_menu_bar": false },
     "machine_specific": { "krbn-0ff74f9c-8399-45a9-9684-40dd3e8418e2": { "enable_multitouch_extension": true } },
     "profiles": [
         {
@@ -659,10 +656,7 @@
                     "to": [{ "key_code": "f13" }]
                 }
             ],
-            "virtual_hid_keyboard": {
-                "indicate_sticky_modifier_keys_state": false,
-                "keyboard_type_v2": "ansi"
-            }
+            "virtual_hid_keyboard": { "indicate_sticky_modifier_keys_state": false }
         },
         {
             "complex_modifications": {
@@ -925,31 +919,8 @@
                     }
                 ]
             },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 666,
-                        "vendor_id": 76
-                    },
-                    "ignore": true,
-                    "manipulate_caps_lock_led": false
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 641,
-                        "vendor_id": 1452
-                    },
-                    "ignore": true
-                }
-            ],
-            "name": "shortcuts",
-            "selected": true,
-            "virtual_hid_keyboard": {
-                "indicate_sticky_modifier_keys_state": false,
-                "keyboard_type_v2": "ansi"
-            }
+            "name": "New profile",
+            "selected": true
         },
         { "name": "clean" }
     ]

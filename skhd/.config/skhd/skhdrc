@@ -1,100 +1,138 @@
 #shellcheck disable=all
-#https://github.com/koekeishiya/skhd/issues/1#issue-248494406
+# yabai configuration
+# https://github.com/koekeishiya/skhd/issues/1#issue-248494406
 
-### General
-cmd - h [
-"safari" : skhd -k ""
-]
+# option -- screens
+# shift -- spaces
+# cmd -- windows
 
-### Yabai
+## // Windows //
 
-## toggle yabai bsp
-fn - s : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout bsp 
+### navgate stack
+fn + cmd - up : yabai -m window --focus stack.next || yabai -m window --focus stack.first
+fn + cmd - down : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 
-## toggle yabai stack
-fn + shift - s : yabai -m space  $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout stack
+### stack
+fn + cmd - left : yabai -m window --focus stack.first
+fn + cmd - right : yabai -m window --focus stack.last
 
+### navigate windows
+fn + cmd - j : yabai -m window --focus south || yabai -m window --focus north
+fn + cmd - k : yabai -m window --focus north || yabai -m window --focus south
+fn + cmd - h : yabai -m window --focus west || yabai -m window --focus east
+fn + cmd - l : yabai -m window --focus east || yabai -m window --focus west
 
-## restart
-fn - 0x32 : yabai --restart-service
+### swap bsp windows (system)
+fn + cmd - down : ~/.config/yabai/moveDownAndFollowFocus.sh && ~/.config/yabai/focus.sh
+fn + cmd - up : ~/.config/yabai/moveUpAndFollowFocus.sh && ~/.config/yabai/focus.sh
+fn + cmd - left : ~/.config/yabai/moveRightAndFollowFocus.sh && ~/.config/yabai/focus.sh
+fn + cmd - right : ~/.config/yabai/moveLeftAndFollowFocus.sh && ~/.config/yabai/focus.sh
 
-## close window
-fn - w : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~.config/yabai/window-focus-on-destroy.sh)"
+### resize windows
+fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
+fn - 0x1E : yabai -m window --resize right:60:0 || yabai -m window --resize left:100:0
+fn + cmd - 0x21 : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-60
+fn + cmd - 0x1E : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
 
-## destroy desktop
-fn - d: yabai -m space --destroy && yabai -m space --focus prev
+### Move window to next/prev space
+fn + shift + cmd - left : yabai -m window --space next || yabai -m window --space first
+fn + shift + cmd - right : yabai -m window --space prev || yabai -m window --space last
 
-## Create space
-fn - c: yabai -m space --create && yabai -m space --focus next && yabai -m space --toggle mission-control
+### close window
+fn - w : yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close && yabai -m window --focus "$(~/.config/yabai/window-focus-on-destroy.sh)"
 
-## toggle window fullscreen zoom
-# fn - w : yabai -m window --toggle zoom-fullscreen
-fn - u : yabai -m window --toggle native-fullscreen
+### cycle through windows
+fn - tab : yabai -m window --focus next || yabai -m window --focus first
 
-## floating window at center of the screen
-fn - t : ~/.config/yabai/float.sh
-
-## next/prev stack window
-fn - n : yabai -m window --focus stack.next || yabai -m window --focus stack.first
-fn - p : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
-
-
-## Show mission control
-fn - o : yabai -m space --toggle mission-control
-
-## Show Expose
-fn - e : yabai -m window --toggle expose
-
-## Show desktop
-fn - i : yabai -m space --toggle show-desktop
-
-
-# Move spaces forward/backwards
-#fn + shift + h : yabai -m space --swap next || yabai -m space --move first
-#fn + shift + l : yabai -m space --swap prev || yabai -m space --move last 
-
-# Move window to next/prev space
-fn - f : yabai -m window --space next || yabai -m window --space first
-fn - b : yabai -m window --space prev || yabai -m window --space last 
-
-
-### Two displays 
-
-## windows movements
-fn - j : ~/.config/yabai/focus.sh && yabai -m window --focus south || yabai -m display --focus south || yabai -m window --focus north || yabai -m display --focus north
-fn - k : ~/.config/yabai/focus.sh && yabai -m window --focus north || yabai -m display --focus north || yabai -m window --focus south || yabai -m display --focus south
-#fn - h : ~/.config/yabai/focus.sh && yabai -m window --focus west || yabai -m display --focus west || yabai -m window --focus east || yabai -m display --focus east 
-#fn - l : ~/.config/yabai/focus.sh && yabai -m window --focus east || yabai -m display --focus east || yabai -m window --focus west || yabai -m display --focus west
-
-# Move between spaces (one screen only)
-fn - l : yabai -m space --focus next || yabai -m space --focus first
-fn - h : yabai -m space --focus prev || yabai -m space --focus last 
-
-
-## swap windows
-# fn + shift - j : ~/.config/yabai/moveDownAndFollowFocus.sh && ~/.config/yabai/focus.sh
-# fn + shift - k : ~/.config/yabai/moveUpAndFollowFocus.sh && ~/.config/yabai/focus.sh
-# fn + shift - h : ~/.config/yabai/moveRightAndFollowFocus.sh && ~/.config/yabai/focus.sh
-# fn + shift - l : ~/.config/yabai/moveLeftAndFollowFocus.sh && ~/.config/yabai/focus.sh
-
-## resize windows
-# fn - 0x21 : yabai -m window --resize left:-60:0 || yabai -m window --resize right:-100:0
-# fn - 0x1E : yabai -m window --resize right:60:0 || yabai -m window --resize left:100:0
-# fn + shift - 0x21 : yabai -m window --resize top:0:-30 || yabai -m window --resize bottom:0:-60
-# fn + shift - 0x1E : yabai -m window --resize bottom:0:30 || yabai -m window --resize top:0:60
-
-## rotate tree 90deg clockwise
+### rotate bsp windows 90deg clockwise
 fn - r : yabai -m space --rotate 90
 
-# # rotate tree 90deg counter-clockwise
+### rotate bsp windows 270deg counter-clockwise
 fn + shift - r : yabai -m space --rotate 270
 
-## mirror horizontally
+### mirror bsp windows horizontally
 fn - x : yabai -m space --mirror x-axis
 
-## mirror vertically
+### mirror bsp windows vertically
 fn - y : yabai -m space --mirror y-axis
 
-## toggle window split type
-# fn - e : yabai -m window --toggle split
+### center window (system)
+fn + cmd - c : ~/.config/yabai/center.sh
 
+### tile window to the left (system)
+fn + cmd - l : ~/.config/yabai/window/tileLeft.sh
+fn + cmd - r : ~/.config/yabai/window/tileRight.sh
+
+## // Spaces //
+
+### move between spaces (one screen only)
+fn + shift - h : yabai -m space --focus next || yabai -m space --focus first
+fn + shift - l : yabai -m space --focus prev || yabai -m space --focus last
+
+### move spaces forward/backwards
+fn + shift - h : yabai -m space --swap next || yabai -m space --move first
+fn + shift - l : yabai -m space --swap prev || yabai -m space --move last
+
+### destroy space
+fn - d: yabai -m space --destroy && yabai -m space --focus prev
+
+### create space
+fn - c: yabai -m space --create && yabai -m space --focus next && yabai -m space --toggle mission-control && sleep 1 && yabai -m space --toggle mission-control
+
+### // Displays //
+
+### move between displays
+fn + alt - up : yabai -m display --focus prev || yabai -m display --focus last
+fn + alt - down : yabai -m display --focus next || yabai -m display --focus first
+fn + alt - left : yabai -m display --focus prev || yabai -m display --focus last
+fn + alt - right : yabai -m display --focus next || yabai -m display --focus first
+
+## move spaces between displays
+fn + shift + alt - up : yabai -m space --swap prev || yabai -m space --move last
+fn + shift + alt - down : yabai -m space --swap next || yabai -m space --move first
+fn + shift + alt - left : yabai -m space --swap prev || yabai -m space --move last
+fn + shift + alt - right : yabai -m space --swap next || yabai -m space --move first
+
+### move windows between displays
+fn + shift + alt - up : yabai -m window --display prev || yabai -m window --display first
+fn + shift + alt - down : yabai -m window --display next || yabai -m window --display last
+fn + shift + alt - left : yabai -m window --display prev || yabai -m window --display last
+fn + shift + alt - right : yabai -m window --display next || yabai -m window --display first
+
+### // Options //
+
+### restart skhd and yabai
+fn - 0x32 : skhd --restart-service && yabai --restart-service
+
+### toggle window from floating to stack/bsp
+fn - t : ~/.config/yabai/float-bsp.sh
+
+### toggle yabai float / stack
+fn - g : yabai -m space $(yabai -m query --spaces | python3 -c 'import json, sys; obj = json.load(sys.stdin); print(next(space["index"] for space in obj if space["has-focus"]))') --layout bsp
+
+### toggle window fullscreen zoom
+fn - w : yabai -m window --toggle zoom-fullscreen
+fn - u : yabai -m window --toggle native-fullscreen
+
+### show space windows
+fn - e : yabai -m window --toggle expose
+fn - n : yabai -m window --toggle expose
+
+### show desktop
+fn - q : yabai -m space --toggle show-desktop
+
+### show mission control
+fn - e : yabai -m space --toggle mission-control
+
+fn - f1: osascript -e 'tell application "System Events" to key code 107'
+fn - f2: osascript -e 'tell application "System Events" to key code 113'
+fn - f3: osascript -e 'tell application "System Events" to key code 160'
+fn - f4: clikclick -c 'f13'
+fn - f5: osascript -e ''
+fn - f6: osascript -e ''
+fn - f7: osascript -e ''
+fn - f8: osascript -e ''
+fn - f9: osascript -e ''
+fn - f10: osascript -e ''
+fn - f11: osascript -e ''
+fn - f12: osascript -e ''
