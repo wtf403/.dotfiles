@@ -2,20 +2,30 @@
 
 # Load scripting addition on restart
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=dock_did_change_pref action="sudo yabai --load-sa"
+
 sudo yabai --load-sa
+
+yabai_spaces () {
+   macbook_spaces=($(yabai -m query --displays | jq -r '.[] | select(.uuid == "37D8832A-2D66-02CA-B9F7-8F30A301B230") | .spaces | @sh' ))
+
+   for space in "${macbook_spaces[@]}"; do
+    yabai -m space $space --layout stack
+   done
+}
 
 # Global settings
 yabai -m config \
     active_window_opacity 1.0 \
     auto_balance on \
-    bottom_padding 12 \
-    left_padding 12 \
-    right_padding 18 \
-    top_padding 12 \
-    window_gap 12 \
+    bottom_padding 0 \
+    left_padding 0 \
+    right_padding 0 \
+    top_padding 0 \
+    window_gap 0 \
     debug_output on \
     display_arrangement_order default \
-    external_bar off:40:0 \
+    external_bar all:1:0 \
     insert_feedback_color 0xffd75f5f \
     layout float \
     menubar_opacity 1.0 \
@@ -24,9 +34,9 @@ yabai -m config \
     mouse_drop_action swap \
     mouse_follows_focus on \
     focus_follows_mouse autofocus \
-    mouse_modifier cmd \
+    mouse_modifier fn \
     normal_window_opacity 0.70 \
-    split_ratio 0.50 \
+    split_ratio 0.37 \
     split_type auto \
     window_animation_duration 0.0 \
     window_animation_easing ease_out_circ \
@@ -37,15 +47,39 @@ yabai -m config \
     window_shadow on \
     window_zoom_persist on
 
-# Default: all applications are in the normal layer
+for event in "mission_control_exit" "display_added" "display_removed" "display_moved" "space_created" "space_destroyed"; do
+  yabai -m signal --add event=$event action="source ~/.config/yabai/yabairc && yabai_spaces"
+done
+
+yabai_spaces
+
+yabai -m signal --add event=window_destroyed action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+yabai -m signal --add event=application_terminated action="yabai -m query --windows --window &> /dev/null || yabai -m window --focus mouse"
+
 yabai -m rule --add app=".*" layer=normal
-
-# Ensure Preview stays normal
 yabai -m rule --add title="^Preview" layer=normal
-
-# Raycast should always be on top
 yabai -m rule --add app="Raycast" layer=above sub-layer=2
-
-# iPhone Mirroring should be above other apps but below Raycast
 yabai -m rule --add title="iPhone Mirroring" layer=above sub-layer=1
-
+yabai -m rule --add app="System Settings" manage=off grid=4:4:1:1:1:1
+yabai -m rule --add app="Finder" manage="off" grid="9:16:1:2:8:6"
+yabai -m rule --add app="Karabiner-Elements" sticky=on manage=off
+yabai -m rule --add app="Karabiner-EventViewer" sticky=on manage=off
+yabai -m rule --add app="Disk Utility" sticky=on manage=off
+yabai -m rule --add app="System Information" sticky=on manage=off
+yabai -m rule --add app="Activity Monitor" sticky=on manage=off
+yabai -m rule --add app="Cisco Webex Start" manage=off
+yabai -m rule --add app="Private Internet Access" manage=off
+yabai -m rule --add app="DeepL" manage=off
+yabai -m rule --add app="Keychain Access" manage=off
+yabai -m rule --add app="Preview" manage=off
+yabai -m rule --add app="iScreen Shoter" manage=off
+yabai -m rule --add app="Xnip" manage=off
+yabai -m rule --add app="App Store" manage=off
+yabai -m rule --add app="Stats" manage=off
+yabai -m rule --add app="Color Picker" manage=off
+yabai -m rule --add app="Marta" manage=off
+yabai -m rule --add app="Simulator" manage=off
+yabai -m rule --add title="Check Point Endpoint Security" manage=off
+yabai -m rule --add app="Microsoft Remote Desktop" manage=off
+yabai -m rule --add app="^Spotify$" scratchpad=spotify grid=11:11:1:1:9:9
+yabai -m rule --add app="^Discord$" title!="^Discord Updater$" scratchpad=discord grid=11:11:1:1:9:9

@@ -1,16 +1,99 @@
-2025-03-06T12:34:55.925Z MainController: Starting nvim: /Users/wtf403/.asdf/installs/neovim/0.10.2/bin/nvim -N --embed --cmd source /Users/wtf403/.cursor/extensions/asvetliakov.vscode-neovim-1.18.16/runtime/vscode-neovim.vim -u /Users/wtf403/.config/nvim/init.vim
-2025-03-06T12:34:56.332Z MainController: Nvim info: {
+2025-03-17T17:08:03.672Z MainController: Starting nvim: /Users/wtf403/.asdf/installs/neovim/0.10.2/bin/nvim -N --embed --cmd source /Users/wtf403/.cursor/extensions/asvetliakov.vscode-neovim-1.18.18/runtime/vscode-neovim.vim -u /Users/wtf403/.config/nvim/init.vim
+2025-03-17T17:08:04.691Z MainController: Nvim info: {
   nvimVersion: {
-    api_prerelease: false,
-    patch: 2,
     build: 'g8b9864200',
-    minor: 10,
     api_compatible: 0,
     prerelease: false,
     api_level: 12,
-    major: 0
+    api_prerelease: false,
+    major: 0,
+    minor: 10,
+    patch: 2
   },
   logFile: '/Users/wtf403/.local/state/nvim/log',
   configDir: '/Users/wtf403/.config/nvim'
 }
-2025-03-06T12:34:56.376Z CursorManager: No editor for gridId: 2
+2025-03-17T17:08:04.798Z CursorManager: No editor for gridId: 2
+2025-03-17T17:11:20.978Z CursorManager: No editor for gridId: 7
+2025-03-17T17:11:32.200Z CursorManager: No editor for gridId: 8
+2025-03-17T17:20:10.253Z CursorManager: No editor for gridId: 9
+2025-03-17T18:58:21.571Z CursorManager: No editor for gridId: 10
+2025-03-17T18:58:25.052Z CursorManager: No editor for gridId: 11
+2025-03-17T18:58:30.441Z CursorManager: No editor for gridId: 2
+2025-03-17T18:58:31.038Z CursorManager: No editor for gridId: 2
+2025-03-17T18:58:31.047Z CursorManager: No editor for gridId: 13
+2025-03-17T18:59:05.012Z CursorManager: No editor for gridId: 14
+2025-03-17T18:59:06.396Z CursorManager: No editor for gridId: 15
+2025-03-17T19:30:25.881Z CursorManager: No editor for gridId: 16
+2025-03-17T19:37:18.137Z CursorManager: No editor for gridId: 17
+2025-03-17T19:37:19.437Z CursorManager: No editor for gridId: 18
+2025-03-17T19:37:20.412Z CursorManager: No editor for gridId: 19
+2025-03-17T19:37:21.362Z CursorManager: No editor for gridId: 20
+2025-03-17T19:37:22.336Z CursorManager: No editor for gridId: 21
+2025-03-17T19:37:23.842Z CursorManager: No editor for gridId: 22
+2025-03-17T19:37:24.843Z CursorManager: No editor for gridId: 23
+2025-03-17T19:37:27.208Z CursorManager: No editor for gridId: 24
+2025-03-17T19:37:29.944Z CursorManager: No editor for gridId: 25
+2025-03-17T19:37:31.140Z CursorManager: No editor for gridId: 26
+2025-03-17T19:37:32.094Z CursorManager: No editor for gridId: 27
+2025-03-17T19:37:33.087Z CursorManager: No editor for gridId: 28
+2025-03-17T19:37:34.024Z CursorManager: No editor for gridId: 29
+2025-03-17T19:37:36.395Z CursorManager: No editor for gridId: 30
+2025-03-17T19:39:43.124Z CursorManager: No editor for gridId: 31
+2025-03-17T19:40:07.696Z CursorManager: No editor for gridId: 32
+2025-03-17T19:40:08.568Z CursorManager: No editor for gridId: 33
+2025-03-17T19:40:09.356Z CursorManager: No editor for gridId: 34
+2025-03-17T19:40:10.161Z CursorManager: No editor for gridId: 35
+2025-03-17T19:40:10.894Z CursorManager: No editor for gridId: 36
+2025-03-17T19:40:11.539Z CursorManager: No editor for gridId: 37
+2025-03-17T19:40:12.399Z CursorManager: No editor for gridId: 38
+2025-03-17T19:40:41.087Z CursorManager: No editor for gridId: 39
+2025-03-17T19:40:50.059Z CursorManager: No editor for gridId: 40
+2025-03-17T19:41:04.396Z CursorManager: No editor for gridId: 41
+2025-03-17T19:41:23.956Z CursorManager: No editor for gridId: 42
+2025-03-17T19:41:33.895Z CursorManager: No editor for gridId: 43
+2025-03-17T19:41:34.833Z CursorManager: No editor for gridId: 44
+2025-03-17T19:41:35.647Z CursorManager: No editor for gridId: 45
+2025-03-17T19:41:36.705Z CursorManager: No editor for gridId: 46
+2025-03-17T19:41:37.715Z CursorManager: No editor for gridId: 47
+2025-03-17T19:41:51.813Z CursorManager: No editor for gridId: 48
+2025-03-17T19:42:13.520Z CursorManager: No editor for gridId: 49
+2025-03-17T19:42:43.420Z CursorManager: No editor for gridId: 50
+2025-03-17T19:44:26.392Z CursorManager: No editor for gridId: 51
+2025-03-17T19:44:37.759Z CursorManager: No editor for gridId: 52
+2025-03-17T19:44:47.387Z CursorManager: No editor for gridId: 53
+2025-03-17T19:44:54.417Z CursorManager: No editor for gridId: 54
+2025-03-17T19:45:03.956Z CursorManager: No editor for gridId: 55
+2025-03-17T19:45:11.195Z CursorManager: No editor for gridId: 56
+2025-03-17T19:46:54.569Z CursorManager: No editor for gridId: 57
+2025-03-17T20:22:32.539Z CursorManager: No editor for gridId: 58
+2025-03-17T20:22:34.349Z CursorManager: No editor for gridId: 59
+2025-03-17T20:27:58.434Z CursorManager: No editor for gridId: 60
+2025-03-17T20:28:06.193Z CursorManager: No editor for gridId: 61
+2025-03-17T20:28:15.463Z CursorManager: No editor for gridId: 62
+2025-03-17T20:28:20.054Z CursorManager: No editor for gridId: 63
+2025-03-17T20:28:28.672Z CursorManager: No editor for gridId: 64
+2025-03-17T20:28:38.041Z CursorManager: No editor for gridId: 65
+2025-03-17T20:28:44.541Z CursorManager: No editor for gridId: 66
+2025-03-17T20:28:54.008Z CursorManager: No editor for gridId: 67
+2025-03-17T20:29:04.579Z CursorManager: No editor for gridId: 68
+2025-03-17T20:29:14.227Z CursorManager: No editor for gridId: 69
+2025-03-17T20:29:15.272Z CursorManager: No editor for gridId: 70
+2025-03-17T20:30:25.594Z CursorManager: No editor for gridId: 71
+2025-03-17T20:30:36.599Z CursorManager: No editor for gridId: 72
+2025-03-17T20:32:26.922Z CursorManager: No editor for gridId: 73
+2025-03-17T20:32:40.852Z CursorManager: No editor for gridId: 74
+2025-03-17T20:32:46.939Z CursorManager: No editor for gridId: 75
+2025-03-17T20:32:50.666Z CursorManager: No editor for gridId: 76
+2025-03-17T20:32:57.553Z CursorManager: No editor for gridId: 77
+2025-03-17T20:33:16.828Z CursorManager: No editor for gridId: 78
+2025-03-17T20:33:20.081Z MessagesManager: '3 lines yanked\n'
+2025-03-17T20:33:21.518Z CursorManager: No editor for gridId: 79
+2025-03-17T20:33:36.065Z CursorManager: No editor for gridId: 80
+2025-03-17T20:46:54.106Z CursorManager: No editor for gridId: 81
+2025-03-17T20:46:59.636Z MessagesManager: '29 lines yanked\n'
+2025-03-17T20:47:01.481Z CursorManager: No editor for gridId: 82
+2025-03-17T20:47:13.856Z MessagesManager: '86 lines yanked\n'
+2025-03-17T20:47:15.598Z MessagesManager: '85 lines yanked\n'
+2025-03-17T20:47:18.135Z MessagesManager: '85 fewer lines\n'
+2025-03-17T20:51:32.691Z CursorManager: No editor for gridId: 83
